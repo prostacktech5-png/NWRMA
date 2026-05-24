@@ -117,6 +117,7 @@ Keep `NWRMA_API_URL_LAN=http://<laptop-lan-ip>:4000` in `env/nwrma.env`. With `F
 | Symptom | Fix |
 |---------|-----|
 | Build fails: `packageManager` / Yarn 1.22 vs Corepack | Do **not** use Build Command `yarn`. Set **Build** to `node scripts/render-build-web.mjs` (web) or `node scripts/render-build-api.mjs` (API). Add env **`SKIP_INSTALL_DEPS=true`**. Set **Start** to `npm run start:web` or `npm run start:api`. |
+| Build fails: `@tailwindcss/oxide-linux-x64-gnu` / native binding | Use latest `main` (web `optionalDependencies` + `render-build-web.mjs` installs Linux oxide). Redeploy with Build Command `node scripts/render-build-web.mjs`. |
 | Deploy fails: `error Command "start" not found` (Render ran `yarn start`) | Set **Start Command** to `npm run start:web` or `npm run start:api` (not `yarn start`). |
 | Sync “cannot reach server” off Wi‑Fi | Rebuild APK after setting `NWRMA_API_URL`; confirm `/health` on Render |
 | Login fails on phone | Run `db:seed`; use `SEED_MOBILE_OFFICER_PHONE` / password |
