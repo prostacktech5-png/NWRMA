@@ -1,19 +1,22 @@
-# NWRMA Render Blueprint — API (field phones) + Next.js ERP/web.
-# Dashboard: New → Blueprint → connect repo. Re-sync after pushes to pick up start commands.
-#
-# If deploy runs "yarn start" and fails: Blueprint → Sync, or set Start Command manually:
-#   nwrma-api: npm run start:api
-#   nwrma-web: npm run start:web
+# NWRMA Render Blueprint — API + Next.js web.
+# Manual service (e.g. NWRMA-1): Settings must match the service you want:
+#   Web: Build = node scripts/render-build-web.mjs   Start = npm run start:web
+#   API: Build = node scripts/render-build-api.mjs   Start = npm run start:api
+# Set SKIP_INSTALL_DEPS=true so Render does not run a separate yarn/npm install.
 
 services:
   - type: web
     name: nwrma-api
     runtime: node
     plan: free
-    buildCommand: npm run build:render:api
+    buildCommand: node scripts/render-build-api.mjs
     startCommand: npm run start:api
     healthCheckPath: /health
     envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
       - key: NODE_ENV
         value: production
       - key: HOST
@@ -39,7 +42,7 @@ services:
     name: nwrma-web
     runtime: node
     plan: free
-    buildCommand: npm run build:render:web
+    buildCommand: node scripts/render-build-web.mjs
     startCommand: npm run start:web
     healthCheckPath: /api/health/db
     disk:
@@ -47,6 +50,10 @@ services:
       mountPath: /opt/render/project/src/web/data
       sizeGB: 1
     envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
       - key: NODE_ENV
         value: production
       - key: PORT

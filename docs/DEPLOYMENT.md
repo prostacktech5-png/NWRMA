@@ -19,6 +19,17 @@ Field phones **never** call the Next.js app directly for sync—they use `NWRMA_
 
 1. Push this repo to GitHub.
 2. Render Dashboard → **New** → **Blueprint** → connect the repo (`render.yaml` at root).
+
+   **If you already have a manual service (e.g. `NWRMA-1`)** instead of Blueprint services, open **Settings** and set:
+
+   | Field | Web (ERP) | API (phones) |
+   |-------|-----------|--------------|
+   | Build Command | `node scripts/render-build-web.mjs` | `node scripts/render-build-api.mjs` |
+   | Start Command | `npm run start:web` | `npm run start:api` |
+   | Environment | `SKIP_INSTALL_DEPS=true`, `NODE_VERSION=20` | same |
+
+   Do **not** leave Build Command as `yarn` — that causes Corepack / `packageManager` errors.
+
 3. When prompted, set **sync: false** variables (use values from your local `env/nwrma.env` where noted):
 
 ### `nwrma-api`
@@ -105,7 +116,8 @@ Keep `NWRMA_API_URL_LAN=http://<laptop-lan-ip>:4000` in `env/nwrma.env`. With `F
 
 | Symptom | Fix |
 |---------|-----|
-| Deploy fails: `error Command "start" not found` (Render ran `yarn start`) | **Blueprint → Sync** so `startCommand` is `npm run start:web` / `npm run start:api`. Or set those manually under **Settings → Start Command**. Root `package.json` also defines `start` as a fallback. |
+| Build fails: `packageManager` / Yarn 1.22 vs Corepack | Do **not** use Build Command `yarn`. Set **Build** to `node scripts/render-build-web.mjs` (web) or `node scripts/render-build-api.mjs` (API). Add env **`SKIP_INSTALL_DEPS=true`**. Set **Start** to `npm run start:web` or `npm run start:api`. |
+| Deploy fails: `error Command "start" not found` (Render ran `yarn start`) | Set **Start Command** to `npm run start:web` or `npm run start:api` (not `yarn start`). |
 | Sync “cannot reach server” off Wi‑Fi | Rebuild APK after setting `NWRMA_API_URL`; confirm `/health` on Render |
 | Login fails on phone | Run `db:seed`; use `SEED_MOBILE_OFFICER_PHONE` / password |
 | Web forms lose uploads after redeploy | Confirm **disk** is attached on `nwrma-web` (`render.yaml` → `web/data`) |

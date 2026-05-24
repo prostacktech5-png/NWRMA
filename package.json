@@ -1,7 +1,10 @@
 {
   "name": "nwrma",
   "private": true,
-  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": ">=20 <25",
+    "npm": ">=10"
+  },
   "workspaces": [
     "shared",
     "server",
@@ -30,8 +33,9 @@
     "start": "npm run start -w web",
     "start:web": "npm run start -w web",
     "start:api": "npm run prisma:migrate -w server && npm run start -w server",
-    "build:render:web": "npm ci && npm run build -w @nwrma/shared && npm run prepare:public -w web && npm run build -w web",
-    "build:render:api": "npm ci && npm run build -w @nwrma/shared && npm run prisma:generate -w server && npm run build -w server"
+    "build:render:web": "node scripts/render-build-web.mjs",
+    "build:render:api": "node scripts/render-build-api.mjs",
+    "build": "node scripts/render-build-web.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
