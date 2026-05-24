@@ -6,6 +6,11 @@ web/.env.local
 mobile/.env
 android app/.env.local
 
+# Lockfiles from other package managers (repo uses npm workspaces + package-lock.json)
+yarn.lock
+pnpm-lock.yaml
+**/pnpm-lock.yaml
+
 # Dependencies and builds
 node_modules/
 .next/

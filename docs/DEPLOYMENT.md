@@ -105,6 +105,7 @@ Keep `NWRMA_API_URL_LAN=http://<laptop-lan-ip>:4000` in `env/nwrma.env`. With `F
 
 | Symptom | Fix |
 |---------|-----|
+| Deploy fails: `error Command "start" not found` (Render ran `yarn start`) | **Blueprint → Sync** so `startCommand` is `npm run start:web` / `npm run start:api`. Or set those manually under **Settings → Start Command**. Root `package.json` also defines `start` as a fallback. |
 | Sync “cannot reach server” off Wi‑Fi | Rebuild APK after setting `NWRMA_API_URL`; confirm `/health` on Render |
 | Login fails on phone | Run `db:seed`; use `SEED_MOBILE_OFFICER_PHONE` / password |
 | Web forms lose uploads after redeploy | Confirm **disk** is attached on `nwrma-web` (`render.yaml` → `web/data`) |

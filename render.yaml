@@ -1,22 +1,17 @@
 # NWRMA Render Blueprint — API (field phones) + Next.js ERP/web.
-# Connect repo → New Blueprint → set sync:false secrets in the dashboard.
+# Dashboard: New → Blueprint → connect repo. Re-sync after pushes to pick up start commands.
 #
-# After deploy:
-#   1. Note https://nwrma-api.onrender.com and https://nwrma-web.onrender.com
-#   2. Set NWRMA_API_URL in env/nwrma.env → npm run sync:env → npm run mobile:release
-#   3. See docs/DEPLOYMENT.md
+# If deploy runs "yarn start" and fails: Blueprint → Sync, or set Start Command manually:
+#   nwrma-api: npm run start:api
+#   nwrma-web: npm run start:web
 
 services:
   - type: web
     name: nwrma-api
     runtime: node
     plan: free
-    buildCommand: >-
-      npm ci &&
-      npm run build -w @nwrma/shared &&
-      npm run prisma:generate -w server &&
-      npm run build -w server
-    startCommand: npm run prisma:migrate -w server && npm run start -w server
+    buildCommand: npm run build:render:api
+    startCommand: npm run start:api
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV
@@ -44,12 +39,8 @@ services:
     name: nwrma-web
     runtime: node
     plan: free
-    buildCommand: >-
-      npm ci &&
-      npm run build -w @nwrma/shared &&
-      npm run prepare:public -w web &&
-      npm run build -w web
-    startCommand: npm run start -w web
+    buildCommand: npm run build:render:web
+    startCommand: npm run start:web
     healthCheckPath: /api/health/db
     disk:
       name: nwrma-uploads
@@ -58,6 +49,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
       - key: DATABASE_URL
         sync: false
       - key: JWT_SECRET
