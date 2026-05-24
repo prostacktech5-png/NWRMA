@@ -1,0 +1,1852 @@
+/* Scoped styles for public NWRMA marketing site — does not affect ERP dashboard */
+
+.nwrma-site {
+  --nwrma-blue: #0072c6;
+  --nwrma-green: #1eb53a;
+  --nwrma-dark: #1a2744;
+  --nwrma-gray: #f4f6f8;
+  --nwrma-text: #333333;
+  --nwrma-muted: #666666;
+  --nwrma-footer-blue: #2b61c6;
+  --nwrma-footer-lime: #a6ce39;
+  --nwrma-footer-green: #2e8b2e;
+  --nwrma-nav-active: #4caf50;
+  --nwrma-more-news: #00acc1;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--nwrma-text);
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nwrma-site a {
+  color: var(--nwrma-blue);
+  text-decoration: none;
+}
+
+.nwrma-site a:hover {
+  text-decoration: underline;
+}
+
+/* Marketing footer inside site routes — do not inherit blue link / dark body text */
+.nwrma-site .site-footer .footer__top,
+.nwrma-site .site-footer .footer__contact-item,
+.nwrma-site .site-footer .footer__contact-item span,
+.nwrma-site .site-footer .footer__bottom,
+.nwrma-site .site-footer .footer__bottom p {
+  color: #fff;
+}
+
+.nwrma-site .site-footer .footer__top a,
+.nwrma-site .site-footer .footer__contacts a,
+.nwrma-site .site-footer .footer__socials a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.nwrma-site .site-footer .footer__heading {
+  color: #fff !important;
+}
+
+.nwrma-site .site-footer .footer__heading .accent {
+  color: #99cc00 !important;
+}
+
+.nwrma-site .site-footer .footer__socials a i,
+.nwrma-site .site-footer .footer__contact-item i {
+  color: #fff;
+}
+
+.nwrma-utility-bar {
+  background: #000;
+  color: #fff;
+  font-size: 0.8125rem;
+}
+
+.nwrma-utility-bar a {
+  color: #fff;
+}
+
+.nwrma-utility-bar a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.nwrma-utility-staff {
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.nwrma-utility-staff:hover {
+  text-decoration: underline !important;
+}
+
+.nwrma-site-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: none;
+}
+
+.nwrma-nav-link {
+  color: var(--nwrma-text);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nwrma-nav-link:hover {
+  color: var(--nwrma-blue);
+  text-decoration: none;
+  background: transparent;
+}
+
+.nwrma-nav-link.is-active {
+  color: var(--nwrma-nav-active) !important;
+  font-weight: 600;
+}
+
+.nwrma-nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--nwrma-text);
+}
+
+.nwrma-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--nwrma-blue);
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.nwrma-btn-primary:hover {
+  background: #005a9e;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.nwrma-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid var(--nwrma-blue);
+  color: var(--nwrma-blue) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+}
+
+.nwrma-btn-outline:hover {
+  background: var(--nwrma-blue);
+  color: #fff !important;
+}
+
+.nwrma-hero,
+.nwrma-hero-home {
+  position: relative;
+  color: #fff;
+  padding: 5rem 1.5rem;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background-color: var(--nwrma-dark);
+  background-size: cover;
+  background-position: center;
+}
+
+.nwrma-hero-home {
+  min-height: 480px;
+}
+
+.nwrma-hero-overlay,
+.nwrma-page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 39, 68, 0.55) 0%,
+    rgba(0, 114, 198, 0.45) 100%
+  );
+}
+
+.nwrma-hero .nwrma-container,
+.nwrma-hero-home .nwrma-container,
+.nwrma-page-banner-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.nwrma-page-banner {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--nwrma-dark);
+  background-size: cover;
+  background-position: center;
+}
+
+.nwrma-page-banner h1 {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Online Forms / Downloads hero — dark navy edges, royal blue center (no photo) */
+.nwrma-page-banner--online-forms {
+  min-height: 200px;
+  background-color: #0a1628;
+  background-image: linear-gradient(
+    180deg,
+    #050d1c 0%,
+    #0f2848 18%,
+    #1a4d8c 38%,
+    #2a6eb8 50%,
+    #1a4d8c 62%,
+    #0f2848 82%,
+    #050d1c 100%
+  );
+}
+
+.nwrma-page-banner--online-forms .nwrma-page-banner-overlay {
+  display: none;
+}
+
+.nwrma-page-banner__pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 55%),
+    repeating-linear-gradient(
+      -14deg,
+      transparent,
+      transparent 48px,
+      rgba(255, 255, 255, 0.04) 48px,
+      rgba(255, 255, 255, 0.04) 49px
+    );
+}
+
+.nwrma-page-banner--online-forms h1 {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nwrma-page-body {
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.nwrma-prose {
+  max-width: 52rem;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.nwrma-prose p {
+  margin-bottom: 1.25rem;
+}
+
+.nwrma-prose-lead {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--nwrma-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.nwrma-dept-block {
+  margin-bottom: 2rem;
+}
+
+.nwrma-dept-block h2 {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--nwrma-blue);
+  margin-bottom: 0.75rem;
+}
+
+.nwrma-dept-block ul {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+
+.nwrma-dept-block li {
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-dept-director {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--nwrma-gray);
+  border-left: 4px solid var(--nwrma-green);
+  border-radius: 0 8px 8px 0;
+}
+
+.nwrma-dept-director p {
+  margin: 0.25rem 0;
+}
+
+.nwrma-dept-director .name {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--nwrma-dark);
+}
+
+.nwrma-card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.nwrma-hub-card {
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  text-decoration: none !important;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.nwrma-hub-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.nwrma-hub-card-img {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.nwrma-hub-card-body {
+  padding: 1.25rem;
+}
+
+.nwrma-hub-card-body h3 {
+  color: var(--nwrma-blue);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.nwrma-hub-card-body p {
+  font-size: 0.875rem;
+  color: var(--nwrma-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.nwrma-tile-resource {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none !important;
+}
+
+.nwrma-tile-resource::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+}
+
+.nwrma-tile-resource span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nwrma-what-we-do-card h3 {
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nwrma-about-photo {
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.nwrma-online-forms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nwrma-online-forms-list li {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--nwrma-muted);
+  font-size: 0.9375rem;
+}
+
+.nwrma-online-forms-list li:last-child {
+  border-bottom: none;
+}
+
+.nwrma-hero h1 {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nwrma-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.0625rem;
+  max-width: 42rem;
+  line-height: 1.6;
+}
+
+.nwrma-section {
+  padding: 3rem 1.5rem;
+}
+
+.nwrma-section-alt {
+  background: var(--nwrma-gray);
+}
+
+.nwrma-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--nwrma-dark);
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-section-title span {
+  color: var(--nwrma-blue);
+}
+
+.nwrma-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.nwrma-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 114, 198, 0.12);
+}
+
+.nwrma-card h3 {
+  color: var(--nwrma-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-site-footer {
+  background: var(--nwrma-dark);
+  color: #c5cdd8;
+  margin-top: auto;
+}
+
+.nwrma-site-footer a {
+  color: #c5cdd8;
+}
+
+.nwrma-site-footer a:hover {
+  color: #fff;
+}
+
+.nwrma-site-footer h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.nwrma-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--nwrma-muted);
+  margin-bottom: 1.5rem;
+}
+
+.nwrma-breadcrumb a {
+  color: var(--nwrma-blue);
+}
+
+.nwrma-pending-banner {
+  background: #fff8e6;
+  border: 1px solid #f0d78c;
+  color: #7a5c00;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.nwrma-main {
+  flex: 1;
+}
+
+.nwrma-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nwrma-grid-2 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nwrma-grid-3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nwrma-grid-4 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .nwrma-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nwrma-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nwrma-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nwrma-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.nwrma-news-card {
+  border-left: 4px solid var(--nwrma-green);
+}
+
+.nwrma-dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 16rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 50;
+}
+
+.nwrma-dropdown-panel a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--nwrma-text);
+  font-size: 0.875rem;
+}
+
+.nwrma-dropdown-panel a:hover {
+  background: var(--nwrma-gray);
+  text-decoration: none;
+  color: var(--nwrma-blue);
+}
+
+/* --- Homepage: hero slider --- */
+.nwrma-hero-slider {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+
+.nwrma-hero-slider .nwrma-hero-overlay {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.nwrma-hero-caption-box {
+  position: relative;
+  z-index: 2;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.nwrma-hero-caption-box h1 {
+  color: #fff;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 0 1rem;
+}
+
+.nwrma-hero-caption-box p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.nwrma-hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nwrma-hero-arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.nwrma-hero-arrow-prev {
+  left: 1rem;
+}
+
+.nwrma-hero-arrow-next {
+  right: 1rem;
+}
+
+/* --- Homepage: about --- */
+.nwrma-home-about {
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  background: #fff;
+}
+
+.nwrma-home-about h2 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 0.5rem;
+}
+
+.nwrma-home-about .nwrma-title-muted {
+  color: #999;
+  font-weight: 700;
+}
+
+.nwrma-home-about h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: #222;
+}
+
+.nwrma-home-about-img {
+  display: block;
+  max-width: 100%;
+  width: min(640px, 100%);
+  height: auto;
+  margin: 0 auto 2rem;
+  border-radius: 4px;
+}
+
+.nwrma-home-about p {
+  max-width: 52rem;
+  margin: 0 auto 1.25rem;
+  line-height: 1.75;
+  color: #444;
+  text-align: center;
+}
+
+.nwrma-read-more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+
+.nwrma-read-more-link:hover {
+  color: var(--nwrma-blue) !important;
+  text-decoration: underline !important;
+}
+
+/* --- Homepage: what we do --- */
+.nwrma-home-what-we-do {
+  padding: 3rem 1.5rem 4rem;
+  background: #fff;
+}
+
+.nwrma-home-what-we-do > h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+.nwrma-what-we-do-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .nwrma-what-we-do-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.nwrma-what-we-do-item {
+  text-align: center;
+}
+
+.nwrma-what-we-do-item img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.nwrma-what-we-do-item h3 {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+.nwrma-what-we-do-item p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #555;
+  text-align: center;
+}
+
+/* --- Homepage: online resources --- */
+.nwrma-home-online-resources {
+  position: relative;
+  padding: 4rem 1.5rem 5rem;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.nwrma-home-online-resources::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 125, 50, 0.82);
+  z-index: 0;
+}
+
+.nwrma-home-online-resources-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.nwrma-home-online-resources h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.nwrma-home-online-resources h2 span {
+  font-weight: 800;
+}
+
+.nwrma-home-online-resources > .nwrma-home-online-resources-inner > p {
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.nwrma-online-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nwrma-online-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.nwrma-online-icon-link:hover {
+  opacity: 0.9;
+  text-decoration: none !important;
+}
+
+.nwrma-online-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffeb3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.nwrma-online-icon-link span.label {
+  font-weight: 700;
+  font-size: 1.0625rem;
+}
+
+.nwrma-wavy-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  line-height: 0;
+}
+
+.nwrma-wavy-bottom svg {
+  display: block;
+  width: 100%;
+  height: 48px;
+}
+
+/* --- Homepage: news --- */
+.nwrma-home-news {
+  position: relative;
+  padding: 3rem 1.5rem 4rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.nwrma-home-news::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55%;
+  background-image: var(--nwrma-news-bg, none);
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nwrma-home-news-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.nwrma-home-news-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nwrma-home-news-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #111;
+}
+
+.nwrma-home-news-rule {
+  width: 4rem;
+  height: 2px;
+  background: #111;
+  margin: 0.75rem auto;
+}
+
+.nwrma-home-news-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #333;
+}
+
+.nwrma-home-news-header h3 span {
+  font-weight: 800;
+}
+
+.nwrma-home-news-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .nwrma-home-news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.nwrma-home-news-card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nwrma-home-news-card .nwrma-news-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  background: var(--nwrma-green);
+  color: #fff;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.nwrma-home-news-card-thumb-wrap {
+  position: relative;
+  min-height: 140px;
+  background: #eee;
+}
+
+.nwrma-home-news-card-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.nwrma-home-news-card-body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nwrma-home-news-card-body h4 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.5rem;
+  color: #1a237e;
+}
+
+.nwrma-home-news-card-body h4 a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.nwrma-home-news-card-body h4 a:hover {
+  text-decoration: underline !important;
+}
+
+.nwrma-home-news-meta {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-home-news-card-body p {
+  font-size: 0.8125rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.nwrma-btn-more-news {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.65rem 2rem;
+  background: var(--nwrma-more-news);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-radius: 2px;
+}
+
+.nwrma-btn-more-news:hover {
+  background: #0097a7;
+  color: #fff !important;
+}
+
+.nwrma-home-news-cta {
+  text-align: center;
+}
+
+/* --- Footer (official style) --- */
+.nwrma-site-footer {
+  background: var(--nwrma-footer-blue);
+  color: #fff;
+  padding: 0;
+}
+
+.nwrma-footer-main {
+  padding: 2.5rem 1.5rem;
+}
+
+.nwrma-footer-main .nwrma-container {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nwrma-footer-main .nwrma-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nwrma-footer-main h3 {
+  color: var(--nwrma-footer-lime);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.nwrma-footer-main ul {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.nwrma-footer-main li {
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-footer-main a {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 0.9375rem;
+}
+
+.nwrma-footer-main a:hover {
+  text-decoration: underline !important;
+}
+
+.nwrma-footer-chevron::before {
+  content: '› ';
+  margin-right: 0.25rem;
+}
+
+.nwrma-footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.nwrma-footer-social {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.nwrma-footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.nwrma-footer-bar {
+  background: var(--nwrma-footer-green);
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #fff;
+  position: relative;
+}
+
+.nwrma-back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.nwrma-back-to-top:hover {
+  background: #333;
+}
+
+/* Online forms wizard */
+.nwrma-online-form-page {
+  max-width: 960px;
+  padding-bottom: 3rem;
+}
+
+.nwrma-form-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin: 1.5rem 0;
+  font-size: 0.75rem;
+}
+
+.nwrma-form-step {
+  color: var(--nwrma-muted);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.nwrma-form-step.is-active {
+  background: var(--nwrma-green);
+  color: #fff;
+  font-weight: 600;
+}
+
+.nwrma-form-step.is-done {
+  color: var(--nwrma-blue);
+}
+
+.nwrma-form-section {
+  margin-bottom: 2rem;
+}
+
+.nwrma-form-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a5c4a;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid var(--nwrma-green);
+}
+
+/* Instructions & requirements — readable, spaced legal-style prose */
+.nwrma-form-prose {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--nwrma-text);
+  max-width: 52rem;
+}
+
+.nwrma-form-prose p {
+  margin: 0 0 1.15rem;
+}
+
+.nwrma-form-prose p:last-of-type {
+  margin-bottom: 0;
+}
+
+.nwrma-form-prose > p:first-child strong {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--nwrma-dark);
+  margin-bottom: 0.35rem;
+}
+
+.nwrma-form-prose h4 {
+  margin: 1.85rem 0 0.9rem;
+  padding: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--nwrma-dark);
+}
+
+.nwrma-form-prose h4:first-of-type {
+  margin-top: 1.35rem;
+}
+
+.nwrma-form-prose ul {
+  margin: 0 0 1.35rem;
+  padding: 0 0 0 0.25rem;
+  list-style: none;
+}
+
+.nwrma-form-prose ul li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 0.15rem;
+  line-height: 1.6;
+}
+
+.nwrma-form-prose ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nwrma-form-prose ul li strong {
+  font-weight: 700;
+  color: var(--nwrma-dark);
+}
+
+.nwrma-form-prose > .nwrma-checkbox {
+  margin-top: 1.1rem;
+}
+
+.nwrma-form-prose > .nwrma-checkbox:first-of-type {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #dde3ea;
+}
+
+.nwrma-form-prose > .nwrma-checkbox + .nwrma-checkbox {
+  margin-top: 1rem;
+}
+
+.nwrma-field-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .nwrma-field-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.nwrma-field--full {
+  grid-column: 1 / -1;
+}
+
+.nwrma-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nwrma-field-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--nwrma-text);
+}
+
+.nwrma-field-label--required::after,
+.nwrma-doc-upload-label--required::after,
+.nwrma-checkbox--required .nwrma-checkbox__text::after {
+  content: ' *';
+  color: #c62828;
+  font-weight: 700;
+}
+
+.nwrma-required-asterisk {
+  color: #c62828;
+  font-weight: 700;
+}
+
+.nwrma-form-required-legend {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  color: var(--nwrma-muted);
+}
+
+.nwrma-field-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+}
+
+.nwrma-field-input--narrow {
+  max-width: 6rem;
+}
+
+.nwrma-field-input--locked {
+  background: #f1f5f9;
+  color: #334155;
+  cursor: not-allowed;
+  border-color: #e2e8f0;
+}
+
+.nwrma-applicant-locked-hint {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.nwrma-form-prose .nwrma-form-prose__field-block {
+  margin: 0.5rem 0 1.75rem;
+  padding: 1rem 1.15rem;
+  background: #f8fafb;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.nwrma-form-prose .nwrma-form-prose__field-block .nwrma-field {
+  margin: 0;
+}
+
+.nwrma-form-prose .nwrma-checkbox {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Applicant gate modal (instructions → company step) — above fixed header (z-index 111) */
+.nwrma-applicant-dialog {
+  display: flex !important;
+  flex-direction: column;
+  width: calc(100% - 2rem);
+  max-width: 28rem;
+  max-height: min(88dvh, 640px);
+  padding: 0 !important;
+  gap: 0 !important;
+  overflow: hidden;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--nwrma-text);
+  background: #fff;
+  z-index: 401 !important;
+}
+
+.nwrma-applicant-dialog__form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
+/* Dim overlay must also sit above the fixed site header */
+[data-slot='dialog-overlay'] {
+  z-index: 400 !important;
+}
+
+.nwrma-applicant-dialog__body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 1.25rem 1.5rem 0.5rem;
+}
+
+.nwrma-applicant-dialog__header {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.nwrma-applicant-dialog__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a5c4a;
+  line-height: 1.35;
+  padding-right: 1.75rem;
+}
+
+.nwrma-applicant-dialog__desc {
+  color: var(--nwrma-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-top: 0.35rem;
+}
+
+.nwrma-applicant-dialog__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.nwrma-applicant-dialog__fields .nwrma-form-error {
+  margin: 0;
+}
+
+.nwrma-applicant-dialog .nwrma-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.nwrma-applicant-dialog .nwrma-field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a2744;
+}
+
+.nwrma-applicant-dialog .nwrma-field-input {
+  display: block;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: #333;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.nwrma-applicant-dialog .nwrma-field-input--file {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.65rem;
+  line-height: 1.5;
+}
+
+.nwrma-applicant-dialog .nwrma-field--receipt {
+  margin-bottom: 0.25rem;
+}
+
+.nwrma-applicant-dialog__file-name {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--nwrma-muted);
+  margin-top: 0.25rem;
+}
+
+.nwrma-applicant-dialog__footer {
+  flex-shrink: 0;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin: 0;
+  padding: 1rem 1.5rem 1.15rem;
+  min-height: 4.25rem;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+}
+
+.nwrma-applicant-dialog__btn {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 2.75rem;
+  margin: 0 !important;
+  padding: 0.55rem 1rem;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.nwrma-applicant-dialog__btn--cancel {
+  background: #fff !important;
+  color: #1a2744 !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.nwrma-applicant-dialog__btn--submit {
+  background: #0072c6 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.nwrma-applicant-dialog__btn--submit:hover:not(:disabled) {
+  background: #005a9e !important;
+}
+
+.nwrma-applicant-dialog__btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Dialog is portaled to document body — beat global WP/theme button rules */
+[data-slot='dialog-content'].nwrma-applicant-dialog .nwrma-applicant-dialog__btn--submit,
+[data-slot='dialog-content'].nwrma-applicant-dialog .nwrma-applicant-dialog__btn--cancel {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+[data-slot='dialog-content'].nwrma-applicant-dialog .nwrma-applicant-dialog__btn--submit {
+  background: #0072c6 !important;
+  color: #fff !important;
+}
+
+.nwrma-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.nwrma-form-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nwrma-form-error {
+  color: #b91c1c;
+  background: #fef2f2;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.nwrma-form-success {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.nwrma-pdf-download {
+  font-weight: 600;
+}
+
+.nwrma-table-scroll {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.nwrma-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.nwrma-data-table th,
+.nwrma-data-table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nwrma-data-table th {
+  background: #f4f6f8;
+  font-weight: 600;
+}
+
+.nwrma-equipment-table-title {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  color: var(--nwrma-dark);
+}
+
+.nwrma-doc-upload-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.nwrma-doc-upload-slot {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.nwrma-doc-upload-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.nwrma-doc-upload-hint {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: var(--nwrma-muted);
+  margin-top: 0.25rem;
+}
+
+.nwrma-file-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nwrma-file-picker-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.nwrma-file-picker-btn {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+}
+
+.nwrma-instruction-sublist {
+  margin: 0.35rem 0 0.75rem 1.25rem;
+  padding: 0;
+}
+
+.nwrma-instruction-sublist li {
+  margin-bottom: 0.25rem;
+}
+
+.nwrma-form-prose .nwrma-instruction-emphasis {
+  margin-bottom: 0.35rem;
+}
+
+.nwrma-form-prose .nwrma-instruction-emphasis strong {
+  font-weight: 700;
+  color: var(--nwrma-dark);
+}
+
+.nwrma-doc-upload-files {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.nwrma-doc-upload-file-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nwrma-doc-upload-file-row:last-child {
+  border-bottom: none;
+}
+
+.nwrma-doc-upload-file-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nwrma-doc-upload-remove {
+  flex-shrink: 0;
+  border: none;
+  background: none;
+  color: var(--nwrma-primary, #0369a1);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.nwrma-doc-upload-remove:hover {
+  color: var(--nwrma-dark);
+}
+
+.nwrma-office-use .nwrma-field-input:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+
+.nwrma-review-summary {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.nwrma-review-summary li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.nwrma-btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--nwrma-blue);
+  color: var(--nwrma-blue);
+  background: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nwrma-btn-secondary:hover {
+  background: #f0f7fc;
+  text-decoration: none;
+}
+
+.nwrma-purpose-grid {
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0.75rem 0 1rem;
+}
+
+/* App content inside WordPress shell — keep form wizard styles isolated from Impreza globals */
+.nwrma-wp-integrated .nwrma-app-content {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--nwrma-text);
+}
+
+.nwrma-wp-integrated .nwrma-app-content a {
+  color: var(--nwrma-blue);
+}
+
+.nwrma-wp-integrated .nwrma-app-content input:not([type='checkbox']):not([type='radio']),
+.nwrma-wp-integrated .nwrma-app-content select,
+.nwrma-wp-integrated .nwrma-app-content textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.nwrma-wp-integrated .nwrma-app-content button,
+.nwrma-wp-integrated .nwrma-app-content .nwrma-btn-primary,
+.nwrma-wp-integrated .nwrma-app-content .nwrma-btn-secondary {
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  box-shadow: none;
+  background-image: none;
+}
+
+.nwrma-form-intake-status {
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.nwrma-form-intake-status--pending {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+
+.nwrma-form-intake-status--rejected {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.nwrma-form-intake-status__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 0.75rem;
+  color: var(--nwrma-blue);
+}
+
+.nwrma-form-intake-status--rejected .nwrma-form-intake-status__icon {
+  color: #b91c1c;
+}
+
+.nwrma-form-intake-status__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--nwrma-text);
+}
+
+.nwrma-form-intake-status__text,
+.nwrma-form-intake-status__meta,
+.nwrma-form-intake-status__hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--nwrma-muted, #64748b);
+}
+
+.nwrma-form-intake-status__meta {
+  margin-top: 1rem;
+  text-align: left;
+  display: inline-block;
+}

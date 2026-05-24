@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": "seed-8664",
+      "slug": "new-year-water-management-message",
+      "title": "New Year Water Management Message to the Government and People of Sierra Leone",
+      "date": "2 Jan at 6:00 am",
+      "publishedAt": "2026-01-02T06:00:59.000Z",
+      "excerpt": "",
+      "bodyHtml": "<p>New Year message from the National Water Resources Management Agency on water management priorities for Sierra Leone.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/"
+    },
+    {
+      "id": "seed-8655",
+      "slug": "merry-christmas-and-happy-holidays",
+      "title": "MERRY CHRISTMAS AND HAPPY HOLIDAYS",
+      "date": "25 Dec 2025",
+      "publishedAt": "2025-12-25T08:00:30.000Z",
+      "excerpt": "",
+      "bodyHtml": "<p>Season's greetings from the National Water Resources Management Agency.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/merry-christmas-and-happy-holidays/"
+    },
+    {
+      "id": "seed-8672",
+      "slug": "parliament-approves-director-general",
+      "title": "Parliament Approves the New Director General for NWRMA",
+      "date": "11 Nov 2025",
+      "publishedAt": "2025-11-11T02:00:34.000Z",
+      "excerpt": "The new Director General, Ing. Pierre Palmer has been approved by Parliament as the successor to the outgoing Director General,",
+      "bodyHtml": "<p>The new Director General, Ing. Pierre Palmer has been approved by Parliament as the successor to the outgoing Director General.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/parliament-approves-the-new-director-general-for-nwrma/"
+    },
+    {
+      "id": "seed-iwmi",
+      "slug": "iwmi-concludes-scoping-mission",
+      "title": "IWMI Concludes Scoping Mission to Sierra Leone",
+      "excerpt": "Freetown, Sierra Leone – June 10, 2025 – A high-level scoping mission from the International Water Management Institute (IWMI) has concluded",
+      "bodyHtml": "<p>Freetown, Sierra Leone – June 10, 2025 – A high-level scoping mission from the International Water Management Institute (IWMI) has concluded its work in Sierra Leone.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/iwmi-concludes-scoping-mission-to-sierra-leone/"
+    },
+    {
+      "id": "seed-groundwater",
+      "slug": "govt-boosts-groundwater-knowledge",
+      "title": "Gov't of Sierra Leone Boosts Groundwater Knowledge among WASH Experts",
+      "excerpt": "The Government of Sierra Leone, through the World Bank-funded Food Systems Resilience Programme, has strengthened groundwater knowledge among WASH experts.",
+      "bodyHtml": "<p>The Government of Sierra Leone, through the World Bank-funded Food Systems Resilience Programme, has strengthened groundwater knowledge among WASH experts.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/"
+    },
+    {
+      "id": "seed-kono",
+      "slug": "declining-water-levels-kono",
+      "title": "Declining Water Levels In Kono- A District Thirsting for Solutions",
+      "excerpt": "Kono District, historically known for its diamond mines and fertile lands, now grapples with an existential threat from declining water levels.",
+      "bodyHtml": "<p>Kono District, historically known for its diamond mines and fertile lands, now grapples with an existential threat from declining water levels.</p>",
+      "comments": 0,
+      "published": true,
+      "legacyPath": "/declining-water-levels-in-kono-a-district-thirsting-for-solutions/"
+    }
+  ]
+}

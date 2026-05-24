@@ -1,0 +1,86 @@
+# NWRMA Render Blueprint — API (field phones) + Next.js ERP/web.
+# Connect repo → New Blueprint → set sync:false secrets in the dashboard.
+#
+# After deploy:
+#   1. Note https://nwrma-api.onrender.com and https://nwrma-web.onrender.com
+#   2. Set NWRMA_API_URL in env/nwrma.env → npm run sync:env → npm run mobile:release
+#   3. See docs/DEPLOYMENT.md
+
+services:
+  - type: web
+    name: nwrma-api
+    runtime: node
+    plan: free
+    buildCommand: >-
+      npm ci &&
+      npm run build -w @nwrma/shared &&
+      npm run prisma:generate -w server &&
+      npm run build -w server
+    startCommand: npm run prisma:migrate -w server && npm run start -w server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 4000
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_ORIGINS
+        sync: false
+      - key: SEED_WEB_ADMIN_EMAIL
+        sync: false
+      - key: SEED_WEB_ADMIN_PASSWORD
+        sync: false
+      - key: SEED_MOBILE_OFFICER_PHONE
+        sync: false
+      - key: SEED_MOBILE_OFFICER_PASSWORD
+        sync: false
+
+  - type: web
+    name: nwrma-web
+    runtime: node
+    plan: free
+    buildCommand: >-
+      npm ci &&
+      npm run build -w @nwrma/shared &&
+      npm run prepare:public -w web &&
+      npm run build -w web
+    startCommand: npm run start -w web
+    healthCheckPath: /api/health/db
+    disk:
+      name: nwrma-uploads
+      mountPath: /opt/render/project/src/web/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: PUBLIC_APP_URL
+        sync: false
+      - key: NWRMA_SERVER_URL
+        sync: false
+      - key: NEXT_PUBLIC_NWRMA_SERVER_URL
+        sync: false
+      - key: FRONTEND_ORIGINS
+        sync: false
+      - key: INVITE_SECRET
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_SECURE
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SMTP_FROM
+        sync: false

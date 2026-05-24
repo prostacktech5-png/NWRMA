@@ -1,0 +1,99 @@
+const t="Govt. closes Sea Coach Express for Evading Water Dues",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">Govt. closes Sea Coach Express for Evading Water Dues</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2023-09-20T17:20:37+00:00" title="20 September 2023 at 17:20:37 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>20 Sep 2023</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/govt-closes-sea-coach-express-for-evading-water-dues/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_image us_custom_70facfb4 stretched"><img width="2560" height="1707" src="https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-scaled.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-scaled.jpg 2560w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-300x200.jpg 300w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-1024x683.jpg 1024w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-1536x1024.jpg 1536w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><div class="w-post-elm post_content" itemprop="text"><p>The National Water Resources Management Agency (NWRMA) has today sealed off the business address of Sea Coach Express at Aberdeen Bridge in Freetown, for failure to obtain a water use permit.</p>
+<p>This move comes after multiple attempts to get the management of the ferry company to regularize its use of water as a means of transportation.</p>
+<p>Prior to today’s enforcement operation, the Agency had on several occasions engaged businesses on the need to regularize their operations with the water management laws, especially so when they use the water for economic gains.</p>
+<p>Leading the team, the Director of Legal, Regulations and Outreach at NWRMA- Abu Bakarr Iscandri Conteh Esq. said the operation is borne out of a series of consultations and eventual partnership with the Sierra Leone Police (SLP) and the Anti-Corruption Commission (ACC), to bring to book businesses who have been violating the country’s water resources management laws. He further said they were closing down Sea Coach Express because the Agency had paid multiple visits and written many letters of warning to the business, but to no avail.</p>
+<p>“<strong><em>Section 29 of the National Water Resources Management Agency Act of 2017</em></strong> clearly states purposes for which a water permit should be obtained, and Sea Coach Express has violated the law by not obtaining a permit.<em><strong> Regulation 27 (2) of the Water Use and Catchment Protection Regulations 2022</strong></em> gives the Agency the power to seal off operations of businesses that neglect and/or fail to comply with the Agency’s directions regarding compliance.” Director Conteh said.</p>
+<p>The team comprising NWRMA, ACC, and SLP officials were met with strong resistance, and some were even physically assaulted in the execution of their duties.</p>
+<p><img decoding="async" class="alignnone  wp-image-8471" src="https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9683-300x200.jpg" alt="" width="681" height="454" srcset="https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9683-300x200.jpg 300w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9683-1024x683.jpg 1024w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9683-1536x1024.jpg 1536w, https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9683-2048x1365.jpg 2048w" sizes="(max-width: 681px) 100vw, 681px" /></p>
+<p>The National Water Resources Management Agency was established in 2017 by an Act of Parliament known as the National Water Resources Management Agency Act no. 5 of 2017 with broad mandates including but not limited to conservation, protection, control, development, and management of the water resources in Sierra Leone. One of the specific objectives through which the Agency achieves its mandates is by levying fees on water users, who gain economic advantage as a result of their uses, for example, sea transport companies, mining companies, water bottling companies that abstract water from natural sources, etc.</p>
+<p>In view of the above, the Agency being a regulatory institution has a department responsible for ensuring that water users comply with the law mentioned.</p>
+<p>Enforcement is the last stage of the Agency’s Compliance Strategy, which first prescribes information, then encouragement, warning, and enforcement. Since 2019, many companies have understood the need to regularize their operations, but a few, like Sea Coach Express, remain neglectful.</p>
+<p>For more info., please contact:<br />
+info@nwrma.gov.sl</p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/govt-closes-sea-coach-express-for-evading-water-dues/" data-sharing-image="https://nwrma.gov.sl//assets/uploads/2023/09/IMG_9656-1024x683.jpg"><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/nwrma-lays-out-water-fund-plans-before-chief-minister/" title="NWRMA Lays Out Water Fund Plans before Chief Minister"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>NWRMA Lays Out Water Fund Plans before Chief Minister</span></div></a><a class="post_navigation-item order_second to_next" href="/regulators-are-the-protectors-not-the-enemy-dg-bangali/" title="Regulators Are the Protectors; Not the Enemy -DG Bangali"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>Regulators Are the Protectors; Not the Enemy -DG Bangali</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/govt-closes-sea-coach-express-for-evading-water-dues/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8469' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

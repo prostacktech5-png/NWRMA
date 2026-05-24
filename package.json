@@ -1,0 +1,39 @@
+{
+  "name": "nwrma",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "server",
+    "web",
+    "mobile"
+  ],
+  "scripts": {
+    "lint": "eslint shared server mobile web --max-warnings 0",
+    "format": "prettier -w \"shared/**/*.{ts,tsx,json}\" \"server/**/*.{ts,tsx,json}\" \"web/**/*.{ts,tsx}\" \"mobile/**/*.{ts,tsx}\"",
+    "sync:env": "node scripts/sync-env.mjs",
+    "dev": "npm run sync:env && npm run build -w @nwrma/shared && concurrently -n server,web -c blue,green \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:field": "npm run sync:env && npm run build -w @nwrma/shared && concurrently -n server,web,tunnel -c blue,green,magenta \"npm run dev:server\" \"npm run dev:web\" \"node scripts/tunnel-api.mjs\"",
+    "dev:field:internet": "npm run dev:field",
+    "prepare:public": "npm run prepare:public -w web",
+    "dev:field:lan": "node scripts/free-port.mjs 3000 && npm run sync:env && npm run build -w @nwrma/shared && concurrently -n server,web -c blue,green \"npm run dev:server\" \"npm run dev:web\"",
+    "start:present": "node scripts/free-port.mjs 3000 && npm run sync:env && npm run build -w @nwrma/shared && npm run build -w web && npm run build -w server && concurrently -n server,web -c blue,green \"npm run start -w server\" \"npm run start -w web\"",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "mobile:release": "powershell -ExecutionPolicy Bypass -File scripts/build-mobile-apk.ps1",
+    "mobile:release:apk": "powershell -ExecutionPolicy Bypass -File scripts/build-mobile-apk.ps1",
+    "db:migrate": "npm run prisma:migrate -w server",
+    "db:seed": "npm run prisma:seed -w server",
+    "verify:field-sync": "node scripts/verify-field-sync.mjs",
+    "deploy:verify": "node scripts/verify-field-sync.mjs",
+    "deploy:set-api-url": "node scripts/set-public-api-url.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "concurrently": "^9.2.1",
+    "localtunnel": "^2.0.2",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.33.1"
+  }
+}

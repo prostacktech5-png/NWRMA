@@ -1,0 +1,98 @@
+const t="How Drama Is Raising the Consciousness Around Water Resources Management",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">How Drama Is Raising the Consciousness Around Water Resources Management</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2022-08-05T10:20:37+00:00" title="5 August 2022 at 10:20:37 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>5 Aug 2022</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/how-drama-is-raising-the-consciousness-around-water-resources-management/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_image us_custom_70facfb4 stretched"><img width="1554" height="858" src="https://nwrma.gov.sl//assets/uploads/2022/09/Drama1.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://nwrma.gov.sl//assets/uploads/2022/09/Drama1.jpg 1554w, https://nwrma.gov.sl//assets/uploads/2022/09/Drama1-300x166.jpg 300w, https://nwrma.gov.sl//assets/uploads/2022/09/Drama1-1024x565.jpg 1024w, https://nwrma.gov.sl//assets/uploads/2022/09/Drama1-1536x848.jpg 1536w" sizes="(max-width: 1554px) 100vw, 1554px" /></div><div class="w-post-elm post_content" itemprop="text"><p>When people hear the sound of the African drum, they stop in their tracks. It goes by a lot of names around Sierra Leone, but the two most prominent are Bata and Goombay, and Taboule in some parts of the country. It has always succeeded in bringing people together, serenading them with rich local rhythms.</p>
+<p>The African drum is present in so many occasions like worship services, weddings, funerals, parties, and even drama.</p>
+<p>Taboule Cultural Theatre is a drama group in Sierra Leone. The name is derived from a certain drum that calls people to attention. As its name implies, they specialize in using drama to raise awareness around social and other issues, as a tool of Social and Behavior change. The National Water Resources Management Agency in collaboration with Catholic Relief Services in Sierra Leone contacted the group to raise awareness around issues like deforestation, land grabbing, settling in disaster-prone areas, stone mining, and many more, which are thematic areas within the Western Area Peninsula Water Fund.</p>
+<p>The team commenced their tour of communities on 29th of July 2022, starting with Tombo, Grafton, Hastings, Mongegba, and River No.2, acting out skits. The first start with the beating of the drums to call public attention, then they go into performing a skit when they have an appreciable audience. The campaign engages community stakeholders on the dangers of deforestation and its effect on water supply and other vital ecosystem services and also informed them about the dangers of catchment degradation and the benefits of the water fund.</p>
+<p>Ing. Ken Tommy is the Technical Head of Catchment Protection in the Western Area Peninsula Water Fund Project. He said they decided on employing the services of a drama group because drama has a track record of achieving desired outcomes in raising awareness.</p>
+<p><em>“People see skits about the dangers of catchment degradation being acted out and they identify with these struggles in their different communities. So, the skits are a wake-up call to remind people that these dangers are real.”</em></p>
+<p>NWRMA’s Director of Legal Regulations and Outreach, Abubakarr Iscandri Conteh Esq. said in one of the awareness-raising sessions that laws to protect and regulate water resources or any other natural resource are informed by rigorous technical studies, and not made to inconvenient citizens, but because they want to sustainably manage these resources in a manner that caters to present and future generations.</p>
+<p><em>“Community participation cannot be overstated, as communities are the first to suffer when water resources dry up, and they are the first responders to any water emergency. Therefore, be active first responders in addressing issues that threaten your water sources and abide by the existing laws set to protect these sources. That way, your future generations can benefit from it.” </em>Director said<em>  </em></p>
+<p>Sheikh Umar Turay, Chief Imam and elder of the Tombo community said their water source, has been with them since he was a child, and the community depends on it for all their water needs. He said to not manage it well would be to expose the community to many dangers like disease outbreaks, water shortage, malnutrition, socioeconomic and even conflict.</p>
+<p>Foday M. Turay, a retired teacher in one of the communities said the skits by the drama group really brought out the dangers posed by not protecting their water source and has given him a renewed commitment to work harder in protecting the water sources.</p>
+<p>The drama performance will continue throughout all the communities around the Western Area Peninsula. Awareness raising through skits in public places has had positive feedback. It is hoped that in the coming days, more communities would yield to the main underlying message: protecting the Western Area Peninsula Rain Forest.</p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/how-drama-is-raising-the-consciousness-around-water-resources-management/" data-sharing-image="https://nwrma.gov.sl//assets/uploads/2022/09/Drama1-1024x565.jpg"><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/soldiers-receive-bikes-for-forest-protection/" title="Soldiers Receive Bikes for Forest Protection"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>Soldiers Receive Bikes for Forest Protection</span></div></a><a class="post_navigation-item order_second to_next" href="/parliament-certifies-four-water-regulations/" title="Parliament Certifies Four Water Regulations"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>Parliament Certifies Four Water Regulations</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-drama-is-raising-the-consciousness-around-water-resources-management/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8361' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

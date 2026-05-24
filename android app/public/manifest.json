@@ -1,0 +1,21 @@
+{
+  "name": "HydroGauge SL",
+  "short_name": "HydroGauge",
+  "description": "Water Level Data Collection App for Sierra Leone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1EB53A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/image-removebg-preview.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,123 @@
+.data-landing {
+  background: var(--color-white);
+  padding: 2.5rem 0 0;
+}
+
+.data-landing__inner {
+  max-width: var(--max-content, 1140px);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 2.5rem);
+}
+
+.data-landing__title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  margin: 0 0 2rem;
+  color: var(--color-text);
+}
+
+.data-landing__prose {
+  max-width: 52rem;
+  margin: 0 auto 2.5rem;
+}
+
+.data-landing__prose p {
+  margin: 0 0 1.5rem;
+  font-size: 15px;
+  line-height: 1.85;
+  text-align: left;
+  color: var(--color-text);
+}
+
+.data-landing__prose p:last-child {
+  margin-bottom: 0;
+}
+
+.data-landing__prose a {
+  color: var(--color-link);
+}
+
+.data-landing__prose a:hover {
+  color: var(--color-link-hover);
+}
+
+.data-landing__cards-band {
+  background: #e5e5e5;
+  padding: clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 3rem);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.data-landing__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.data-landing__card {
+  flex: 0 1 200px;
+  margin: 0;
+}
+
+.data-landing__card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.data-landing__card-link:hover .data-landing__card-title {
+  color: var(--color-link-hover);
+}
+
+.data-landing__card-img-wrap {
+  display: block;
+  width: 173px;
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  padding: 3px;
+  background: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.data-landing__card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.data-landing__card-title {
+  display: block;
+  text-align: center;
+  font-family: var(--font-subheading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #666699;
+  line-height: 1.3;
+}
+
+@media (max-width: 720px) {
+  .data-landing__cards {
+    flex-direction: column;
+  }
+
+  .data-landing__card {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 220px;
+  }
+}

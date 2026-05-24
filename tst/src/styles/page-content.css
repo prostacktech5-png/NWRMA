@@ -1,0 +1,140 @@
+/* Inner pages: crawled Impreza / WPB markup without theme CSS */
+.page-content-section {
+  background: var(--color-white);
+}
+
+.page-content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 clamp(1rem, 3vw, 2.5rem) 3rem;
+}
+
+.page-content .l-section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.page-content .l-section-h {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.page-content .g-cols,
+.page-content .vc_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.page-content .vc_col-sm-12 {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.page-content .vc_col-sm-6 {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.page-content .vc_col-sm-4 {
+  width: 33.333%;
+  padding: 0 1rem;
+}
+
+.page-content .vc_col-sm-3 {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 899px) {
+  .page-content .vc_col-sm-6,
+  .page-content .vc_col-sm-4,
+  .page-content .vc_col-sm-3 {
+    width: 100%;
+  }
+}
+
+.page-content .w-image,
+.page-content .w-image-h {
+  margin: 1rem 0;
+}
+
+.page-content .w-image img,
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-content .align_center,
+.page-content .aligncenter {
+  text-align: center;
+}
+
+.page-content .align_center .w-image-h,
+.page-content .aligncenter img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content .l-section-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page-content .l-section-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.page-content .with_img > .l-section-h,
+.page-content .with_overlay > .l-section-h {
+  position: relative;
+  z-index: 2;
+}
+
+.page-content .w-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.page-content .w-grid-item-h {
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.page-content .w-separator {
+  margin: 1.5rem auto;
+}
+
+.page-content h2.entry-title,
+.page-content h2.post_title {
+  text-align: center;
+}
+
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.page-content td,
+.page-content th {
+  border: 1px solid #e8e8e8;
+  padding: 0.5rem 0.75rem;
+}
+
+.page-content rs-module-wrap,
+.page-content rs-module,
+.page-content rs-slide {
+  display: none !important;
+}

@@ -1,0 +1,56 @@
+:root {
+  --color-primary: #349e41;
+  --color-primary-dark: #157d44;
+  --color-table-header: #006644;
+  --color-table-header-hover: #005538;
+  --color-link: #1f53b5;
+  --color-link-hover: #7049ba;
+  --color-header-top-bg: #333333;
+  --color-header-top-text: #f5f5f5;
+  --color-header-top-hover: #e8d717;
+  --color-header-mid-bg: #ffffff;
+  --color-header-mid-text: #333333;
+  --color-footer-top-bg: #2761cc;
+  --color-footer-bottom-bg: #148521;
+  --color-body-bg: #eeeeee;
+  --color-text: #333333;
+  --color-text-muted: #999999;
+  --color-white: #ffffff;
+  --color-accent-yellow: #eeee22;
+  --color-overlay-green: rgba(32, 133, 111, 0.73);
+  --color-overlay-white: rgba(255, 255, 255, 0.7);
+  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-subheading: 'Montserrat', sans-serif;
+  --font-hero: 'Roboto', sans-serif;
+  --max-site-width: 100%;
+  --max-content: min(1140px, calc(100% - 3rem));
+  --max-canvas: var(--max-site-width);
+  --header-mid-height: 150px;
+  --header-mid-sticky: 72px;
+  --header-top-height: 36px;
+  --shadow-card: 0 0.03rem 0.06rem rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1), 0 0.33rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Boxed site shell (marketing + online-forms without full global.css) */
+.canvas {
+  width: 100%;
+  max-width: var(--max-site-width);
+  margin-inline: auto;
+}
+
+/* Ultra-wide TV / 4K: wider centered shell so main nav stays beside the logo */
+@media (min-width: 1920px) {
+  :root {
+    --max-site-width: min(1680px, 94vw);
+    --max-content: min(1280px, calc(100% - 3rem));
+  }
+}
+
+@media (min-width: 2400px) {
+  :root {
+    --max-site-width: min(1760px, 92vw);
+    --max-content: min(1320px, calc(100% - 3rem));
+  }
+}

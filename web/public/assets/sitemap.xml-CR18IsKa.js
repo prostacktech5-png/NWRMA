@@ -1,0 +1,34 @@
+const t="NWRMA",s=`<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This sitemap was dynamically generated on May 19, 2026 at 9:31 pm by All in One SEO v4.5.9.1 - the original SEO plugin for WordPress. -->
+
+
+
+<?xml-stylesheet type="text/xsl" href="default-sitemap.xsl?sitemap=root"?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/post-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2026-01-02T09:36:57+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/page-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2025-09-26T00:10:32+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/thjm_jobs-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2022-08-09T00:18:06+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2026-01-02T09:36:57+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/post_tag-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2026-01-02T08:37:13+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://nwrma.gov.sl/thjm_job_category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2022-08-09T00:18:06+00:00]]></lastmod>
+	</sitemap>
+</sitemapindex>`,m={title:t,html:s};export{m as default,s as html,t as title};

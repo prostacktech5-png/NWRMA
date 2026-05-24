@@ -1,0 +1,236 @@
+/* Site footer — matches official NWRMA reference layout */
+
+.site-footer {
+  position: relative;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Center footer content (online-forms omits global.css where .container is defined) */
+.site-footer .container {
+  width: 100%;
+  max-width: var(--max-content);
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
+  box-sizing: border-box;
+}
+
+.footer__top {
+  background: var(--color-footer-top-bg);
+  color: #fff;
+  padding: 2.75rem 0 3rem;
+}
+
+.footer__heading {
+  margin: 0 0 0.5rem;
+  font-family: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff !important;
+}
+
+.footer__heading .accent {
+  color: #99cc00 !important;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1rem;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.footer__top a,
+.footer__top .footer__links a,
+.footer__contacts a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.footer__top a:hover,
+.footer__contacts a:hover {
+  color: #fff !important;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links li {
+  margin-bottom: 0.45rem;
+}
+
+.footer__links a {
+  display: inline-block;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.footer__links a::before {
+  content: '› ';
+  margin-right: 0.15rem;
+  font-weight: 700;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer__contact-item i {
+  flex-shrink: 0;
+  width: 1rem;
+  margin-top: 0.2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer__contact-item a {
+  word-break: break-word;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.65rem;
+  font-size: 1.05rem;
+}
+
+.footer__socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff !important;
+  transition: opacity 0.2s ease;
+}
+
+.footer__socials a:hover {
+  opacity: 0.85;
+}
+
+.footer__socials a i {
+  color: #fff;
+}
+
+.footer__bottom-area {
+  position: relative;
+  background: var(--color-footer-bottom-bg);
+}
+
+.footer__bottom {
+  padding: 0.65rem clamp(3rem, 5vw, 4rem) 0.65rem clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.footer__bottom p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.footer__back-to-top {
+  position: absolute;
+  right: clamp(1.25rem, 4vw, 3rem);
+  bottom: 100%;
+  transform: translateY(50%);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background: #4a4a4a;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: background 0.2s ease;
+}
+
+.footer__back-to-top:hover {
+  background: #333;
+}
+
+.footer__back-to-top i {
+  font-size: 0.95rem;
+}
+
+/* NWRMA site shell — keep footer readable if nested inside .nwrma-site */
+.nwrma-site .footer__top,
+.nwrma-site .footer__top .footer__contact-item,
+.nwrma-site .footer__top .footer__contact-item span,
+.nwrma-site .footer__bottom,
+.nwrma-site .footer__bottom p {
+  color: #fff;
+}
+
+.nwrma-site .footer__top a,
+.nwrma-site .footer__contacts a,
+.nwrma-site .footer__socials a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.nwrma-site .footer__heading {
+  color: #fff !important;
+}
+
+.nwrma-site .footer__heading .accent {
+  color: #99cc00 !important;
+}
+
+.nwrma-site .footer__socials a i,
+.nwrma-site .footer__contact-item i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer__contact-item {
+    justify-content: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__links a {
+    text-align: center;
+  }
+
+  .footer__back-to-top {
+    right: 1rem;
+  }
+}

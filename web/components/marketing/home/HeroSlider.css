@@ -1,0 +1,181 @@
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero__stage {
+  position: relative;
+  width: 100%;
+  height: min(780px, 68vh);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Vertical blind slices — staggered left-to-right 3D fold (Revolution-style) */
+.hero__slices {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  perspective: 1400px;
+}
+
+.hero__slice {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero__slice-3d {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.hero__slice-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.hero__slice-panel--out {
+  z-index: 2;
+  transform: rotateY(0deg);
+  transform-origin: 100% 50%;
+}
+
+.hero__slice-panel--in {
+  z-index: 1;
+  transform: rotateY(90deg);
+  transform-origin: 0% 50%;
+}
+
+.hero__slices--animate .hero__slice-panel {
+  transition: transform 650ms cubic-bezier(0.45, 0.05, 0.25, 1);
+  transition-delay: var(--slice-delay, 0ms);
+}
+
+.hero__slices--animate .hero__slice-panel--out {
+  transform: rotateY(-90deg);
+}
+
+.hero__slices--animate .hero__slice-panel--in {
+  transform: rotateY(0deg);
+}
+
+.hero__slices--animate .hero__slice {
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.12),
+    inset -1px 0 0 rgba(0, 0, 0, 0.18);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.hero__content-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.hero__content-wrap--fading {
+  opacity: 0.7;
+}
+
+.hero__content {
+  text-align: center;
+  color: #fff;
+  width: min(900px, 92%);
+  padding: 1.25rem 1.75rem;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.125rem, 2.2vw, 2rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+.hero__desc {
+  font-family: var(--font-hero);
+  font-size: clamp(0.875rem, 1vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 52em;
+  margin-inline: auto;
+}
+
+.hero__title--stacked {
+  margin-bottom: 0;
+}
+
+.hero__nav {
+  position: absolute;
+  top: 50%;
+  z-index: 6;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.hero__nav:hover {
+  background: #000;
+}
+
+.hero__nav--prev {
+  left: 16px;
+}
+
+.hero__nav--next {
+  right: 16px;
+}
+
+.hero__nav i {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero__stage {
+    height: 520px;
+  }
+
+  .hero__slices {
+    perspective: 900px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__slices--animate .hero__slice-panel {
+    transition: none;
+  }
+}

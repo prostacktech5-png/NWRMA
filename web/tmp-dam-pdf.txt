@@ -1,0 +1,219 @@
+﻿--- page 9 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+9 
+body/bodies or aquifer system mentioned above: (attach list)  
+Persons or areas affected by:                                                                                                                                                          
+1) The (proposed) use: Up-streamΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª.                                                                                                                                                                                                                                                                                                                                                                           
+                                                    Down-stream ΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª. 
+2) Subsequent discharges: Down-streamΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª.                                                                                                                           
+Indicate any major impacts the proposed water use activity will have on the environment:  
+_________________________________________________________________________________ 
+_________________________________________________________________________________ 
+ ________________________________________________________________________________ 
+What measures are proposed or undertaken to avoid pollution, flooding or other adverse effects?  
+_________________________________________________________________________________ 
+_________________________________________________________________________________ 
+ ________________________________________________________________________________ 
+Data on Specific Dam Use Activities                                                                                                                              
+Additional data is required for certain specific uses. Please provide information as applicable below.  
+                                                         
+ 
+10.0   Aquaculture    
+10.1. Cage:                                                                                                                                     
+ 
+9.0 Abstraction (For all consumptive uses): 
+∩é╖ Names and models of pumps: 
+∩é╖ Pumping/Withdrawal mechanism:  
+∩é╖ Number of pumps installed: 
+∩é╖ Capacity of pumps:    
+∩é╖ Capacity of additional pumps (to be installed): 
+∩é╖ Pumping hours per day:  
+∩é╖ Rate of abstraction (per hour) (m3/hr.):
+
+--- page 10 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+10 
+Proposed concession area (m2):                                                                                                                
+Number of Cages:                                                                                                                        
+Dimensions of Cages (m):                                                                                                                                          
+GPS coordinates of Proposed Concession Area Species to be cultivated:                                                               
+10.2. Pond:                                                                                                                                                           
+Number of ponds:                                                                                                                              
+Dimensions of ponds (m):                                                                                                                           
+Frequency of effluent discharge from ponds:                                                                                    
+Discharge from ponds (m3/min):                                                                                                          
+Type of effluent treatment system in place (attach extra sheet if necessary):                                               
+10.3. Tank:                                                                                                                                      
+Number of tanks:                                                                                                                                 
+Volume of tanks (m3):                                                                                                                     
+Frequency of discharge of tanks:                                                                                                                                  
+Discharge from tanks (m3/min):                                                                                                                            
+Type of effluent treatment system in place (attach extra sheet if necessary):                                                          
+                                                                                           
+11.0 Municipal and Domestic Use/Small Town Domestic Water Supply. 
+ The projected number of persons, establishments and institutions to be served (5, 10 - and 20-year 
+estimates.): Indicate the planned rate of use per capita (5, 10- and 20-year estimates)   
+ Location ΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª.  
+Particulars of distribution of water: ΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª 
+   
+ 
+ 
+12.0 Irrigation   
+The  Size of land to be irrigated (ha):                                                                 
+proposed water demand per hectare:                                                                                          
+The types of crops to be irrigated:                                                                                                   
+Crop water demand (l/ha):                                                                                                              
+Type of irrigation system:                                                                                                         
+The type of soil to be irrigated:                                                                                                  
+Describe any works to drain irrigated land:
+
+--- page 11 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+11 
+ 
+13.0 Hydropower Generation   
+The gross head available for power production at low, medium and high water level:  
+Operational head (max and min):                                                                                                       
+Power (to be) generated (MW):                                                                                                                        
+Water release for power generation per day (m3/day):                                                                                    
+System of mandatory releases (spillways etc.):                                                                            
+Comprehensive hydrological assessment (high &low flows): 
+ 
+14.0 Livestock Watering                                                                                                          
+Type (s) of livestock:                                                                                                               
+Maximum number of Livestock:                                                                                                       
+Water use per day per livestock (liters): 
+ 
+ 
+15.0 Navigation/Transport                                                                                                                                
+Type of vessel:                                                                                                                                              
+Number of vessels:                                                                                                                                        
+Route of transport:    
+Distance travelled:                                                                                                                                            
+Engine capacity (horsepower): 
+                                                               
+                                                                                                                                                                                                                                             
+Data on Specific Water Use activities 
+ 
+ 
+16.0 Diversion:                                                                                                                                                     
+Indicate whether diversion is permanent or temporary:                                                                                            
+Diversion by gravitation, canal or pipe:                                                                                                                     
+Include detailed map/diagram of diversion works including dimensions and GPS coordinates:                                                           
+Length, width and area of the portion of water body to be diverted:                                                                             
+Details of diversion plan/works including time frames:                                                                                             
+Description of vegetation to be removed and/or planted before and after diversion:                                                       
+Details of land ownership, if other than applicant:  
+  
+17.0 Damming:                                                                                                                                                                   
+Height/proposed height of dam:                                                                                                                                       
+Length of dam (m):                                                                                                                                                       
+Freeboard:                                                                                                                                                                                    
+Type of construction material:                                                                                                                 
+Maximum capacity of reservoir:                                                                                                                                     
+Area of inundation:
+
+--- page 12 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+12 
+Average depth of storage:                                                                                                                                            
+System of mandatory releases (spillways etc.):                                                                                                                    
+Type of spillway:                                                                                                                                                                  
+Details of damming works including time frames: 
+ 
+18.0 Recreation:                                                                                                                                                                                          
+Type of recreational activity (e.g. boating, kayaking etc.):                                                                              
+Number of vessels:                                                                                                                                                                       
+Name & model of vessel/engine:                                                                                                                                                  
+Capacity of engine (horse power): 
+ 
+19.0 Underwater Wood Harvesting:                                                                                                                                           
+Type of wood to be harvested:                                                                                                                                           
+Proposed concession area:                                                                                                                                             
+Harvesting equipment:                                                                                                                                                       
+Harvesting time-frame: 
+ 
+20.0 Spillage (freshwater/effluent):                                                                                                                                                             
+Rate of spillage (m3/sec):                                                                                                                                                                
+Possible area of inundation:                                                                                                                                                        
+Quality of spillage (attach water quality monitoring results):                                                                                      
+Ecosystem affected e.g. vegetation: 
+   
+                                   
+ 
+ 
+                                                                                                                                                                                                                                                                     
+Data on Specific Water Use activities          
+             
+22.0 Dredging:                                                                                                                                                                         
+Purpose of dredging:                                                                                                                                                               
+Type & capacity of dredging machine:                                                                                                                              
+Type and quality of material to be dredged:                                                                                                                   
+Depth of dredging works:                                                                                                                               
+Proposed dredging area:                                                                                                                                                     
+Include detailed map/diagram of dredging activity: 
+  
+23.0 Construction:                                                                                                                                                                   
+Type of construction works: 
+Status of construction:                                                                                                       
+partially                                              proposed                                       complete                 
+Proposed quantity of water to be used                                                                
+21.0 Water Tankering/ Dust Suppression:                                                                                                                                      
+Number of Water tanks:                                                                                                                                 
+Volume of tanks (m3):                                                                                                                     
+Frequency of water tinkering/ dust suppression:
+
+--- page 13 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+13 
+Commencement date:ΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª..  Completion dateΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇªΓÇª..                                                                
+ 
+24.0 Dewatering:                                                                                                                                                                  
+Type of dewatering activity (e.g. pit, sump, etcΓÇª.):                                                                                                   
+Purpose of dewatering:                                                                                                                                                         
+Rate of dewatering:                                                                                                                                                        
+Quality of water:                                                                                                                                                                
+Duration of dewatering: 
+ 
+ 
+The information contained in this application is true to the best of my knowledge, information and belief.                                           
+Signature  Date Print name:
+
+--- page 14 ---
+NWRMA Form1 
+ 
+National Water Resources Management Agency 
+ 29 Kingharman Road, Brookfields, Freetown  
+Sierra Leone 
+ 
+14 
+ 
+OFFICE USE ONLY                                              
+Application No.  Date Rec.:  Fee rec. : Receipt No.:  I.D No.:  
+Approved        Disapproved               Issue date:        Expiry date
+

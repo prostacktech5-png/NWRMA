@@ -1,0 +1,283 @@
+const a="Surface Water",s=`<section class="l-section wpb_row height_small"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container has_text_color"><div class="vc_column-inner us_custom_6df4bc3a "><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h4><strong>Surface Water Flow and Level Monitoring Stations and Records</strong></h4>
+</div></div></div></div></div></div></div></section><!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="#506677" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><section class="l-section wpb_row height_small"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h5>This page includes historic river stage (level) and flow data for the major rivers of Sierra Leone, and a few short records from commercial sites and from the Water Security Project.</h5>
+</div></div><div class="w-separator size_small with_line width_default thick_2 style_dashed color_primary align_center"><div class="w-separator-h"></div></div></div></div></div></div></div></section><section class="l-section wpb_row height_auto"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h3>Key</h3>
+</div></div><div class="w-separator size_small"></div><div class="g-cols wpb_row  type_default valign_top vc_inner"><div class="vc_col-sm-4 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h5>Site Reference Numbers</h5>
+<p class="font_7">Site reference number prefixes that are used link back to the <a href="/maps/"><span class="color_4">maps</span></a> generated in the 2015 Water Security Report:</p>
+<p><strong>Riv</strong><br />
+Map 2, Proposed River Monitoring Network<br />
+<strong>SN, BD</strong><br />
+Map 10, Rokel-Seli River Basin Water Security Project</p>
+<p><em>* Those not prefixed are not shown on report maps. See Lists and Maps in </em><a href="https://fb615793-e8b4-4c13-9093-8c3cb093f037.filesusr.com/ugd/bf9204_ede82d8d30354dbab0041188775368fc.pdf" target="_blank" rel="noopener noreferrer"><em>Volume 1 Appendices.</em></a></p>
+</div></div></div></div></div><div class="vc_col-sm-4 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h5>Included Data</h5>
+<p>The types of data that are included in the downloads are indicated in the charts below as follows:</p>
+<p><strong>F</strong> Stream or River Flow<br />
+<strong>G</strong> Groundwater Level<br />
+<strong>R</strong> Rainfall<br />
+<strong>B</strong> Barometric Pressure<br />
+<strong>Tw</strong> Water Temperature<br />
+<strong>Ta</strong> Air Temperature</p>
+</div></div></div></div></div><div class="vc_col-sm-4 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h5>Data Owner, Collector or Origin</h5>
+<p>The data is made available from different sources which is listed in the charts below:</p>
+<p><strong>ADDAX</strong> Addax Biosciences<br />
+<strong>BWMA</strong> Bumbuna Watershed Management Authority<br />
+<strong>Met Dept</strong> Meteorological Department<br />
+<strong>MOE</strong> Ministry of Energy<br />
+<strong>MWR</strong> Ministry of Water Resources</p>
+</div></div></div></div></div></div></div></div></div></div></div></section><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-separator size_small with_line width_default thick_2 style_dashed color_primary align_center"><div class="w-separator-h"></div></div><div class="wpb_text_column us_custom_1140c72b"><div class="wpb_wrapper"><h5>1976 Hydrological Year Book (1970 to 1976)</h5>
+</div></div><div  class="vc_wp_text wpb_content_element"><div class="widget widget_text">			<div class="textwidget"><table id="tablepress-1" class="tablepress tablepress-id-1 tablepress-responsive">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">District</th>
+<th class="column-2">River Basin</th>
+<th class="column-3">River Name</th>
+<th class="column-4">Monitoring Site Location or Name</th>
+<th class="column-5">Included Data</th>
+<th class="column-6">Data Owner</th>
+<th class="column-7">Data Collection or Origin</th>
+<th class="column-8"></th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Port Loko</td>
+<td class="column-2">Little Scarcies</td>
+<td class="column-3">Tributary to Little Scarcies</td>
+<td class="column-4">Riv 14</td>
+<td class="column-5">River Stage at Mabole (Daily) 1975-1976</td>
+<td class="column-6">L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Stage-at-Mabole-Daily-1975-1976.xlsx" target="_blank" data-type="document" id="i84c9yqplink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqplabel" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Port Loko</td>
+<td class="column-2">Little Scarcies</td>
+<td class="column-3">Little Scarcies</td>
+<td class="column-4">Riv 15</td>
+<td class="column-5">River Stage at Mange (Daily) 1972-1976</td>
+<td class="column-6">L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Stage-at-Mange-Daily-1972-1976.xlsx" target="_blank" data-type="document" id="i84c9yqi_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqi_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Koinadugu</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Rokel-Seli</td>
+<td class="column-4">Riv 1</td>
+<td class="column-5">River Flow at Badala (Daily) 1970-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Badala-Daily-1970-1976.xlsx" target="_blank" data-type="document" id="i84c9yqo_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqo_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Tributary to Rokel Seli</td>
+<td class="column-4"></td>
+<td class="column-5">River Stage at Mador (Daily) 1975-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Stage-at-Mador-Daily-1975-1976.xlsx" target="_blank" data-type="document" id="i84c9yqp_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqp_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Rokel-Seli</td>
+<td class="column-4">Riv 2</td>
+<td class="column-5">River Flow at Bumbuna (Daily) 1970-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Bumbuna-Daily-1970-1976.xlsx" target="_blank" data-type="document" id="i84c9yqqlink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqqlabel" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Rokel-Seli</td>
+<td class="column-4">Riv 3</td>
+<td class="column-5">River Stage at Magburaka (Daily) 1975-1976</td>
+<td class="column-6">L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Stage-at-Magburaka-Daily-1975-1976.xlsx" target="_blank" data-type="document" id="i84c9yqq_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqq_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Jong</td>
+<td class="column-3">Pampana</td>
+<td class="column-4">Riv 5</td>
+<td class="column-5">River Flow at Pampana (Maratoka) (Daily) 1971-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Pampana-Daily-1971-1976.xlsx" target="_blank" data-type="document" id="i84c9yqjlink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqjlabel" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-9 odd">
+<td class="column-1">Kono</td>
+<td class="column-2">Sewa</td>
+<td class="column-3">Sewa</td>
+<td class="column-4">Riv 23</td>
+<td class="column-5">River Flow at Sewa (Jaima Sewafe) (Daily) 1971-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Sewa-Daily-1971-1976.xlsx" target="_blank" data-type="document" id="i84c9yql_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yql_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-10 even">
+<td class="column-1">Kenema</td>
+<td class="column-2">Sewa</td>
+<td class="column-3">Tributary to Sewa (Bundoya?)</td>
+<td class="column-4"></td>
+<td class="column-5">River Flow at Palima (Daily) 1971-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Palima-Daily-1972-1976.xlsx" target="_blank" data-type="document" id="i84c9yqmlink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqmlabel" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-11 odd">
+<td class="column-1">Kenema</td>
+<td class="column-2">Sewa</td>
+<td class="column-3">Tributary to Sewa (Maboa?)</td>
+<td class="column-4"></td>
+<td class="column-5">River Flow at Dodo (Daily) 1972-1976</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Dodo-Daily-1972-1976.xlsx" target="_blank" data-type="document" id="i84c9yqm_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqm_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-12 even">
+<td class="column-1">Kenema</td>
+<td class="column-2">Moa</td>
+<td class="column-3">Moa</td>
+<td class="column-4">Riv 29</td>
+<td class="column-5">River Flow at Moa (Gofor) (Daily) 1971-1975</td>
+<td class="column-6">F,L</td>
+<td class="column-7">MWR</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/River-Flow-at-Moa-Daily-1971-1975.xlsx" target="_blank" data-type="document" id="i84c9yqm_0link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84c9yqm_0label" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+		</div></div></div></div></div></div></div></section><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-separator size_small with_line width_default thick_2 style_dashed color_primary align_center"><div class="w-separator-h"></div></div><div class="wpb_text_column us_custom_1140c72b"><div class="wpb_wrapper"><h5>Bumbuna Dam (2009 onwards)</h5>
+</div></div><div  class="vc_wp_text wpb_content_element"><div class="widget widget_text">			<div class="textwidget"><table id="tablepress-2" class="tablepress tablepress-id-2 tablepress-responsive">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">District</th>
+<th class="column-2">River Basin</th>
+<th class="column-3">River Name</th>
+<th class="column-4">Site Reference Number</th>
+<th class="column-5">Monitoring Site Location or Name</th>
+<th class="column-6">Included Data</th>
+<th class="column-7">Data Owner</th>
+<th class="column-8">Data Collection or Origin</th>
+<th class="column-9"></th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Rokel-Seli</td>
+<td class="column-4">BD02</td>
+<td class="column-5">Bumbuna HEP Dam - Weir</td>
+<td class="column-6">F, L</td>
+<td class="column-7">MOE</td>
+<td class="column-8">Other</td>
+<td class="column-9"><a href="//assets/uploads/2020/02/BD02-BUMBUNA-DAM-Weir.xlsx" target="_blank" data-type="document" id="i84drnh7link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84drnh7label" class="b2label">BD02 download &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3"></td>
+<td class="column-4">BD03</td>
+<td class="column-5">Bumbuna HEP Dam Reservoir</td>
+<td class="column-6">L</td>
+<td class="column-7">MOE</td>
+<td class="column-8">Other</td>
+<td class="column-9"><a href="//assets/uploads/2020/02/BD03-BUMBUNA-DAM-Reservoir-Levels.xlsx" target="_blank" data-type="document" id="i84dry0llink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84dry0llabel" class="b2label">BD03 download &gt;&gt;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+		</div></div></div></div></div></div></div></section><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-separator size_small with_line width_default thick_2 style_dashed color_primary align_center"><div class="w-separator-h"></div></div><div class="wpb_text_column us_custom_1140c72b"><div class="wpb_wrapper"><h5>Water Security Project (Springs and Small Stream Water Sources, 2013 onwards)</h5>
+</div></div><div  class="vc_wp_text wpb_content_element"><div class="widget widget_text">			<div class="textwidget"><table id="tablepress-3" class="tablepress tablepress-id-3 tablepress-responsive">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">District</th>
+<th class="column-2">River Basin</th>
+<th class="column-3">Site Reference Number</th>
+<th class="column-4">Monitoring Site Location or Name</th>
+<th class="column-5">Included Data</th>
+<th class="column-6">Data Owner</th>
+<th class="column-7">Data Collection or Origin</th>
+<th class="column-8"></th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">SN10</td>
+<td class="column-4">Kadala Spring</td>
+<td class="column-5">F,L, Tw</td>
+<td class="column-6">MWR</td>
+<td class="column-7">BWMA</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/SN10-KADALA-Spring.xlsx" target="_blank" data-type="document" id="i84e31o2link" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84e31o2label" class="b2label">SN10 download &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">SN11</td>
+<td class="column-4">Kakutan Spring</td>
+<td class="column-5">F,L, R, Tw</td>
+<td class="column-6">MWR</td>
+<td class="column-7">BWMA</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/SN11-KAKUTAN-Weir.xlsx" target="_blank" data-type="document" id="i84gjzwjlink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84gjzwjlabel" class="b2label">SN13 download &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">SN13</td>
+<td class="column-4">Kamathor 2 Stream</td>
+<td class="column-5">F,L, R, B, Tw, Ta</td>
+<td class="column-6">MWR</td>
+<td class="column-7">BWMA</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/SN13-KAMATHOR-2-Weir.xlsx" target="_blank" data-type="document" id="i84gjz9olink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84gjz9olabel" class="b2label">SN14 download &gt;&gt;</span></a></td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">Tonkolili</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">SN14</td>
+<td class="column-4">Kasokira Stream</td>
+<td class="column-5">F,L, R, B, Tw, Ta</td>
+<td class="column-6">MWR</td>
+<td class="column-7">BWMA</td>
+<td class="column-8"><a href="//assets/uploads/2020/02/SN14-KASOKIRA-Weir.xlsx" target="_blank" data-type="document" id="i84gjz9olink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84gjz9olabel" class="b2label">SN14 download &gt;&gt;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+		</div></div></div></div></div></div></div></section><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-separator size_small with_line width_default thick_2 style_dashed color_primary align_center"><div class="w-separator-h"></div></div><div class="wpb_text_column us_custom_1140c72b"><div class="wpb_wrapper"><h5>Addax Biosciences (Flow in Rokel-Seli River, 2012 onwards)</h5>
+</div></div><div  class="vc_wp_text wpb_content_element"><div class="widget widget_text">			<div class="textwidget"><table id="tablepress-4" class="tablepress tablepress-id-4 tablepress-responsive">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">District</th>
+<th class="column-2">River Basin</th>
+<th class="column-3">River Name</th>
+<th class="column-4">Site Reference Number</th>
+<th class="column-5">Monitoring Site Location or Name</th>
+<th class="column-6">Included Data</th>
+<th class="column-7">Data Owner</th>
+<th class="column-8">Data Collection or Origin</th>
+<th class="column-9"></th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Bombali</td>
+<td class="column-2">Rokel Seli</td>
+<td class="column-3">Rokel-Seli</td>
+<td class="column-4">Riv 10 (AD02) and Riv 11 (AD03)</td>
+<td class="column-5">Addax - Rokel River (Upstream and Downstream Gauging Site)</td>
+<td class="column-6">F</td>
+<td class="column-7">ADDAX</td>
+<td class="column-8">ADDAX</td>
+<td class="column-9"><a href="//assets/uploads/2020/02/AD02-AD03-ADDAX-Rokel-River-Flows.xlsx" target="_blank" data-type="document" id="i84gx17olink" class="g-transparent-a b2link" rel="noopener noreferrer"><span id="i84gx17olabel" class="b2label">Download here &gt;&gt;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+		</div></div></div></div></div></div></div></section>`,t={title:a,html:s};export{t as default,s as html,a as title};

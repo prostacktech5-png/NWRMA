@@ -1,0 +1,95 @@
+const t="Environmental Prosperity is Key to Sustainable Development -DG Bangali",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">Environmental Prosperity is Key to Sustainable Development -DG Bangali</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2024-04-24T17:01:47+00:00" title="24 April 2024 at 17:01:47 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>24 Apr 2024</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/environmental-prosperity-is-key-to-sustainable-development-dg-bangali/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_content" itemprop="text"><p>The Director-General of the National Water Resources Management Agency, Junisa Patrick Bangali Esq. has said there is an urgent need for Mano River Union (MRU) countries to safeguard their <img decoding="async" fetchpriority="high" class="wp-image-8563 alignleft" src="https://nwrma.gov.sl//assets/uploads/2024/04/Use-225x300.jpeg" alt="" width="320" height="427" srcset="https://nwrma.gov.sl//assets/uploads/2024/04/Use-225x300.jpeg 225w, https://nwrma.gov.sl//assets/uploads/2024/04/Use-767x1024.jpeg 767w, https://nwrma.gov.sl//assets/uploads/2024/04/Use.jpeg 809w" sizes="(max-width: 320px) 100vw, 320px" />shared natural resources, protect biodiversity, and mitigate the impacts of climate change for the well-being of present and future generations, as this is very essential for achieving sustainable development.</p>
+<p>He said this while giving the welcome remarks at a two-day donor conference for phase two of the GEF/IUCN-supported project: Mano River Union Ecosystem Conservation and International Water Resources Management project, which started on April 24th in Freetown.</p>
+<p>DG Bangali said through collective determination and shared vision, MRU countries can pave the way for a more resilient and sustainable future for all, and collectively manage shared resources to ensure the sustainability and prosperity of member states.</p>
+<p>“<em>Over the next two days, we have a unique opportunity to engage in meaningful dialogue, exchange insights, and forge strategic partnerships that will shape the course of our actions moving forward. Together, we will explore innovative solutions, leverage our combined strengths, and mobilize resources to implement the Strategic Action Program outlined in the GEF-MANO Project….I encourage each of you to actively participate, share your perspectives, and contribute constructively to our discussions. Let us seize this opportunity to reaffirm our commitment to the principles of environmental stewardship, sustainable development, and regional cooperation.”</em> DG Bangali said.</p>
+<p>The two-day session brought together project stakeholders and possible funding partners to brainstorm the way forward for the funding for the implementation of the Strategic Action Plan (SAP). The SAP is a product of the Transboundary Diagnostic Analyses (TDA) which looked into pressing biodiversity and environmental challenges like deforestation, water pollution, loss of biodiversity and land degradation (soil erosion) and change in the river hydrodynamics.</p>
+<p>The TDA investigated and eventually brought out the specific problems related to the aforementioned environmental challenges, while the SAP outlined the possible solutions to these challenges. The SAP sets the stage for a second phase of the project, which will look into addressing the challenges, while also ensuring that the sub-region achieves water security, food security, human and ecosystem health protection, as well as actions for adapting and increasing the resilience to climate change, and providing other essential socioeconomic benefits.</p>
+<p>The implementation of the SAP will cost One Hundred and Forty Million, Two Hundred and Eighty-Seven Thousand, Two Hundred United States Dollars ($US140, 287,200), with Sierra Leone requiring 38% of the total cost.</p>
+<p>The Mano River Union Ecosystem Conservation and International Water Resources Management project is implemented by the Mano River Union for the benefit of the National Water Resources Management Agency (NWRMA) and the National Protected Area Authority (NPAA), with support from the Global Environment Facility (GEF) and the International Union for the Conservation of Nature (IUCN). It aims to address issues around loss of biodiversity, deforestation, land degradation &amp; soil erosion, and water pollution.</p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/environmental-prosperity-is-key-to-sustainable-development-dg-bangali/" data-sharing-image=""><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/welcome-address-at-the-western-area-peninsular-water-fund-launch-event-on-25th-january-2024/" title="Welcome Address at the Western Area Peninsular Water Fund Launch Event on 25th January, 2024"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>Welcome Address at the Western Area Peninsular Water Fund Launch Event on 25th January, 2024</span></div></a><a class="post_navigation-item order_second to_next" href="/more-community-volunteers-enlist-to-save-river-taia-pampana/" title="More Community Volunteers Enlist to Save River Taia/Pampana"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>More Community Volunteers Enlist to Save River Taia/Pampana</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/environmental-prosperity-is-key-to-sustainable-development-dg-bangali/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8560' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

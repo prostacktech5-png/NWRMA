@@ -1,0 +1,97 @@
+const t="NWRMA Engages the Media on Regulations",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">NWRMA Engages the Media on Regulations</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2022-08-26T10:41:58+00:00" title="26 August 2022 at 10:41:58 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>26 Aug 2022</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/nwrma-engages-the-media-on-regulations/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_image us_custom_70facfb4 stretched"><img width="1366" height="768" src="https://nwrma.gov.sl//assets/uploads/2022/09/482B242C-0345-4F3F-8E88-AB4D11881130.png.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://nwrma.gov.sl//assets/uploads/2022/09/482B242C-0345-4F3F-8E88-AB4D11881130.png.jpg 1366w, https://nwrma.gov.sl//assets/uploads/2022/09/482B242C-0345-4F3F-8E88-AB4D11881130.png-300x169.jpg 300w, https://nwrma.gov.sl//assets/uploads/2022/09/482B242C-0345-4F3F-8E88-AB4D11881130.png-1024x576.jpg 1024w" sizes="(max-width: 1366px) 100vw, 1366px" /></div><div class="w-post-elm post_content" itemprop="text"><p>The National Water Resources Management Agency (NWRMA) has on Friday 26<sup>th</sup> August 2022 conducted a training workshop for media practitioners on the Rules and Procedures for Compliance with the National Water Resources Management Agency Act &amp; Regulations, at its head office in Freetown.</p>
+<p>The workshop was to brief journalists on provisions of the NWRMA Act, and the four water regulations which were recently approved by Parliament to ensure effective public education. The training highlighted available regulations on effective water resource management, with regards to rights, obligations, and penalties.</p>
+<p>The workshop focused on the four regulations: what procedures are for registration and obtaining water rights, validity, duration of the rights, offenses, and penalties. The Water Use and Catchment Regulation focuses on appropriately protecting the country&#8217;s surface water and catchments, and its abstraction, through issuing a water use permit. The Groundwater Development and Protection Regulation focus on protecting groundwater sources, especially for borehole well construction, by giving a borehole/well drilling license. The Dam Safety Regulation seeks to make dam construction and management safe by awarding a dam safety license and setting standards that dams must meet. The fourth Regulation- the Water Pollution Control Regulations, aims to reduce the pollution rate of Sierra Leone’s water resources through the granting of a waste discharge license.</p>
+<p>The Agency’s Director-General, Junisa Patrick Bangali Esq. gave a brief background of the Agency and its relationship with the media over the years. He spoke a little about their communications strategy, and what role the media plays in it. He went on to explain the Agency’s mandate, and how it is different from other state-owned water entities.</p>
+<p><em>“While Sierra Leone Water Company (SALWACO) and Guma Valley Water Company are utility companies-they supply processed water to homes and businesses, we ensure that the water is protected and is available in the first place so that the utility companies can access it for supply.” DG Bangali said.</em></p>
+<p>The Director-General continued that while the Electricity and Water Regulatory Commission (EWRC) regulates standards (in terms of quality and price) of the processed water and electricity that is made available by utility companies and private businesses, NWRMA regulates raw, unprocessed water. He further emphasised the urgent need for water management in Sierra Leone by stating that natural disasters such as flash floods, etc. and water insecurity, etc. are evidences of a lack of effective water management, in addition to climate change impacts that presently affect the world. The Director General concluded his statement by saying water in contemporary times is a gem, similarly important as mineral resources.</p>
+<p>Presenting on the regulations, the Director of Legal, Regulations, and Outreach, Abubakarr Iscandri Conteh Esq. said the Agency’s efforts to reach the public would be futile without proper partnership with the media.</p>
+<p>“The fourth estate is the fourth power as it possesses the ability to educate, advocate, and influence opinions. “We hope you’ll use your mediums to help your audiences understand the need to efficiently protect, manage and regulate our water resources not just for our benefit, but for unborn generations.”</p>
+<p>Fatmata Kamara, a reporter from Freedom Radio asked whether the country has plans to explore the economic potential of transboundary water bodies, and Director Conteh responded that the government looks forward to every opportunity of such and would do the required when it is necessary to the extent that no significant harm is caused to the water course.</p>
+<p>NWRMA deeply values its relationship with the media and has always worked on maintaining and improving it. We continue to conduct our business in public view and are open to feedback from the media and the entire public.</p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/nwrma-engages-the-media-on-regulations/" data-sharing-image="https://nwrma.gov.sl//assets/uploads/2022/09/482B242C-0345-4F3F-8E88-AB4D11881130.png-1024x576.jpg"><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/data-collectors-who-volunteer-protect-sierra-leones-rivers/" title="Data Collectors Who Volunteer To Protect Sierra Leone’s Rivers"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>Data Collectors Who Volunteer To Protect Sierra Leone’s Rivers</span></div></a><a class="post_navigation-item order_second to_next" href="/nwrma-partners-with-police-to-protect-water-resources/" title="NWRMA Partners With Police to Protect Water Resources"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>NWRMA Partners With Police to Protect Water Resources</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/nwrma-engages-the-media-on-regulations/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8368' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

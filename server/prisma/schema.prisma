@@ -1,0 +1,87 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String?       @unique
+  phone        String?       @unique
+  passwordHash String
+  fullName     String
+  role         String        @default("staff")
+  department   String?
+  jobTitle     String?       @map("job_title")
+  /// Hydrological staff: which /hydrological/* areas this user may open (null = legacy full access).
+  hydroNavAccess Json?
+  /// Per-department ERP section access (staff); keys match department-sections ids.
+  departmentSectionAccess Json?
+  /// When set, invitation link expires at this time until password is set.
+  inviteExpiresAt DateTime?
+  /// When set, the account stops working after this time (temporary staff access).
+  accountExpiresAt DateTime? @map("account_expires_at")
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  fieldReports FieldReport[]
+
+  @@index([role])
+}
+
+model FieldReport {
+  id            String   @id @default(uuid())
+  clientLocalId String?  @unique
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  officerName   String
+  officerPhone  String
+  riverName     String?
+  location      String
+  waterLevel    Decimal  @db.Decimal(14, 4)
+  readingTime   String
+  date          String
+  dateTime      DateTime
+  gpsLat        Float?
+  gpsLng        Float?
+  photoBase64   String? @db.Text
+  remarks       String?
+  hodValidation String   @default("pending")
+  createdAt     DateTime @default(now())
+
+  @@index([userId])
+  @@index([dateTime])
+}
+
+/// Public water testing intake + HSD lab workflow (see web/lib/db/water-testing-persistence.ts).
+model WaterTestingRequest {
+  id                          String    @id @default(uuid())
+  reference                   String    @unique
+  publicCaseId                String?   @map("public_case_id")
+  requesterName               String    @map("requester_name")
+  requesterEmail              String    @map("requester_email")
+  requesterPhone              String?   @map("requester_phone")
+  organisation                String
+  siteAddress                 String    @map("site_address")
+  testsRequested              Json      @default("[]") @map("tests_requested")
+  priority                    String    @default("normal")
+  status                      String    @default("received")
+  notes                       String?
+  assignedToUserId            String?   @map("assigned_to_user_id")
+  assignedToName              String?   @map("assigned_to_name")
+  sampleCollectionScheduledAt DateTime? @map("sample_collection_scheduled_at")
+  results                     Json?
+  reportNotes                 String?   @map("report_notes")
+  receivedAt                  DateTime  @default(now()) @map("received_at")
+  completedAt                 DateTime? @map("completed_at")
+  lastEmailSentAt             DateTime? @map("last_email_sent_at")
+  createdAt                   DateTime  @default(now()) @map("created_at")
+  updatedAt                   DateTime  @updatedAt @map("updated_at")
+
+  @@index([status])
+  @@index([requesterEmail])
+  @@index([receivedAt])
+  @@map("water_testing_requests")
+}

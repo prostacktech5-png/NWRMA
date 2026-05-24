@@ -1,0 +1,99 @@
+const t="Groundwater Monitoring Goes Digital",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">Groundwater Monitoring Goes Digital</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2022-07-24T16:03:34+00:00" title="24 July 2022 at 16:03:34 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>24 Jul 2022</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/groundwater-monitoring-goes-digital/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_image us_custom_70facfb4 stretched"><img width="810" height="707" src="https://nwrma.gov.sl//assets/uploads/2022/07/Ground-Water-Relief-7-e1659699690960.jpeg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://nwrma.gov.sl//assets/uploads/2022/07/Ground-Water-Relief-7-e1659699690960.jpeg 810w, https://nwrma.gov.sl//assets/uploads/2022/07/Ground-Water-Relief-7-e1659699690960-300x262.jpeg 300w" sizes="(max-width: 810px) 100vw, 810px" /></div><div class="w-post-elm post_content" itemprop="text"><p><strong>Freetown, July 24 </strong><strong>&#8211;</strong>The National Water Resources Management Agency (NWRMA) and Groundwater Relief (GWR), a British water charity organization have today signed a memorandum of understanding, which marks the start of collaborations to support their mutual interests in implementing a pilot of a citizen science project.</p>
+<p>The project involves the use of a community engagement study approach in riverine and other areas within the country, plus the use of a mobile app to monitor surface and groundwater levels and report handpump issues in its areas of implementation. This initiative will go a long way in understanding the behaviour of our surface and groundwater bodies in an almost real-time and state-of-the-art fashion.</p>
+<p>The project which would be implemented by NWRMA and GWR will gain collective knowledge (at scientific and socio-technological levels) to better manage groundwater sources by enabling an in-field trial of the phone app and supplementary tools with its intended end-users.</p>
+<p>GWR is partnering with the (Action research and Critical Inquiry in Organisations (ARCIO), within the Bristol School of Management and beyond. This is an interdisciplinary research centre, which brings together a network of scholars committed to researching in organizations and communities in participative and/or capacity-building ways. During the project implementation, it is expected that Ground Water Relief (GWR), also representing Bristol University will develop, fund, and provide the phone app; share collected data with NWRMA, ideally through agreed secure means; provide training to citizen scientists; and compile a report on lessons learned.</p>
+<p>NWRMA on the other hand would select suitable sites for the study; select citizen scientists within pilot areas to participate in the training who have smartphones (with Google Play or App Store available); enable GWR access to the NWRMA database so that a method of data transfer from a phone app to a database can be established; contribute to the facilitation of training sessions; facilitate logistical support like transportation, meeting venues, etc; store data and provide feedback on the progress of the project.</p>
+<p style="text-align: center;"><strong>###</strong></p>
+<p>The NWRMA was established by Act No. 5 of parliament in 2017, to protect, manage and regulate surface and groundwater resources in Sierra Leone with an overall vision of becoming one of the leading water resources management Agencies in West Africa. The Agency is responsible for granting water rights, water resources allotment among competing users, formulation of regulatory measures, information/data collection and sharing on water resources, with a view also to controlling pollution. Transboundary water resource issues also fall under the mandate of the Agency.</p>
+<p>GWR is registered with the UK Charity Commission as a Charitable Incorporated Organisation (Registration No. 1167458). GWR provides technical support to organisations engaged in supplying water to the world&#8217;s poorest and most vulnerable people. Through a global membership of over 400 technical experts, GWR helps organisations construct and manage groundwater infrastructure in a professional, responsible, cost-effective, and sustainable way, engaging local authorities, companies, and institutions.</p>
+<p><strong><em>For more information, please contact:<br />
+The Director of Legal, Regulations and Outreach<br />
+077-441-854/ 079-072-424<br />
+nwrmacommunications@gmail.com </em></strong></p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/groundwater-monitoring-goes-digital/" data-sharing-image="https://nwrma.gov.sl//assets/uploads/2022/07/Ground-Water-Relief-7-768x1024.jpeg"><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/mru-project-validates-transboundary-diagnostic-analyses-report/" title="MRU Project Validates Transboundary Diagnostic Analyses Report"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>MRU Project Validates Transboundary Diagnostic Analyses Report</span></div></a><a class="post_navigation-item order_second to_next" href="/soldiers-receive-bikes-for-forest-protection/" title="Soldiers Receive Bikes for Forest Protection"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>Soldiers Receive Bikes for Forest Protection</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/groundwater-monitoring-goes-digital/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8221' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

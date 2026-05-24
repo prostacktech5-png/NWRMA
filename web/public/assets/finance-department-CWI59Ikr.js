@@ -1,0 +1,46 @@
+const n="Finance Department",a=`<section class="l-section wpb_row us_custom_e11ab399 height_small"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_middle"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 class="w-post-elm post_title us_custom_47ffbcae align_center entry-title" itemprop="headline">Finance Department</h2><div class="w-separator size_small"></div></div></div></div></div></div></section><!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="#eded9a" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><section class="l-section wpb_row height_auto width_full"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-post-elm post_content" itemprop="text"><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><section class="l-section wpb_row height_medium"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"></div></div></section><div class="vc_col-sm-12 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_text_column"><div class="wpb_wrapper"></div></div>
+<div class="wpb_text_column">
+<div class="wpb_wrapper">
+<h5>Finance is the central Department of the Agency of the National Water Resources Management and plays an important role in assisting the Agency across a wide range of activity areas to ensure its outcomes are met.</h5>
+</div>
+</div>
+<div class="g-cols wpb_row type_default valign_top vc_inner">
+<div class="vc_col-sm-6 wpb_column vc_column_container">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+<div class="wpb_text_column">
+<div class="wpb_wrapper">
+<p>Finance Department is the part of an organization that is responsible for acquiring funds for the firm, managing funds within the organization, and planning for the expenditure of funds on various assets. It is the part of an organization that ensures efficient financial management and financial control necessary to support all business activities.</p>
+<p><strong>Key Tasks of the finance department include but are not limited to:</strong></p>
+<ol>
+<li><em>Bookkeeping</em></li>
+<li><em>Management of the Agency’s cash flow</em></li>
+<li><em>Budgets and forecasting</em></li>
+<li><em>Advising and sourcing longer/Shorter-term financing</em></li>
+<li><em>Management of Taxes</em></li>
+<li><em>Management of Agency’s Funds/Investments from Water users and Government</em></li>
+<li><em>Financial Reporting and analysis</em></li>
+<li><em>Assist managers in making key strategic decisions</em></li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Specialized Units</strong></p>
+<ol>
+<li><em>Cost and Management</em></li>
+<li><em>Finance and Reporting</em></li>
+</ol>
+<h4><em><strong>Head of Department</strong></em></h4>
+</div>
+</div>
+<div class="wpb_text_column">
+<div class="wpb_wrapper">
+<p class="font_7"><img loading="lazy" decoding="async" class="alignnone wp-image-8073 alignleft" src="https://nwrma.gov.sl//assets/uploads/2021/06/Dir-Koroma-300x225.jpeg" alt="" width="200" height="150" srcset="https://nwrma.gov.sl//assets/uploads/2021/06/Dir-Koroma-300x225.jpeg 300w, https://nwrma.gov.sl//assets/uploads/2021/06/Dir-Koroma.jpeg 911w" sizes="(max-width: 200px) 100vw, 200px" /><strong>Dr. Philip Sulaiman Koroma,</strong><br />
+<strong>Director of the Department of Finance</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span id="more-7950"></span></p>
+</div></div></div></div></div></div></div></section>
+</div></div></div></div></div></div></section>`,e={title:n,html:a};export{e as default,a as html,n as title};

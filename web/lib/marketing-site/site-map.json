@@ -1,0 +1,590 @@
+[
+  {
+    "path": "/about",
+    "route": "/about",
+    "template": "news-article",
+    "title": "About",
+    "contentFile": "src/data/pages/about.json"
+  },
+  {
+    "path": "/acts-policies-2",
+    "route": "/acts-policies-2",
+    "template": "news-article",
+    "title": "Plans",
+    "contentFile": "src/data/pages/acts-policies-2.json"
+  },
+  {
+    "path": "/acts-policies",
+    "route": "/acts-policies",
+    "template": "news-article",
+    "title": "Acts &amp; Policies",
+    "contentFile": "src/data/pages/acts-policies.json"
+  },
+  {
+    "path": "/administration-and-human-resources-department",
+    "route": "/administration-and-human-resources-department",
+    "template": "news-article",
+    "title": "Administration and Human Resources Department",
+    "contentFile": "src/data/pages/administration-and-human-resources-department.json"
+  },
+  {
+    "path": "/another-interesting-single-post",
+    "route": "/another-interesting-single-post",
+    "template": "news-article",
+    "title": "Another Interesting Single Post",
+    "contentFile": "src/data/pages/another-interesting-single-post.json"
+  },
+  {
+    "path": "/bridge-trains-river-basin-committees-and-national-platform-members",
+    "route": "/bridge-trains-river-basin-committees-and-national-platform-members",
+    "template": "news-article",
+    "title": "BRIDGE Trains River Basin Committees and National Platform Members",
+    "contentFile": "src/data/pages/bridge-trains-river-basin-committees-and-national-platform-members.json"
+  },
+  {
+    "path": "/category/news",
+    "route": "/category/news",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/category_news.json"
+  },
+  {
+    "path": "/category/news/frontpage",
+    "route": "/category/news/frontpage",
+    "template": "news-list",
+    "title": "Frontpage",
+    "contentFile": "src/data/pages/category_news_frontpage.json"
+  },
+  {
+    "path": "/category/news/page/2",
+    "route": "/category/news/page/2",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/category_news_page_2.json"
+  },
+  {
+    "path": "/category/news/page/3",
+    "route": "/category/news/page/3",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/category_news_page_3.json"
+  },
+  {
+    "path": "/category/news/page/4",
+    "route": "/category/news/page/4",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/category_news_page_4.json"
+  },
+  {
+    "path": "/category/news/page/5",
+    "route": "/category/news/page/5",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/category_news_page_5.json"
+  },
+  {
+    "path": "/category/regulation",
+    "route": "/category/regulation",
+    "template": "news-list",
+    "title": "Regulation",
+    "contentFile": "src/data/pages/category_regulation.json"
+  },
+  {
+    "path": "/category/report",
+    "route": "/category/report",
+    "template": "news-list",
+    "title": "Report",
+    "contentFile": "src/data/pages/category_report.json"
+  },
+  {
+    "path": "/contact",
+    "route": "/contact",
+    "template": "news-article",
+    "title": "Contact",
+    "contentFile": "src/data/pages/contact.json"
+  },
+  {
+    "path": "/data-collectors-who-volunteer-protect-sierra-leones-rivers",
+    "route": "/data-collectors-who-volunteer-protect-sierra-leones-rivers",
+    "template": "news-article",
+    "title": "Data Collectors Who Volunteer To Protect Sierra Leone’s Rivers",
+    "contentFile": "src/data/pages/data-collectors-who-volunteer-protect-sierra-leones-rivers.json"
+  },
+  {
+    "path": "/data",
+    "route": "/data",
+    "template": "news-article",
+    "title": "Data",
+    "contentFile": "src/data/pages/data.json"
+  },
+  {
+    "path": "/data/ground-water",
+    "route": "/data/ground-water",
+    "template": "news-article",
+    "title": "Ground Water",
+    "contentFile": "src/data/pages/data_ground-water.json"
+  },
+  {
+    "path": "/data/rainfall",
+    "route": "/data/rainfall",
+    "template": "news-article",
+    "title": "Rainfall",
+    "contentFile": "src/data/pages/data_rainfall.json"
+  },
+  {
+    "path": "/data/surface-water",
+    "route": "/data/surface-water",
+    "template": "news-article",
+    "title": "Surface Water",
+    "contentFile": "src/data/pages/data_surface-water.json"
+  },
+  {
+    "path": "/declining-water-levels-in-kono-a-district-thirsting-for-solutions",
+    "route": "/declining-water-levels-in-kono-a-district-thirsting-for-solutions",
+    "template": "news-article",
+    "title": "Declining Water Levels In Kono As The People Thirst for Solutions",
+    "contentFile": "src/data/pages/declining-water-levels-in-kono-a-district-thirsting-for-solutions.json"
+  },
+  {
+    "path": "/departments",
+    "route": "/departments",
+    "template": "news-article",
+    "title": "Departments",
+    "contentFile": "src/data/pages/departments.json"
+  },
+  {
+    "path": "/donor-completed-projects",
+    "route": "/donor-completed-projects",
+    "template": "news-article",
+    "title": "Donor Completed Projects",
+    "contentFile": "src/data/pages/donor-completed-projects.json"
+  },
+  {
+    "path": "/donor-ongoing-projects",
+    "route": "/donor-ongoing-projects",
+    "template": "news-article",
+    "title": "Donor Ongoing Projects",
+    "contentFile": "src/data/pages/donor-ongoing-projects.json"
+  },
+  {
+    "path": "/donor-pipeline-projects",
+    "route": "/donor-pipeline-projects",
+    "template": "news-article",
+    "title": "Donor Pipeline Projects",
+    "contentFile": "src/data/pages/donor-pipeline-projects.json"
+  },
+  {
+    "path": "/downloads",
+    "route": "/downloads",
+    "template": "news-article",
+    "title": "Downloads",
+    "contentFile": "src/data/pages/downloads.json"
+  },
+  {
+    "path": "/environmental-prosperity-is-key-to-sustainable-development-dg-bangali",
+    "route": "/environmental-prosperity-is-key-to-sustainable-development-dg-bangali",
+    "template": "news-article",
+    "title": "Environmental Prosperity is Key to Sustainable Development -DG Bangali",
+    "contentFile": "src/data/pages/environmental-prosperity-is-key-to-sustainable-development-dg-bangali.json"
+  },
+  {
+    "path": "/finance-department",
+    "route": "/finance-department",
+    "template": "news-article",
+    "title": "Finance Department",
+    "contentFile": "src/data/pages/finance-department.json"
+  },
+  {
+    "path": "/forming-the-right-alliances-for-enforcement",
+    "route": "/forming-the-right-alliances-for-enforcement",
+    "template": "news-article",
+    "title": "Forming The Right Alliances for Enforcement",
+    "contentFile": "src/data/pages/forming-the-right-alliances-for-enforcement.json"
+  },
+  {
+    "path": "/gef-project-enlists-famers-help-to-conserve-ecosystem-and-water-resources",
+    "route": "/gef-project-enlists-famers-help-to-conserve-ecosystem-and-water-resources",
+    "template": "news-article",
+    "title": "GEF Project Enlists Famers’ Help to Conserve Ecosystem and Water Resources",
+    "contentFile": "src/data/pages/gef-project-enlists-famers-help-to-conserve-ecosystem-and-water-resources.json"
+  },
+  {
+    "path": "/get-involved",
+    "route": "/get-involved",
+    "template": "news-article",
+    "title": "Get Involved",
+    "contentFile": "src/data/pages/get-involved.json"
+  },
+  {
+    "path": "/gosl-completed-projects",
+    "route": "/gosl-completed-projects",
+    "template": "news-article",
+    "title": "GoSL Completed Projects",
+    "contentFile": "src/data/pages/gosl-completed-projects.json"
+  },
+  {
+    "path": "/gosl-ongoing-projects",
+    "route": "/gosl-ongoing-projects",
+    "template": "news-article",
+    "title": "GoSL Ongoing Projects",
+    "contentFile": "src/data/pages/gosl-ongoing-projects.json"
+  },
+  {
+    "path": "/gosl-pipeline-projects",
+    "route": "/gosl-pipeline-projects",
+    "template": "news-article",
+    "title": "GoSL Pipeline Projects",
+    "contentFile": "src/data/pages/gosl-pipeline-projects.json"
+  },
+  {
+    "path": "/govt-closes-sea-coach-express-for-evading-water-dues",
+    "route": "/govt-closes-sea-coach-express-for-evading-water-dues",
+    "template": "news-article",
+    "title": "Govt. closes Sea Coach Express for Evading Water Dues",
+    "contentFile": "src/data/pages/govt-closes-sea-coach-express-for-evading-water-dues.json"
+  },
+  {
+    "path": "/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts",
+    "route": "/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts",
+    "template": "news-article",
+    "title": "Gov’t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts",
+    "contentFile": "src/data/pages/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts.json"
+  },
+  {
+    "path": "/groundwater-assessment-to-ensure-water-security-in-kono",
+    "route": "/groundwater-assessment-to-ensure-water-security-in-kono",
+    "template": "news-article",
+    "title": "Groundwater Assessment to Ensure Water Security in Kono",
+    "contentFile": "src/data/pages/groundwater-assessment-to-ensure-water-security-in-kono.json"
+  },
+  {
+    "path": "/groundwater-monitoring-goes-digital",
+    "route": "/groundwater-monitoring-goes-digital",
+    "template": "news-article",
+    "title": "Groundwater Monitoring Goes Digital",
+    "contentFile": "src/data/pages/groundwater-monitoring-goes-digital.json"
+  },
+  {
+    "path": "/how-drama-is-raising-the-consciousness-around-water-resources-management",
+    "route": "/how-drama-is-raising-the-consciousness-around-water-resources-management",
+    "template": "news-article",
+    "title": "How Drama Is Raising the Consciousness Around Water Resources Management",
+    "contentFile": "src/data/pages/how-drama-is-raising-the-consciousness-around-water-resources-management.json"
+  },
+  {
+    "path": "/hydrological-services-department",
+    "route": "/hydrological-services-department",
+    "template": "news-article",
+    "title": "Hydrological Services Department",
+    "contentFile": "src/data/pages/hydrological-services-department.json"
+  },
+  {
+    "path": "/imagination-encircles-the-world",
+    "route": "/imagination-encircles-the-world",
+    "template": "news-article",
+    "title": "Imagination Encircles the World",
+    "contentFile": "src/data/pages/imagination-encircles-the-world.json"
+  },
+  {
+    "path": "/",
+    "route": "/",
+    "template": "home",
+    "title": "Home",
+    "contentFile": "src/data/pages/home.json"
+  },
+  {
+    "path": "/it-is-a-corruption-offence-to-breach-the-water-resources-mgt-law",
+    "route": "/it-is-a-corruption-offence-to-breach-the-water-resources-mgt-law",
+    "template": "news-article",
+    "title": "It Is a Corruption Offence to Breach the Water Resources Mgt. Law.",
+    "contentFile": "src/data/pages/it-is-a-corruption-offence-to-breach-the-water-resources-mgt-law.json"
+  },
+  {
+    "path": "/iwmi-concludes-scoping-mission-to-sierra-leone",
+    "route": "/iwmi-concludes-scoping-mission-to-sierra-leone",
+    "template": "news-article",
+    "title": "IWMI Concludes Scoping Mission to Sierra Leone",
+    "contentFile": "src/data/pages/iwmi-concludes-scoping-mission-to-sierra-leone.json"
+  },
+  {
+    "path": "/legal-regulations-and-outreach-department",
+    "route": "/legal-regulations-and-outreach-department",
+    "template": "news-article",
+    "title": "Legal, Regulations and Outreach Department",
+    "contentFile": "src/data/pages/legal-regulations-and-outreach-department.json"
+  },
+  {
+    "path": "/legislation",
+    "route": "/legislation",
+    "template": "news-article",
+    "title": "Legislation",
+    "contentFile": "src/data/pages/legislation.json"
+  },
+  {
+    "path": "/links",
+    "route": "/links",
+    "template": "news-article",
+    "title": "Links",
+    "contentFile": "src/data/pages/links.json"
+  },
+  {
+    "path": "/mano-river-union-meet-in-monrovia-to-discuss-water",
+    "route": "/mano-river-union-meet-in-monrovia-to-discuss-water",
+    "template": "news-article",
+    "title": "Mano River Union Meet in Monrovia to Discuss Water",
+    "contentFile": "src/data/pages/mano-river-union-meet-in-monrovia-to-discuss-water.json"
+  },
+  {
+    "path": "/maps",
+    "route": "/maps",
+    "template": "news-article",
+    "title": "Maps",
+    "contentFile": "src/data/pages/maps.json"
+  },
+  {
+    "path": "/merry-christmas-and-happy-holidays",
+    "route": "/merry-christmas-and-happy-holidays",
+    "template": "news-article",
+    "title": "MERRY CHRISTMAS AND HAPPY HOLIDAYS",
+    "contentFile": "src/data/pages/merry-christmas-and-happy-holidays.json"
+  },
+  {
+    "path": "/minister-visits-water-catchments",
+    "route": "/minister-visits-water-catchments",
+    "template": "news-article",
+    "title": "Minister Visits Water Catchments",
+    "contentFile": "src/data/pages/minister-visits-water-catchments.json"
+  },
+  {
+    "path": "/more-community-volunteers-enlist-to-save-river-taia-pampana",
+    "route": "/more-community-volunteers-enlist-to-save-river-taia-pampana",
+    "template": "news-article",
+    "title": "More Community Volunteers Enlist to Save River Taia/Pampana",
+    "contentFile": "src/data/pages/more-community-volunteers-enlist-to-save-river-taia-pampana.json"
+  },
+  {
+    "path": "/mru-gef-project-outlines-plans-to-protect-biodiversity-and-water-resources",
+    "route": "/mru-gef-project-outlines-plans-to-protect-biodiversity-and-water-resources",
+    "template": "news-article",
+    "title": "MRU-GEF Project Outlines Plans to Protect Biodiversity and Water Resources",
+    "contentFile": "src/data/pages/mru-gef-project-outlines-plans-to-protect-biodiversity-and-water-resources.json"
+  },
+  {
+    "path": "/mru-project-validates-transboundary-diagnostic-analyses-report",
+    "route": "/mru-project-validates-transboundary-diagnostic-analyses-report",
+    "template": "news-article",
+    "title": "MRU Project Validates Transboundary Diagnostic Analyses Report",
+    "contentFile": "src/data/pages/mru-project-validates-transboundary-diagnostic-analyses-report.json"
+  },
+  {
+    "path": "/new-year-water-management-message-to-the-government-and-people-of-sierra-leone",
+    "route": "/new-year-water-management-message-to-the-government-and-people-of-sierra-leone",
+    "template": "news-article",
+    "title": "New Year Water Management Message to the Government and People of Sierra Leone",
+    "contentFile": "src/data/pages/new-year-water-management-message-to-the-government-and-people-of-sierra-leone.json"
+  },
+  {
+    "path": "/news",
+    "route": "/news",
+    "template": "news-list",
+    "title": "News",
+    "contentFile": "src/data/pages/news.json"
+  },
+  {
+    "path": "/nwrma-board-concludes-tour-to-the-south-and-the-east",
+    "route": "/nwrma-board-concludes-tour-to-the-south-and-the-east",
+    "template": "news-article",
+    "title": "NWRMA Board Concludes Tour to the South and the East",
+    "contentFile": "src/data/pages/nwrma-board-concludes-tour-to-the-south-and-the-east.json"
+  },
+  {
+    "path": "/nwrma-concludes-transboundary-water-governance-training",
+    "route": "/nwrma-concludes-transboundary-water-governance-training",
+    "template": "news-article",
+    "title": "NWRMA Concludes Transboundary Water Governance Training",
+    "contentFile": "src/data/pages/nwrma-concludes-transboundary-water-governance-training.json"
+  },
+  {
+    "path": "/nwrma-engages-the-media-on-regulations",
+    "route": "/nwrma-engages-the-media-on-regulations",
+    "template": "news-article",
+    "title": "NWRMA Engages the Media on Regulations",
+    "contentFile": "src/data/pages/nwrma-engages-the-media-on-regulations.json"
+  },
+  {
+    "path": "/nwrma-lays-out-water-fund-plans-before-chief-minister",
+    "route": "/nwrma-lays-out-water-fund-plans-before-chief-minister",
+    "template": "news-article",
+    "title": "NWRMA Lays Out Water Fund Plans before Chief Minister",
+    "contentFile": "src/data/pages/nwrma-lays-out-water-fund-plans-before-chief-minister.json"
+  },
+  {
+    "path": "/nwrma-partners-with-police-to-protect-water-resources",
+    "route": "/nwrma-partners-with-police-to-protect-water-resources",
+    "template": "news-article",
+    "title": "NWRMA Partners With Police to Protect Water Resources",
+    "contentFile": "src/data/pages/nwrma-partners-with-police-to-protect-water-resources.json"
+  },
+  {
+    "path": "/nwrma-trains-catchment-management-committee-members",
+    "route": "/nwrma-trains-catchment-management-committee-members",
+    "template": "news-article",
+    "title": "NWRMA Trains Catchment Management Committee Members",
+    "contentFile": "src/data/pages/nwrma-trains-catchment-management-committee-members.json"
+  },
+  {
+    "path": "/nwrma-trains-partners-on-water-governance",
+    "route": "/nwrma-trains-partners-on-water-governance",
+    "template": "news-article",
+    "title": "NWRMA Trains Partners on Water Governance",
+    "contentFile": "src/data/pages/nwrma-trains-partners-on-water-governance.json"
+  },
+  {
+    "path": "/parliament-approves-the-new-director-general-for-nwrma",
+    "route": "/parliament-approves-the-new-director-general-for-nwrma",
+    "template": "news-article",
+    "title": "Parliament Approves the New Director General for NWRMA",
+    "contentFile": "src/data/pages/parliament-approves-the-new-director-general-for-nwrma.json"
+  },
+  {
+    "path": "/parliament-certifies-four-water-regulations",
+    "route": "/parliament-certifies-four-water-regulations",
+    "template": "news-article",
+    "title": "Parliament Certifies Four Water Regulations",
+    "contentFile": "src/data/pages/parliament-certifies-four-water-regulations.json"
+  },
+  {
+    "path": "/photography-is-the-science",
+    "route": "/photography-is-the-science",
+    "template": "news-article",
+    "title": "Photography is the Science",
+    "contentFile": "src/data/pages/photography-is-the-science.json"
+  },
+  {
+    "path": "/policy-research-and-operations-department",
+    "route": "/policy-research-and-operations-department",
+    "template": "news-article",
+    "title": "Planning, Research and Operations Department",
+    "contentFile": "src/data/pages/policy-research-and-operations-department.json"
+  },
+  {
+    "path": "/post-with-interesting-picture",
+    "route": "/post-with-interesting-picture",
+    "template": "news-article",
+    "title": "Post With Interesting Picture",
+    "contentFile": "src/data/pages/post-with-interesting-picture.json"
+  },
+  {
+    "path": "/procurement",
+    "route": "/procurement",
+    "template": "news-article",
+    "title": "Procurement",
+    "contentFile": "src/data/pages/procurement.json"
+  },
+  {
+    "path": "/projectprocurement",
+    "route": "/projectprocurement",
+    "template": "news-article",
+    "title": "ProjectProcurement",
+    "contentFile": "src/data/pages/projectprocurement.json"
+  },
+  {
+    "path": "/projects",
+    "route": "/projects",
+    "template": "news-article",
+    "title": "Projects",
+    "contentFile": "src/data/pages/projects.json"
+  },
+  {
+    "path": "/publications",
+    "route": "/publications",
+    "template": "news-article",
+    "title": "Publications",
+    "contentFile": "src/data/pages/publications.json"
+  },
+  {
+    "path": "/publications/agreements",
+    "route": "/publications/agreements",
+    "template": "news-article",
+    "title": "Agreements",
+    "contentFile": "src/data/pages/publications_agreements.json"
+  },
+  {
+    "path": "/publications/public-notice",
+    "route": "/publications/public-notice",
+    "template": "news-article",
+    "title": "Public Notice",
+    "contentFile": "src/data/pages/publications_public-notice.json"
+  },
+  {
+    "path": "/publications/reports",
+    "route": "/publications/reports",
+    "template": "news-article",
+    "title": "Reports",
+    "contentFile": "src/data/pages/publications_reports.json"
+  },
+  {
+    "path": "/regional-water-fund-training-strengthens-collaboration-for-sustainable-water-management",
+    "route": "/regional-water-fund-training-strengthens-collaboration-for-sustainable-water-management",
+    "template": "news-article",
+    "title": "Regional Water Fund Training Strengthens Collaboration for Sustainable Water Management",
+    "contentFile": "src/data/pages/regional-water-fund-training-strengthens-collaboration-for-sustainable-water-management.json"
+  },
+  {
+    "path": "/regulators-are-the-protectors-not-the-enemy-dg-bangali",
+    "route": "/regulators-are-the-protectors-not-the-enemy-dg-bangali",
+    "template": "news-article",
+    "title": "Regulators Are the Protectors; Not the Enemy -DG Bangali",
+    "contentFile": "src/data/pages/regulators-are-the-protectors-not-the-enemy-dg-bangali.json"
+  },
+  {
+    "path": "/sierra-leone-embraces-ecohydrology-to-protect-water-and-biodiversity",
+    "route": "/sierra-leone-embraces-ecohydrology-to-protect-water-and-biodiversity",
+    "template": "news-article",
+    "title": "Sierra Leone Embraces Ecohydrology to Protect Water and Biodiversity",
+    "contentFile": "src/data/pages/sierra-leone-embraces-ecohydrology-to-protect-water-and-biodiversity.json"
+  },
+  {
+    "path": "/soldiers-receive-bikes-for-forest-protection",
+    "route": "/soldiers-receive-bikes-for-forest-protection",
+    "template": "news-article",
+    "title": "Soldiers Receive Bikes for Forest Protection",
+    "contentFile": "src/data/pages/soldiers-receive-bikes-for-forest-protection.json"
+  },
+  {
+    "path": "/this-post-looks-beautiful-even-with-long-interesting-title",
+    "route": "/this-post-looks-beautiful-even-with-long-interesting-title",
+    "template": "news-article",
+    "title": "NWRMA Commences Remote Sensing and GIS Training for Technical Staff",
+    "contentFile": "src/data/pages/this-post-looks-beautiful-even-with-long-interesting-title.json"
+  },
+  {
+    "path": "/v-p-commits-government-support-to-water-fund",
+    "route": "/v-p-commits-government-support-to-water-fund",
+    "template": "news-article",
+    "title": "V. P. Commits Government Support to Water Fund",
+    "contentFile": "src/data/pages/v-p-commits-government-support-to-water-fund.json"
+  },
+  {
+    "path": "/vacancies",
+    "route": "/vacancies",
+    "template": "news-article",
+    "title": "Vacancies",
+    "contentFile": "src/data/pages/vacancies.json"
+  },
+  {
+    "path": "/water-fund-stretches-protective-concrete-barriers-to-tombo-and-madina-communities",
+    "route": "/water-fund-stretches-protective-concrete-barriers-to-tombo-and-madina-communities",
+    "template": "news-article",
+    "title": "Water Fund Stretches Protective Concrete Barriers to Tombo and Madina Communities",
+    "contentFile": "src/data/pages/water-fund-stretches-protective-concrete-barriers-to-tombo-and-madina-communities.json"
+  },
+  {
+    "path": "/welcome-address-at-the-western-area-peninsular-water-fund-launch-event-on-25th-january-2024",
+    "route": "/welcome-address-at-the-western-area-peninsular-water-fund-launch-event-on-25th-january-2024",
+    "template": "news-article",
+    "title": "Welcome Address at the Western Area Peninsular Water Fund Launch Event on 25th January, 2024",
+    "contentFile": "src/data/pages/welcome-address-at-the-western-area-peninsular-water-fund-launch-event-on-25th-january-2024.json"
+  }
+]

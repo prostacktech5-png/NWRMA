@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero__swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.hero__slide {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 50px);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero__desc {
+  font-family: var(--font-hero);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero :global(.swiper-button-prev),
+.hero :global(.swiper-button-next) {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.hero :global(.swiper-button-prev::after),
+.hero :global(.swiper-button-next::after) {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero__swiper,
+  .hero__slide {
+    height: 400px;
+  }
+}

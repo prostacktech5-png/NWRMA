@@ -1,0 +1,306 @@
+/* Water Drilling Licence — staff review layout matching official PDF */
+
+.wdl-pdf {
+  max-width: 820px;
+  margin: 0 auto;
+  font-family: Arial, 'Segoe UI', Calibri, sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+.wdl-pdf__agency-bar {
+  background: #0072c6;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.wdl-pdf__page {
+  position: relative;
+  border: 1px solid #000;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  page-break-after: always;
+}
+
+.wdl-pdf__page-inner {
+  padding: 1rem 1.25rem 2.5rem;
+}
+
+.wdl-pdf__cover {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.wdl-pdf__cover .wdl-pdf__page-inner {
+  padding: 0.75rem 0 1.5rem;
+}
+
+.wdl-pdf__logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.wdl-pdf__logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+}
+
+.wdl-pdf__agency-name {
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #228b22;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.wdl-pdf__regulation-title {
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 1rem 0 1.25rem;
+}
+
+.wdl-pdf__application-box {
+  border: 2px solid #000;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.wdl-pdf__application-box-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.wdl-pdf__dotted-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.35rem;
+  margin: 0.45rem 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.wdl-pdf__dotted-label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.wdl-pdf__dotted-line {
+  flex: 1;
+  min-width: 8rem;
+  border-bottom: 1px dotted #000;
+  min-height: 1.15em;
+  font-weight: 400;
+  padding: 0 0.15rem 0.1rem;
+  word-break: break-word;
+}
+
+.wdl-pdf__dotted-line--empty {
+  background: #fffbeb;
+}
+
+.wdl-pdf__dotted-row--block {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.wdl-pdf__dotted-row--block .wdl-pdf__dotted-line {
+  width: 100%;
+  min-height: 1.35em;
+}
+
+.wdl-pdf__hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 0.55rem 0;
+}
+
+.wdl-pdf__page-num {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.65rem;
+  font-size: 0.8125rem;
+  color: #000;
+}
+
+.wdl-pdf__table-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+
+.wdl-pdf__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8125rem;
+  margin-bottom: 1rem;
+}
+
+.wdl-pdf__table th,
+.wdl-pdf__table td {
+  border: 1px solid #000;
+  padding: 0.25rem 0.4rem;
+  vertical-align: middle;
+}
+
+.wdl-pdf__table th {
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.wdl-pdf__table td {
+  font-style: italic;
+}
+
+.wdl-pdf__table .wdl-pdf__col-no {
+  width: 2.5rem;
+  text-align: center;
+}
+
+.wdl-pdf__table .wdl-pdf__col-qty {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.wdl-pdf__table .wdl-pdf__col-class {
+  width: 4.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+.wdl-pdf__table .wdl-pdf__col-desc {
+  text-align: left;
+}
+
+.wdl-pdf__table .wdl-pdf__cell-empty {
+  background: #fffbeb;
+}
+
+.wdl-pdf__table-spacer td {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top: none;
+  border-bottom: none;
+  height: 0.35rem;
+  padding: 0;
+}
+
+.wdl-pdf__annex-line {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0.75rem 0 0.35rem;
+}
+
+.wdl-pdf__declaration-box {
+  border: 1px solid #000;
+  min-height: 11rem;
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.wdl-pdf__declaration-text {
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 0 0 1.25rem;
+  line-height: 1.45;
+}
+
+.wdl-pdf__signature-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.wdl-pdf__signature-field {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 12rem;
+}
+
+.wdl-pdf__signature-dots {
+  flex: 1;
+  border-bottom: 1px dotted #000;
+  min-height: 1.1em;
+  font-weight: 400;
+  padding-bottom: 0.1rem;
+}
+
+.wdl-pdf__note {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.wdl-pdf__footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0.5rem;
+}
+
+.wdl-pdf__footer-logo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.wdl-pdf__staff-meta {
+  font-size: 0.8125rem;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.wdl-pdf__staff-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #cbd5e1;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+@media print {
+  .wdl-pdf__page {
+    page-break-after: always;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .wdl-pdf__staff-section,
+  .application-completeness-banner {
+    page-break-before: always;
+  }
+}

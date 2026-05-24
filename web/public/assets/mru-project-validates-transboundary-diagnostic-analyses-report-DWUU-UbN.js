@@ -1,0 +1,100 @@
+const t="MRU Project Validates Transboundary Diagnostic Analyses Report",e=`<section class="l-section wpb_row height_medium sidebar-fix"><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-9 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 class="w-post-elm post_title us_custom_d503c3f4 entry-title" itemprop="headline">MRU Project Validates Transboundary Diagnostic Analyses Report</h1><div class="w-hwrapper align_left valign_top wrap"><time class="w-post-elm post_date us_custom_ea2be81a entry-date published" datetime="2022-04-02T19:01:32+00:00" title="2 April 2022 at 19:01:32 +00:00" itemprop="datePublished"><span class="w-post-elm-before">Posted on </span>2 Apr 2022</time><div class="w-post-elm post_comments us_custom_ea2be81a layout_amount color_link_inherit with_word"><a class="smooth-scroll" href="/mru-project-validates-transboundary-diagnostic-analyses-report/#respond">No Comments</a></div></div><div class="w-separator size_small"></div><div class="w-post-elm post_image us_custom_70facfb4 stretched"><img width="1024" height="768" src="https://nwrma.gov.sl//assets/uploads/2022/04/WhatsApp-Image-2022-04-01-at-2.25.51-PM-1.jpeg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://nwrma.gov.sl//assets/uploads/2022/04/WhatsApp-Image-2022-04-01-at-2.25.51-PM-1.jpeg 1024w, https://nwrma.gov.sl//assets/uploads/2022/04/WhatsApp-Image-2022-04-01-at-2.25.51-PM-1-300x225.jpeg 300w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><div class="w-post-elm post_content" itemprop="text"><p>The Mano River Ecosystem Conservation and International Water Resources Management project has held a national review and validation of the Regional Synthesis report of the Transboundary Diagnostic Analyses (TDA), in Bo.</p>
+<p>The event brought together the Minister and top officials of the Ministry of Water Resources, the Deputy Minister and top officials of the Ministry of Environment, officials from the Ministry of Fisheries, Ministry of Mines, The Environment Protection Agency, National Minerals Agency, Traditional leaders, Civil Society organisations and the Private sector.</p>
+<p>Speaking on behalf of his Ministry, the Hon Deputy Minister of Environment, Mr. Cyril S. Jusu said the TDA is an important process and it is their desire as a Ministry to commit to its successful execution. He continued to say that as a nation we cannot sit by and see the environment that sustains our livelihood is at risk, due to human activities that keeps destroying the environment. He mentioned that the Ministry of Environment has committed to plant five million trees within five years across the country, especially around water catchments, and this would help to protect water sources.</p>
+<p><em>&#8220;Climate change is real, resulting in global warming. We have many government MDAs working on environment-related programmes, but the problem continues to escalate….due to the severity of human activities that is destroying our environment,  the President has  put together an inter-ministerial committee to address these challenges. We have to do more and do better.”</em> He concluded by saying the Ministry of Environment will always collaborate with the Ministry of Water Resources and other MDAS in the protection and conservation of the country’s river basins.</p>
+<p>In his Keynote speech, the Hon. Minister of Water Resources, Ing. Philip K. Lansana said Sierra Leone is at the downstream of these rivers, and that any negative activity upstream by neighbouring countries affects Sierra Leone terribly; hence a transboundary cooperation is critically important to us and the countries upstream, in order to reduce transboundary pollution, protect water-related ecosystems, and ensure a prosperous future for all across these transboundary basins.</p>
+<p><em>“Therefore, we must build on our long established and successful relationship with our neighbouring countries, particularly on issues around the environment, sustainable development, and water governance. On behalf of the President and the people of Sierra Leone, the Mano River Union (MRU) for effectively coordinating activities amongst member countries; the International Union for the Conservation of Nature (IUCN) and Global Environment Facility (GEF) for their unflinching technical and financial support”. </em>Minister said</p>
+<p>This TDA was carried out to diagnose the state of the physical, political, socio-economic and scientific environments at transboundary basins of the Moa-Makona, Great and Little Scarcies rivers, and to identify and identify threats to the basin ecosystems, the socio-economic and environmental conditions that depend on these basins.  This report will explore opportunities and threat around our transboundary waters, and how we can properly manage relationship around our international waters.</p>
+<p>The Mano River Ecosystems Conservation and International Water Resources Management Project is funded by the Global Environmental Facility (GEF) through the International Union for the Conservation of Nature (IUCN), and implemented by National Protected Areas Authority (NPAA) and National Water Resources Management Agency (NWRMA) as the two National Executing Agencies.  The project consists of two components: component 1 is about integrated management of forest ecosystems; while component 2 is about sustainable management of transboundary waters.</p>
+<p>For more information, please contact:<br />
+Legal, Regulations and Outreach Dept.<br />
+Email: <a href="mailto:nwrmacommunications@gmail.com">nwrmacommunications@gmail.com</a><br />
+Tel:       +23279072424/ +23277445184</p>
+<p>&nbsp;</p>
+</div><div class="w-separator size_medium"></div><div class="w-sharing type_solid align_left color_default"><div class="w-sharing-list" data-sharing-url="https://nwrma.gov.sl/mru-project-validates-transboundary-diagnostic-analyses-report/" data-sharing-image="https://nwrma.gov.sl//assets/uploads/2022/04/WhatsApp-Image-2022-04-01-at-2.25.51-PM-1.jpeg"><a class="w-sharing-item email" href="javascript:void(0)" title="Email this" aria-label="Email this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item facebook" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item twitter" href="javascript:void(0)" title="Tweet this" aria-label="Tweet this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item linkedin" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item pinterest" href="javascript:void(0)" title="Pin this" aria-label="Pin this"><span class="w-sharing-icon"></span></a><a class="w-sharing-item vk" href="javascript:void(0)" title="Share this" aria-label="Share this"><span class="w-sharing-icon"></span></a></div></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_navigation layout_simple inv_false"><a class="post_navigation-item order_first to_prev" href="/bridge-trains-river-basin-committees-and-national-platform-members/" title="BRIDGE Trains River Basin Committees and National Platform Members"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Previous Post</div><div class="post_navigation-item-title"><span>BRIDGE Trains River Basin Committees and National Platform Members</span></div></a><a class="post_navigation-item order_second to_next" href="/groundwater-monitoring-goes-digital/" title="Groundwater Monitoring Goes Digital"><div class="post_navigation-item-arrow"></div><div class="post_navigation-item-meta">Next Post</div><div class="post_navigation-item-title"><span>Groundwater Monitoring Goes Digital</span></div></a></div><div class="w-separator size_small with_line width_default thick_1 style_solid color_border align_center"><div class="w-separator-h"></div></div><div class="w-post-elm post_comments layout_comments_template"><div id="comments" class="w-comments">
+
+	
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/mru-project-validates-transboundary-diagnostic-analyses-report/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://nwrma.gov.sl/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="w-form-row for_textarea required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-edit"></i>		<textarea  name="comment" aria-label="Comment" placeholder="Comment *" data-required="true" aria-required="true"></textarea>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+<div class="w-form-row for_text required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-user"></i>		<input type="text" name="author" aria-label="Name" value="" placeholder="Name *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Fill out this field</div>
+
+</div>
+
+
+<div class="w-form-row for_email required with_icon">
+
+		<div class="w-form-row-field">
+
+		<i class="far fa-envelope"></i>		<input type="email" name="email" aria-label="Email" value="" placeholder="Email *" data-required="true" aria-required="true"/>
+
+			</div>
+
+		<div class="w-form-row-state">Please enter a valid email address.</div>
+
+</div>
+
+
+<p class="form-submit"><button type="submit" class="w-btn us-btn-style_1"><span class="w-btn-label">Post Comment</span></button> <input type='hidden' name='comment_post_ID' value='8155' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	<div class="us-comments-json hidden" onclick='return {&quot;no_content_msg&quot;:&quot;Fill out this field&quot;,&quot;no_name_msg&quot;:&quot;Fill out this field&quot;,&quot;no_email_msg&quot;:&quot;Please enter a valid email address.&quot;}'></div></div>
+
+</div></div></div></div><div class="vc_col-sm-3 wpb_column vc_column_container"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_posts wpb_content_element">
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="/new-year-water-management-message-to-the-government-and-people-of-sierra-leone/">New Year Water Management Message to the Government and People of Sierra Leone</a>
+											<span class="post-date">January 2, 2026</span>
+									</li>
+											<li>
+					<a href="/merry-christmas-and-happy-holidays/">MERRY CHRISTMAS AND HAPPY HOLIDAYS</a>
+											<span class="post-date">December 25, 2025</span>
+									</li>
+											<li>
+					<a href="/parliament-approves-the-new-director-general-for-nwrma/">Parliament Approves the New Director General for NWRMA</a>
+											<span class="post-date">November 11, 2025</span>
+									</li>
+											<li>
+					<a href="/iwmi-concludes-scoping-mission-to-sierra-leone/">IWMI Concludes Scoping Mission to Sierra Leone</a>
+											<span class="post-date">June 10, 2025</span>
+									</li>
+											<li>
+					<a href="/govt-of-sierra-leone-boosts-groundwater-knowledge-among-wash-experts/">Gov&#8217;t of Sierra Leone Boosts Groundwater Knowledge among WASH Experts</a>
+											<span class="post-date">May 17, 2025</span>
+									</li>
+					</ul>
+
+		</div></div><div class="w-separator size_medium"></div><div  class="vc_wp_categories wpb_content_element"><div class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+			<ul>
+					<li class="cat-item cat-item-39"><a href="/category/news/frontpage/">Frontpage</a> (3)
+</li>
+	<li class="cat-item cat-item-1"><a href="/category/news/">News</a> (41)
+</li>
+	<li class="cat-item cat-item-41"><a href="/category/regulation/">Regulation</a> (1)
+</li>
+	<li class="cat-item cat-item-42"><a href="/category/report/">Report</a> (1)
+</li>
+			</ul>
+
+			</div></div></div></div></div></div></div></section>`,a={title:t,html:e};export{a as default,e as html,t as title};

@@ -1,0 +1,111 @@
+/* Staff APU review — mirrors public online form (nwrma-site) appearance */
+
+.portal-form-review {
+  max-width: 960px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+}
+
+.portal-form-review__agency-bar {
+  background: linear-gradient(180deg, #0072c6 0%, #005a9e 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1rem;
+  text-transform: uppercase;
+}
+
+.portal-form-review__doc-frame {
+  border: 2px solid #0a2647;
+  background: #fff;
+  padding: 1.25rem 1.5rem 2rem;
+  margin-top: 0;
+}
+
+.portal-form-review__doc-title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0a2647;
+  text-decoration: underline;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.portal-form-review__meta {
+  font-size: 0.8125rem;
+  color: #64748b;
+  margin-bottom: 1.25rem;
+}
+
+.portal-readonly-value {
+  width: 100%;
+  min-height: 2.375rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.portal-readonly-value--empty {
+  background: #fffbeb;
+  border-color: #fbbf24;
+  color: #92400e;
+}
+
+.portal-readonly-value--empty::before {
+  content: none;
+}
+
+.portal-readonly-yesno {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.portal-readonly-yesno:last-child {
+  border-bottom: none;
+}
+
+.portal-readonly-yesno__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.portal-readonly-yesno__value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-width: 3rem;
+  text-align: right;
+}
+
+.portal-readonly-yesno--warn {
+  background: #fffbeb;
+  margin: 0 -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 4px;
+}
+
+.portal-form-review .nwrma-equipment-table-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.portal-form-review .nwrma-form-section {
+  margin-bottom: 2rem;
+}
+
+.portal-form-review .application-completeness-banner {
+  margin-bottom: 1.25rem;
+}

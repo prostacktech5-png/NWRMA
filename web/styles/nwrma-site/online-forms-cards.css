@@ -1,0 +1,200 @@
+/* Online Forms hub — card grid (reference layout) */
+
+.nwrma-online-forms-hub {
+  position: relative;
+  background: #f4f6f8;
+  padding: 2.5rem 1.5rem 3rem;
+  overflow: hidden;
+}
+
+.nwrma-online-forms-hub::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/uploads/2020/10/2-2.png');
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: min(520px, 72%);
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.nwrma-online-forms-hub__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nwrma-online-forms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2.25rem;
+}
+
+.nwrma-form-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.08);
+  min-height: 220px;
+}
+
+.nwrma-form-card--sky {
+  --nwrma-form-tab: #7ec8e8;
+  --nwrma-form-tab-dark: #5eb0d8;
+}
+
+.nwrma-form-card--green {
+  --nwrma-form-tab: #5cb85c;
+  --nwrma-form-tab-dark: #449d44;
+}
+
+.nwrma-form-card--amber {
+  --nwrma-form-tab: #f0ad4e;
+  --nwrma-form-tab-dark: #d89438;
+}
+
+.nwrma-form-card--teal {
+  --nwrma-form-tab: #1a6b7a;
+  --nwrma-form-tab-dark: #145662;
+}
+
+.nwrma-form-card__tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 88px;
+  height: 72px;
+  background: var(--nwrma-form-tab);
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px 18px 14px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.nwrma-form-card__tab::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  background: var(--nwrma-form-tab-dark);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.nwrma-form-card__icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+}
+
+.nwrma-form-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nwrma-form-card__body {
+  padding: 3.25rem 1.5rem 1.5rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 220px;
+}
+
+.nwrma-form-card__title {
+  margin: 0 0 0.65rem;
+  padding-left: 4.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1a2744;
+}
+
+.nwrma-form-card__desc {
+  margin: 0 0 auto;
+  padding-left: 0.25rem;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #5a6578;
+  flex: 1;
+}
+
+.nwrma-form-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: linear-gradient(135deg, #1a6b7a 0%, #0072c6 100%);
+  box-shadow: 0 2px 8px rgba(0, 114, 198, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nwrma-form-card__cta:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 114, 198, 0.45);
+}
+
+.nwrma-online-forms-hub__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.nwrma-online-forms-hub__brand img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.nwrma-online-forms-hub__brand span {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #4a5568;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .nwrma-online-forms-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .nwrma-form-card__title {
+    padding-left: 3.5rem;
+  }
+
+  .nwrma-form-card__tab {
+    width: 76px;
+    height: 64px;
+  }
+
+  .nwrma-form-card__icon {
+    width: 38px;
+    height: 38px;
+  }
+}

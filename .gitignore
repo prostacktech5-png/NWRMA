@@ -1,0 +1,33 @@
+# Secrets and local env (Android URL comes from env/nwrma.env after sync:env — never commit)
+env/nwrma.env
+server/.env
+server/.env.local
+web/.env.local
+mobile/.env
+android app/.env.local
+
+# Dependencies and builds
+node_modules/
+.next/
+dist/
+server/dist/
+mobile/android/
+mobile/ios/
+mobile/.expo/
+*.tsbuildinfo
+
+# Runtime / upload data (local or Render disk — not in repo)
+web/data/
+data/
+*.apk
+mobile/HydroGauge-SL-release.apk
+
+# OS / IDE / tooling
+.DS_Store
+Thumbs.db
+.vercel/
+.cursor/
+*.log
+
+# Keep examples and deploy config
+!env/nwrma.env.example

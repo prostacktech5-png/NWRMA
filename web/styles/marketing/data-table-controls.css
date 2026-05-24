@@ -1,0 +1,87 @@
+/* Shared search / pagination chrome for TablePress enhancer (Data + Publications, etc.) */
+.data-table__block {
+  margin: 0 0 2.5rem;
+}
+
+.data-table__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 0.75rem;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.data-table__length-wrap,
+.data-table__search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.data-table__length,
+.data-table__search {
+  font: inherit;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.data-table__search {
+  min-width: 180px;
+}
+
+.data-table__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.75rem 0 0;
+  font-size: 14px;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.data-table__paginate {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.data-table__prev,
+.data-table__next {
+  font: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.data-table__prev::before {
+  content: '‹\00a0';
+}
+
+.data-table__next::after {
+  content: '\00a0›';
+}
+
+.data-table__prev:hover:not(.disabled),
+.data-table__next:hover:not(.disabled) {
+  color: #333;
+  text-decoration: underline;
+}
+
+.data-table__prev.disabled,
+.data-table__next.disabled {
+  color: #aaa;
+  cursor: default;
+  text-decoration: none;
+}

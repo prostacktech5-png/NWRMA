@@ -1,0 +1,177 @@
+openapi: 3.0.3
+info:
+  title: NWRMA Water ERP — Hydrological officer incentive payments
+  version: 0.1.0
+  description: |
+    Field officer incentive accrual and DG disbursement workflow.
+    Status values: pending | submitted | approved | disbursed.
+servers:
+  - url: /
+tags:
+  - name: hydrological
+  - name: field
+
+paths:
+  /api/hydrological/readings:
+    get:
+      tags: [hydrological]
+      summary: List water level readings (ERP + field-submitted)
+      responses:
+        '200':
+          description: OK
+  /api/hydrological/readings/{id}/validation:
+    patch:
+      tags: [hydrological]
+      summary: HoD validates or rejects a reading (drives pending payment accrual)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [hodValidation]
+              properties:
+                hodValidation:
+                  type: string
+                  enum: [valid, rejected]
+      responses:
+        '200':
+          description: Updated reading
+        '404':
+          description: Not found
+  /api/hydrological/settings:
+    get:
+      tags: [hydrological]
+      summary: Hydrological settings (per-reading rate, field app key)
+      responses:
+        '200':
+          description: OK
+    patch:
+      tags: [hydrological]
+      summary: Update settings
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                perReadingRateSle:
+                  type: number
+                  minimum: 0
+                fieldAppKey:
+                  type: string
+      responses:
+        '200':
+          description: OK
+  /api/hydrological/payments:
+    get:
+      tags: [hydrological]
+      summary: List officer payment rows with optional filters
+      parameters:
+        - name: month
+          in: query
+          schema:
+            type: string
+            pattern: '^\\d{4}-\\d{2}$'
+        - name: status
+          in: query
+          schema:
+            $ref: '#/components/schemas/OfficerPaymentStatus'
+      responses:
+        '200':
+          description: payments array and aggregate metrics
+        '400':
+          description: Invalid filter
+  /api/hydrological/payments/bulk-submit:
+    post:
+      tags: [hydrological]
+      summary: HoD submits all pending lines for a calendar month to DG
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [yearMonth]
+              properties:
+                yearMonth:
+                  type: string
+                  example: '2024-03'
+      responses:
+        '200':
+          description: Count of rows moved to submitted
+  /api/hydrological/payments/metrics:
+    get:
+      tags: [hydrological]
+      summary: Payments summary + hydrological budget hydration
+      responses:
+        '200':
+          description: OK
+  /api/hydrological/payments/{id}/approve:
+    post:
+      tags: [hydrological]
+      summary: DG approves a submitted payment (idempotent conflict on repeat)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Approved
+        '400':
+          description: Invalid state (e.g. still pending)
+        '409':
+          description: Already approved or disbursed
+  /api/hydrological/payments/{id}/disburse:
+    post:
+      tags: [hydrological]
+      summary: DG marks cash/mobile-money paid out (idempotent conflict on repeat)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Disbursed
+        '400':
+          description: Invalid state
+        '409':
+          description: Already disbursed
+  /api/field/payments/summary:
+    get:
+      tags: [field]
+      summary: Officer payment summary (field API key)
+      description: |
+        Send X-Field-App-Key. If using the shared demo org key, also send X-Gauge-Officer-Id.
+      parameters:
+        - name: X-Field-App-Key
+          in: header
+          required: true
+          schema:
+            type: string
+        - name: X-Gauge-Officer-Id
+          in: header
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Officer-safe payment rows (no other officers' PII)
+        '401':
+          description: Missing or invalid key
+
+components:
+  schemas:
+    OfficerPaymentStatus:
+      type: string
+      enum: [pending, submitted, approved, disbursed]

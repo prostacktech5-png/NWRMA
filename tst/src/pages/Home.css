@@ -1,0 +1,147 @@
+.section--about {
+  background: #fff;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.shape-triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(to bottom right, transparent 49%, #eee 50%);
+}
+
+.about-logo {
+  display: block;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fancy-heading .sub-head {
+  font-size: 0.6em;
+  display: block;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.what-we-do__item h6 {
+  margin-top: 1rem;
+}
+
+.what-we-do__icon {
+  text-align: center;
+}
+
+.what-we-do__icon img {
+  max-width: 225px;
+}
+
+.what-we-do__placeholder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.section--resources {
+  position: relative;
+  color: #fff;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.section--resources__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/uploads/2020/02/bg-1.jpg'),
+    url('https://nwrma.gov.sl/wp-content/uploads/2020/02/bg-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section--resources__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay-green);
+}
+
+.section--resources__content {
+  position: relative;
+  z-index: 2;
+}
+
+.shape-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #fff;
+  clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0 100%);
+  z-index: 3;
+}
+
+.resources-grid {
+  margin-top: 2rem;
+}
+
+.resource-link {
+  text-align: center;
+  color: #fff !important;
+  padding: 1rem;
+}
+
+.resource-link:hover {
+  color: var(--color-accent-yellow) !important;
+}
+
+.resource-icon {
+  font-size: 99px;
+  color: var(--color-accent-yellow);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section--news {
+  position: relative;
+  padding: 50px 0;
+}
+
+.section--news__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/uploads/2020/02/service.jpg'),
+    url('https://nwrma.gov.sl/wp-content/uploads/2020/02/service.jpg');
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+.section--news__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay-white);
+}
+
+.section--news .container {
+  position: relative;
+  z-index: 2;
+}
+
+.news-grid {
+  margin-top: 2rem;
+}

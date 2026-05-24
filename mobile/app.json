@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "HydroGauge SL",
+    "slug": "hydrogauge-sl",
+    "version": "1.0.9",
+    "orientation": "portrait",
+    "icon": "./assets/logo-nwrma.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-nwrma.png",
+        "backgroundColor": "#1EB53A"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "sl.gov.nwrma.hydrogauge"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow HydroGauge SL to scan QR codes for gauge stations."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow HydroGauge SL to capture GPS for water level readings."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "abiFilters": ["armeabi-v7a", "arm64-v8a"]
+          }
+        }
+      ]
+    ]
+  }
+}
