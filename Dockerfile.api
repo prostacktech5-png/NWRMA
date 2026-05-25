@@ -12,7 +12,7 @@ COPY package.json package-lock.json .npmrc ./
 COPY shared/package.json ./shared/
 COPY server/package.json ./server/
 COPY web/package.json ./web/
-COPY mobile/package.json ./mobile/
+RUN mkdir -p mobile && printf '%s\n' '{"name":"mobile","version":"1.0.0","private":true}' > mobile/package.json
 
 COPY shared ./shared
 COPY server ./server
@@ -37,7 +37,7 @@ COPY package.json package-lock.json .npmrc ./
 COPY shared/package.json ./shared/
 COPY server/package.json ./server/
 COPY web/package.json ./web/
-COPY mobile/package.json ./mobile/
+RUN mkdir -p mobile && printf '%s\n' '{"name":"mobile","version":"1.0.0","private":true}' > mobile/package.json
 
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/shared ./shared

@@ -22,6 +22,8 @@ Deploy **Express API** and **Next.js web** from GitHub using **Docker** (recomme
 
 **Error `open Dockerfile: no such file or directory`:** Sevalla defaulted to `Dockerfile` at repo root. Use path `Dockerfile` (web) or `Dockerfile.api` (API) after pulling latest `main`.
 
+**Error `mobile/package.json: not found` / CopyIgnoredFile:** `.dockerignore` excludes the mobile app tree; Dockerfiles create a minimal `mobile/package.json` stub for npm workspaces. Pull latest `main` and redeploy.
+
 **Alternative:** Set **Config file** to `/nixpacks.toml` (web) or `/nixpacks.api.toml` (API) if you must stay on Nixpacks.
 
 ---

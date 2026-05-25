@@ -16,12 +16,24 @@ server/dist
 shared/dist
 *.tsbuildinfo
 
-# Mobile / duplicate app trees (not needed for server or web images; "android app" breaks Nixpacks paths)
-mobile
-mobile/
-android app
-android app/
-**/android app/**
+# Mobile app source (workspace stub created in Dockerfile — do not send 100s of MB to the builder)
+mobile/**
+android app/**
+
+# Large dev-only media (web marketing still works without raw video in image)
+tst/**/*.mp4
+tst/**/*.mov
+tst/**/*.webm
+tst/**/*.avi
+
+# Docs and local deploy configs (not needed in image)
+docs/**
+*.md
+render.yaml
+railway.toml
+railway.*.toml
+nixpacks.toml
+nixpacks.api.toml
 
 # Runtime uploads — mount Railway volume at /app/web/data for web service
 web/data
