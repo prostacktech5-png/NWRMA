@@ -1,6 +1,5 @@
-# NWRMA Next.js web — Railway service: nwrma-web
-# Sevalla/Railway: Dockerfile path = Dockerfile.web OR Dockerfile (root includes this file)
-# Mount volume at /app/web/data for uploads.
+# NWRMA Next.js web — default Sevalla path when "Dockerfile path" = Dockerfile
+# Keep in sync with Dockerfile.web. API app must use Dockerfile.api (not this file).
 
 FROM node:20-bookworm-slim AS build
 

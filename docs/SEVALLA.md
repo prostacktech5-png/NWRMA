@@ -13,9 +13,14 @@ Deploy **Express API** and **Next.js web** from GitHub using **Docker** (recomme
 **Fix (recommended):**
 
 1. Sevalla → your app → **Settings** → **Build strategy** → **Dockerfile**
-2. **Dockerfile path:** `Dockerfile.web` (web) or `Dockerfile.api` (API)
-3. Clear custom **Build command** / Nixpacks overrides
-4. **Redeploy**
+2. **Dockerfile path:**
+   - **Web:** `Dockerfile` or `Dockerfile.web` (root `Dockerfile` includes the web build)
+   - **API:** `Dockerfile.api` (required — do not use root `Dockerfile` for API)
+3. **Docker context:** `.` (repo root)
+4. Clear custom **Build command** / Nixpacks overrides
+5. **Redeploy**
+
+**Error `open Dockerfile: no such file or directory`:** Sevalla defaulted to `Dockerfile` at repo root. Use path `Dockerfile` (web) or `Dockerfile.api` (API) after pulling latest `main`.
 
 **Alternative:** Set **Config file** to `/nixpacks.toml` (web) or `/nixpacks.api.toml` (API) if you must stay on Nixpacks.
 

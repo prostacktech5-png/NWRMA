@@ -4,10 +4,10 @@
 
 ## 1. Two Sevalla apps from GitHub
 
-| App | Dockerfile | Start |
-|-----|------------|-------|
+| App | Dockerfile path (Sevalla) | Start |
+|-----|---------------------------|-------|
 | API | `Dockerfile.api` | `npm run start:api` |
-| Web | `Dockerfile.web` | `next start` in image |
+| Web | `Dockerfile` or `Dockerfile.web` | `next start` in image |
 
 **Settings → Build strategy → Dockerfile** (not Nixpacks auto-detect).
 
