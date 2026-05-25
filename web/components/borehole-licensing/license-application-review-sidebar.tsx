@@ -18,6 +18,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { useDemoSession, useSessionUser } from '@/components/demo-session-provider'
+import { RequestAdditionalInfoDialog } from '@/components/forms/request-additional-info-dialog'
 import { SuperAdminLicenseActions } from '@/components/super-admin/super-admin-license-actions'
 import { invalidateBoreholesDepartmentQueries } from '@/lib/boreholes-department-sync'
 import { formatApplicantEmailList } from '@/lib/borehole-license-application'
@@ -68,6 +69,7 @@ export function LicenseApplicationReviewSidebar({
   const [error, setError] = useState<string | null>(null)
   const [infoMessage, setInfoMessage] = useState<string | null>(null)
   const [busy, setBusy] = useState<string | null>(null)
+  const [additionalInfoOpen, setAdditionalInfoOpen] = useState(false)
 
   useEffect(() => {
     setInspectionDate(toIsoDateInputValue(application.siteInspectionDate))
@@ -102,10 +104,14 @@ export function LicenseApplicationReviewSidebar({
     setInfoMessage(parts.join(' '))
   }
 
-  const patchStatus = async (status: LicenseApplicationStatus) => {
+  const patchStatus = async (
+    status: LicenseApplicationStatus,
+    noteOverride?: string
+  ) => {
     setBusy(status)
     setError(null)
     setInfoMessage(null)
+    const note = (noteOverride ?? reviewNote).trim() || null
     try {
       const res = await fetch(`/api/borehole-license-applications/${application.id}`, {
         method: 'PATCH',
@@ -116,7 +122,7 @@ export function LicenseApplicationReviewSidebar({
         credentials: 'same-origin',
         body: JSON.stringify({
           status,
-          reviewNote: reviewNote.trim() || null,
+          reviewNote: note,
           technicalReportSummary: technicalReportSummary.trim() || null,
         }),
       })
@@ -137,6 +143,10 @@ export function LicenseApplicationReviewSidebar({
         additional_info_required: 'Additional information requested.',
       }
       handleApiResult(data, labels[status] ?? 'Updated.', status !== 'under_review')
+      if (status === 'additional_info_required' && noteOverride) {
+        setReviewNote(noteOverride)
+        setAdditionalInfoOpen(false)
+      }
     } catch {
       setError('Unable to reach the server.')
     } finally {
@@ -431,14 +441,22 @@ export function LicenseApplicationReviewSidebar({
             variant="secondary"
             className="w-full"
             disabled={busy !== null}
-            onClick={() => void patchStatus('additional_info_required')}
+            onClick={() => setAdditionalInfoOpen(true)}
           >
-            {busy === 'additional_info_required' ? (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            ) : null}
             Request additional info
           </Button>
         </div>
+
+        <RequestAdditionalInfoDialog
+          open={additionalInfoOpen}
+          onOpenChange={setAdditionalInfoOpen}
+          applicationReference={application.reference}
+          applicantLabel={formatApplicantEmailList(application)}
+          busy={busy === 'additional_info_required'}
+          onConfirm={(missingInformation) =>
+            void patchStatus('additional_info_required', missingInformation)
+          }
+        />
 
         {canAccessSuperAdmin ? (
           <SuperAdminLicenseActions

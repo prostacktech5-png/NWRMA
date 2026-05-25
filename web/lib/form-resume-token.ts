@@ -106,11 +106,21 @@ export function verifyFormResumeToken(token: string): FormResumeTokenPayload | n
   }
 }
 
-export function onlineFormResumeUrl(formSlug: string, rawToken: string): string {
-  const raw =
+/** Base URL for links in outbound email (resume, invites). Prefers LAN URL when primary is localhost. */
+export function resolvePublicAppBaseUrl(): string {
+  const primary =
     process.env.PUBLIC_APP_URL?.trim() ||
     process.env.NEXT_PUBLIC_APP_URL?.trim() ||
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '')
-  const base = raw.replace(/\/+$/, '') || 'http://localhost:3000'
+  const lan = process.env.PUBLIC_APP_URL_LAN?.trim() ?? ''
+  const isLocalPrimary =
+    !primary ||
+    /^https?:\/\/(localhost|127\.0\.0\.1)(:|\/|$)/i.test(primary)
+  if (lan && isLocalPrimary) return lan.replace(/\/+$/, '')
+  return primary.replace(/\/+$/, '') || 'http://localhost:3000'
+}
+
+export function onlineFormResumeUrl(formSlug: string, rawToken: string): string {
+  const base = resolvePublicAppBaseUrl()
   return `${base}/online-forms/${encodeURIComponent(formSlug)}?resume=${encodeURIComponent(rawToken)}`
 }

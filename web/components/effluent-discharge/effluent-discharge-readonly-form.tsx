@@ -2,13 +2,11 @@
 
 import { Paperclip } from 'lucide-react'
 import { EffluentDischargeDocumentActions } from '@/components/effluent-discharge/effluent-discharge-document-actions'
-import { ApplicationCompletenessBanner } from '@/components/forms/application-completeness-banner'
 import { PortalFormReviewShell } from '@/components/forms/portal-form-review-shell'
 import { PortalReadonlyField } from '@/components/forms/portal-readonly-field'
 import { PortalReadonlyYesNo } from '@/components/forms/portal-readonly-yes-no'
 import { FormSection } from '@/components/nwrma-site/online-forms/form-section'
 import { EFFLUENT_DISCHARGE_REQUIRED_DOCUMENTS } from '@/lib/effluent-discharge-documents'
-import { scanEffluentDischargeCompleteness } from '@/lib/online-form-readonly-completeness'
 import {
   ACTIVITY_SECTION_KEYS,
   ACTIVITY_SECTION_LABELS,
@@ -20,13 +18,10 @@ export function EffluentDischargeReadonlyForm({ application }: { application: Ef
   const form = application.extendedForm
   if (!form) return null
 
-  const report = scanEffluentDischargeCompleteness(application)
-
   return (
     <PortalFormReviewShell
       documentTitle="APPLICATION FOR EFFLUENT DISCHARGE PERMIT"
       reference={application.reference}
-      topSlot={<ApplicationCompletenessBanner report={report} className="application-completeness-banner" />}
     >
       <FormSection title="1.0 Applicant details">
         <div className="nwrma-field-grid">

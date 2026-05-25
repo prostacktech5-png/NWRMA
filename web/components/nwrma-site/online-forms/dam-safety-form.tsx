@@ -33,6 +33,7 @@ import {
 import { PermitApplicationInstructions } from '@/components/nwrma-site/online-forms/form-instructions-step'
 import { FormSection } from '@/components/nwrma-site/online-forms/form-section'
 import { appendOptionalDocumentFiles } from '@/lib/nwrma-site/online-forms/applicant-gate'
+import { useApplicationAmendment } from '@/components/nwrma-site/online-forms/use-application-amendment'
 import { usePaymentIntakeGate } from '@/components/nwrma-site/online-forms/use-payment-intake-gate'
 import {
   FormPaymentGateMessages,
@@ -71,6 +72,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [successRef, setSuccessRef] = useState<string | null>(null)
+  const [amendResubmit, setAmendResubmit] = useState(false)
   const patch = (partial: Partial<DamSafetyFormPayload>) => {
     setForm((prev) => ({ ...prev, ...partial }))
   }
@@ -82,11 +84,26 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
     acknowledgements: form.acknowledgements,
   })
 
+  const amend = useApplicationAmendment({
+    formSlug: 'dam-safety',
+    createDefaultForm: createDefaultDamSafetyForm,
+    patchForm: patch,
+  })
+
+  const canAccessWizardSteps =
+    paymentGate.canAccessWizardSteps || amend.canAccessWizardSteps
+  const lockApplicantIdentity =
+    paymentGate.lockApplicantIdentity || amend.canAccessWizardSteps
+
   useEffect(() => {
     if (paymentGate.canAccessWizardSteps && paymentGate.cameFromPaymentResume) {
       setStep(1)
     }
   }, [paymentGate.canAccessWizardSteps, paymentGate.cameFromPaymentResume])
+
+  useEffect(() => {
+    if (amend.canAccessWizardSteps) setStep(1)
+  }, [amend.canAccessWizardSteps])
 
   const togglePurpose = (purpose: string) => {
     setForm((prev) => {
@@ -162,12 +179,12 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
       setError(err)
       return
     }
-    if (step === 0 && paymentGate.phase === 'fresh') {
+    if (step === 0 && paymentGate.phase === 'fresh' && !amend.canAccessWizardSteps) {
       setError(null)
       paymentGate.setApplicantGateOpen(true)
       return
     }
-    if (!paymentGate.canAccessWizardSteps && step >= 0) {
+    if (!canAccessWizardSteps && step >= 0) {
       setError('Payment must be verified by Finance before you can continue.')
       return
     }
@@ -181,6 +198,56 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
   }
 
   const submit = async () => {
+    if (amend.canAccessWizardSteps && amend.amendToken) {
+      const payload = {
+        ...form,
+        declarationDate: resolveDeclarationDate(form.declarationDate),
+      }
+      const validation = validateAllStepsBeforeSubmit({
+        maxStepInclusive: 9,
+        validateStep,
+        schema: damSafetyFormSchema,
+        form: payload,
+        pathToStep: permitApplicationPathToStep,
+      })
+      if (validation) {
+        setError(validation.message)
+        setStep(validation.step)
+        return
+      }
+      setSubmitting(true)
+      setError(null)
+      try {
+        const body = new FormData()
+        body.append('application', JSON.stringify(payload))
+        body.append('amend', amend.amendToken)
+        for (const slot of DAM_SAFETY_REQUIRED_SLOTS) {
+          for (const file of documents[slot.id] ?? []) {
+            body.append(`doc_${slot.id}`, file)
+          }
+        }
+        appendOptionalDocumentFiles(
+          body,
+          documents,
+          DAM_SAFETY_REQUIRED_SLOTS.map((s) => s.id)
+        )
+        const res = await postPublicApplication('/api/public/application-amend', body)
+        const data = (await res.json()) as ApiValidationBody & { reference?: string }
+        if (!res.ok) {
+          setError(apiValidationErrorMessage(data))
+          return
+        }
+        amend.clearAmendFromUrl()
+        setAmendResubmit(true)
+        setSuccessRef(data.reference ?? amend.reference)
+      } catch {
+        setError('Network error. Please try again.')
+      } finally {
+        setSubmitting(false)
+      }
+      return
+    }
+
     if (!paymentGate.intakeId || !paymentGate.resumeToken) {
       setError('Validated payment intake is required.')
       return
@@ -291,9 +358,9 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
           </nav>
 
           {error ? <p className="nwrma-form-error" role="alert">{error}</p> : null}
-          <FormPaymentGateMessages gate={paymentGate} applicantEmail={form.email} />
+          <FormPaymentGateMessages gate={paymentGate} applicantEmail={form.email} amend={amend} />
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={0}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={0}>
             <PermitApplicationInstructions
               variant="dam-safety"
               acknowledgements={form.acknowledgements}
@@ -303,12 +370,12 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             />
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={1}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={1}>
             <FormSection title="1.0 Applicant details">
               <div className="nwrma-field-grid">
                 <ApplicantOrganizationField
                   value={form.companyName}
-                  locked={paymentGate.lockApplicantIdentity}
+                  locked={lockApplicantIdentity}
                   onChange={(companyName) => patch({ companyName })}
                 />
                 <Field label="Name of CEO/Director">
@@ -331,7 +398,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
                 </Field>
                 <ApplicantEmailField
                   value={form.email}
-                  locked={paymentGate.lockApplicantIdentity}
+                  locked={lockApplicantIdentity}
                   onChange={(email) => patch({ email })}
                 />
                 <Field required={false} label="Website">
@@ -367,7 +434,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={2}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={2}>
             <FormSection title="2.0–3.0 Location & purpose of water use">
               <div className="nwrma-field-grid">
                 <Field label="Town">
@@ -403,7 +470,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={3}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={3}>
             <FormSection title="4.0 Included documents checklist">
               <YesNoField label="Environmental Impact Assessment Report" value={form.includedDocuments.eiaReport} onChange={(v) => patch({ includedDocuments: { ...form.includedDocuments, eiaReport: v } })} />
               <YesNoField label="Environmental Permit & Schedule" value={form.includedDocuments.environmentalPermit} onChange={(v) => patch({ includedDocuments: { ...form.includedDocuments, environmentalPermit: v } })} />
@@ -417,7 +484,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={4}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={4}>
             <FormSection title="5.0 Data on the (proposed) dam use">
               <div className="nwrma-field-grid">
                 <Field label="Dam location — Town"><input className="nwrma-field-input" value={form.damLocationTown} onChange={(e) => patch({ damLocationTown: e.target.value })} /></Field>
@@ -447,7 +514,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={5}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={5}>
             <FormSection title="6.0–8.0 Discharges, project & affected parties">
               <div className="nwrma-field-grid">
                 <Field required={false} label="Discharge — Town"><input className="nwrma-field-input" value={form.dischargeTown} onChange={(e) => patch({ dischargeTown: e.target.value })} /></Field>
@@ -472,7 +539,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={6}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={6}>
             <FormSection title="8.0–9.0 Affected parties & environment">
               <Field required={false} label="Affected parties list (attach list)" className="nwrma-field--full">
                 <textarea className="nwrma-field-input" rows={3} value={form.affectedPartiesList} onChange={(e) => patch({ affectedPartiesList: e.target.value })} />
@@ -486,7 +553,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={7}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={7}>
             <FormSection title="Activity-specific data (sections 9–24)">
               <p className="nwrma-muted text-sm mb-4">Complete sections relevant to your selected purposes. Mark N/A where not applicable.</p>
               {ACTIVITY_SECTION_KEYS.map((key) => (
@@ -511,13 +578,13 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={8}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={8}>
             <FormSection title="Required document uploads">
               <DamSafetyDocumentUploadGrid files={documents} onChange={setDocuments} />
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={9}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={9}>
             <>
               <FormSection title="Declaration">
                 <p>The information contained in this application is true to the best of my knowledge, information and belief.</p>
@@ -536,7 +603,7 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </>
           </FormPaymentGateWizardStep>
 
-          <FormPaymentGateWizardStep gate={paymentGate} step={step} targetStep={10}>
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={10}>
             <FormSection title="Review & submit">
               <ul className="nwrma-review-summary">
                 <li><strong>Company:</strong> {form.companyName}</li>
@@ -548,9 +615,9 @@ export function DamSafetyForm({ title, pdfPath }: { title: string; pdfPath?: str
             </FormSection>
           </FormPaymentGateWizardStep>
 
-          {paymentGate.showFormNav ? (
-          <div className="nwrma-form-nav">
-            {step > 0 && paymentGate.canAccessWizardSteps ? (
+          {(paymentGate.showFormNav || amend.canAccessWizardSteps) ? (
+            <div className="nwrma-form-nav">
+            {step > 0 && canAccessWizardSteps ? (
               <button type="button" className="nwrma-btn-secondary" onClick={goBack} disabled={submitting}>Back</button>
             ) : (
               <span />

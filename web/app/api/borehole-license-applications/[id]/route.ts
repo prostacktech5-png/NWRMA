@@ -8,6 +8,7 @@ import {
   isReviewableLicenseStatus,
   upsertDrillingCompanyFromLicense,
 } from '@/lib/borehole-license-application'
+import { additionalInfoRequestPayload } from '@/lib/application-amendment'
 import { notifyApplicantForLicenseStatus } from '@/lib/borehole-license-notify'
 import { resolveDemoViewerFromRequest } from '@/lib/demo-viewer-server'
 import type { LicenseApplicationStatus } from '@/lib/types'
@@ -83,10 +84,39 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
     }
 
     const existing = payload.licenseApplications[index]
+
+    if (status === 'additional_info_required' && !reviewNote) {
+      return Response.json(
+        {
+          error:
+            'Describe the missing information in the request dialog before sending to the applicant.',
+        },
+        { status: 400 }
+      )
+    }
+
+    let amendUrl: string | undefined
+    let additionalPatch: Record<string, unknown> = {}
+
+    if (status === 'additional_info_required' && reviewNote) {
+      const issued = additionalInfoRequestPayload(
+        'water-drilling-licence',
+        id,
+        existing,
+        reviewNote
+      )
+      additionalPatch = issued.patch
+      amendUrl = issued.amendUrl
+    }
+
     let updated = {
       ...existing,
+      ...additionalPatch,
       status: status ? (status as LicenseApplicationStatus) : existing.status,
-      reviewNote: reviewNote ?? existing.reviewNote ?? null,
+      reviewNote:
+        status === 'additional_info_required' && reviewNote
+          ? reviewNote
+          : reviewNote ?? existing.reviewNote ?? null,
       technicalReportSummary:
         technicalReportSummary !== undefined
           ? technicalReportSummary
@@ -127,7 +157,7 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
       status === 'rejected'
     ) {
       try {
-        await notifyApplicantForLicenseStatus(updated, status)
+        await notifyApplicantForLicenseStatus(updated, status, { amendUrl })
         updated = { ...updated, lastEmailSentAt: new Date() }
         licenseApplications[index] = updated
         await saveErpReferencePayload({

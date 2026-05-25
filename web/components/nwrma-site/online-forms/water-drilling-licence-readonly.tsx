@@ -1,11 +1,9 @@
 'use client'
 
 import { Paperclip } from 'lucide-react'
-import { ApplicationCompletenessBanner } from '@/components/forms/application-completeness-banner'
 import { WaterDrillingLicencePdfLayout } from '@/components/nwrma-site/online-forms/water-drilling-licence-pdf-layout'
 import { LicenseDocumentActions } from '@/components/borehole-licensing/license-document-actions'
 import { REQUIRED_DOCUMENTS } from '@/lib/borehole-licensing-documents'
-import { scanWaterDrillingCompleteness } from '@/lib/online-form-readonly-completeness'
 import { FORM_INSTRUCTIONS } from '@/lib/nwrma-site/online-forms/water-drilling-licence-schema'
 import type { BoreholeLicenseApplication } from '@/lib/types'
 import { cn } from '@/lib/utils'
@@ -18,11 +16,8 @@ export function WaterDrillingLicenceReadonly({
   const form = application.extendedForm
   if (!form) return null
 
-  const report = scanWaterDrillingCompleteness(application)
-
   return (
     <div>
-      <ApplicationCompletenessBanner report={report} className="application-completeness-banner mb-4" />
       <WaterDrillingLicencePdfLayout form={form} reference={application.reference} />
 
       <section className="wdl-pdf__staff-section">

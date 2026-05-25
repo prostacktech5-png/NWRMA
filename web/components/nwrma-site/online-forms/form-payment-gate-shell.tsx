@@ -4,31 +4,41 @@ import type { ReactNode } from 'react'
 import {
   PaymentIntakeRejectedPanel,
   PaymentIntakeResumePanel,
+  PaymentIntakeVerifiedEmailPanel,
   PaymentIntakeWaitingPanel,
 } from '@/components/nwrma-site/online-forms/payment-intake-status-panel'
+import { ApplicationAmendFormBanner } from '@/components/nwrma-site/online-forms/application-amend-form-banner'
+import type { useApplicationAmendment } from '@/components/nwrma-site/online-forms/use-application-amendment'
 import type { usePaymentIntakeGate } from '@/components/nwrma-site/online-forms/use-payment-intake-gate'
 
 type Gate = ReturnType<typeof usePaymentIntakeGate>
+type Amend = ReturnType<typeof useApplicationAmendment>
 
 export function FormPaymentGateMessages({
   gate,
   applicantEmail,
+  amend,
 }: {
   gate: Gate
   applicantEmail: string
+  amend?: Amend
 }) {
+  const skipPaymentGateUi = amend?.isAmendMode ?? false
+
   return (
     <>
-      {gate.gateError ? (
+      {amend ? <ApplicationAmendFormBanner amend={amend} /> : null}
+
+      {!skipPaymentGateUi && gate.gateError ? (
         <p className="nwrma-form-error" role="alert">
           {gate.gateError}
         </p>
       ) : null}
-      {gate.statusLoading ? (
+      {!skipPaymentGateUi && gate.statusLoading ? (
         <p className="nwrma-muted py-8 text-center">
           {gate.resumeActivating ? 'Opening your application…' : 'Loading…'}
         </p>
-      ) : gate.phase === 'resume_ready' ? (
+      ) : !skipPaymentGateUi && gate.phase === 'resume_ready' ? (
         <PaymentIntakeResumePanel
           intakeReference={gate.intakeReference}
           organisationName={gate.organisationName}
@@ -36,12 +46,18 @@ export function FormPaymentGateMessages({
           onContinue={gate.redeemResume}
           busy={gate.submittingIntake}
         />
-      ) : gate.phase === 'pending' ? (
+      ) : !skipPaymentGateUi && gate.phase === 'pending' ? (
         <PaymentIntakeWaitingPanel
           intakeReference={gate.intakeReference}
           email={gate.intakeEmail || applicantEmail}
         />
-      ) : gate.phase === 'rejected' ? (
+      ) : !skipPaymentGateUi && gate.phase === 'verified_pending_email' ? (
+        <PaymentIntakeVerifiedEmailPanel
+          intakeReference={gate.intakeReference}
+          email={gate.intakeEmail || applicantEmail}
+          financeReceiptNumber={gate.financeReceiptNumber}
+        />
+      ) : !skipPaymentGateUi && gate.phase === 'rejected' ? (
         <PaymentIntakeRejectedPanel
           intakeReference={gate.intakeReference}
           validationNote={gate.validationNote}
@@ -54,15 +70,24 @@ export function FormPaymentGateMessages({
 
 export function FormPaymentGateWizardStep({
   gate,
+  amend,
   step,
   targetStep,
   children,
 }: {
   gate: Gate
+  amend?: Amend
   step: number
   targetStep: number
   children: ReactNode
 }) {
-  if (!gate.showWizardStep(step, targetStep)) return null
+  const show = amend
+    ? amend.phase !== 'loading' &&
+      amend.phase !== 'error' &&
+      (amend.canAccessWizardSteps
+        ? step === targetStep
+        : gate.showWizardStep(step, targetStep))
+    : gate.showWizardStep(step, targetStep)
+  if (!show) return null
   return <>{children}</>
 }

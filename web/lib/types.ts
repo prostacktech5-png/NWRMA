@@ -513,6 +513,10 @@ export interface BoreholeLicenseApplication {
   siteInspectionNotes?: string | null
   technicalReportSummary?: string | null
   lastEmailSentAt?: Date | null
+  /** One-time link for applicant to refill missing fields after additional_info_required. */
+  amendmentTokenHash?: string | null
+  amendmentTokenExpiresAt?: Date | null
+  amendmentClearPaths?: string[] | null
   /** Set when approved — links to `DrillingCompany.id` in ERP registry */
   licensedCompanyId?: string | null
   paymentStatus?: string
@@ -557,6 +561,9 @@ export interface DamSafetyApplication {
   reviewNote?: string | null
   reviewedAt?: Date | null
   lastEmailSentAt?: Date | null
+  amendmentTokenHash?: string | null
+  amendmentTokenExpiresAt?: Date | null
+  amendmentClearPaths?: string[] | null
   bankReceiptValidation?: BankReceiptValidation
 }
 
@@ -599,6 +606,9 @@ export interface EffluentDischargeApplication {
   reviewNote?: string | null
   reviewedAt?: Date | null
   lastEmailSentAt?: Date | null
+  amendmentTokenHash?: string | null
+  amendmentTokenExpiresAt?: Date | null
+  amendmentClearPaths?: string[] | null
   bankReceiptValidation?: BankReceiptValidation
 }
 
@@ -641,6 +651,9 @@ export interface WaterRightApplication {
   reviewNote?: string | null
   reviewedAt?: Date | null
   lastEmailSentAt?: Date | null
+  amendmentTokenHash?: string | null
+  amendmentTokenExpiresAt?: Date | null
+  amendmentClearPaths?: string[] | null
   bankReceiptValidation?: BankReceiptValidation
 }
 

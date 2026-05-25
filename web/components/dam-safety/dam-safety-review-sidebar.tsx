@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import { RequestAdditionalInfoDialog } from '@/components/forms/request-additional-info-dialog'
 import { useSessionUser } from '@/components/demo-session-provider'
 import { formatDamSafetyApplicantEmailList } from '@/lib/dam-safety-application'
 import { DAM_SAFETY_REQUIRED_SLOTS } from '@/lib/dam-safety-documents'
@@ -46,15 +47,20 @@ export function DamSafetyReviewSidebar({
   const [error, setError] = useState<string | null>(null)
   const [infoMessage, setInfoMessage] = useState<string | null>(null)
   const [busy, setBusy] = useState<string | null>(null)
+  const [additionalInfoOpen, setAdditionalInfoOpen] = useState(false)
 
   useEffect(() => {
     setReviewNote(application.reviewNote ?? '')
   }, [application])
 
-  const patchStatus = async (status: DamSafetyApplicationStatus) => {
+  const patchStatus = async (
+    status: DamSafetyApplicationStatus,
+    noteOverride?: string
+  ) => {
     setBusy(status)
     setError(null)
     setInfoMessage(null)
+    const note = (noteOverride ?? reviewNote).trim() || null
     try {
       const res = await fetch(`/api/dam-safety-applications/${application.id}`, {
         method: 'PATCH',
@@ -65,7 +71,7 @@ export function DamSafetyReviewSidebar({
         credentials: 'same-origin',
         body: JSON.stringify({
           status,
-          reviewNote: reviewNote.trim() || null,
+          reviewNote: note,
         }),
       })
       const data = (await res.json()) as {
@@ -98,6 +104,10 @@ export function DamSafetyReviewSidebar({
         }
       }
       setInfoMessage(parts.join(' '))
+      if (status === 'additional_info_required' && noteOverride) {
+        setReviewNote(noteOverride)
+        setAdditionalInfoOpen(false)
+      }
     } catch {
       setError('Unable to reach the server.')
     } finally {
@@ -223,14 +233,22 @@ export function DamSafetyReviewSidebar({
             variant="secondary"
             className="w-full"
             disabled={busy !== null}
-            onClick={() => void patchStatus('additional_info_required')}
+            onClick={() => setAdditionalInfoOpen(true)}
           >
-            {busy === 'additional_info_required' ? (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            ) : null}
             Request additional info
           </Button>
         </div>
+
+        <RequestAdditionalInfoDialog
+          open={additionalInfoOpen}
+          onOpenChange={setAdditionalInfoOpen}
+          applicationReference={application.reference}
+          applicantLabel={formatDamSafetyApplicantEmailList(application)}
+          busy={busy === 'additional_info_required'}
+          onConfirm={(missingInformation) =>
+            void patchStatus('additional_info_required', missingInformation)
+          }
+        />
       </CardContent>
     </Card>
   )

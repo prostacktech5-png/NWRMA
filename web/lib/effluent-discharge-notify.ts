@@ -28,9 +28,10 @@ export async function notifyEffluentDischargeApplicationReceived(
 
 export async function notifyEffluentDischargeApplicantForStatus(
   app: EffluentDischargeApplication,
-  status: EffluentDischargeApplicationStatus
+  status: EffluentDischargeApplicationStatus,
+  options?: { amendUrl?: string }
 ): Promise<void> {
-  const base = emailBase(app)
+  const base = { ...emailBase(app), amendUrl: options?.amendUrl ?? null }
   switch (status) {
     case 'additional_info_required':
       await sendEffluentDischargeStatusEmail(base, 'additional_info_required')

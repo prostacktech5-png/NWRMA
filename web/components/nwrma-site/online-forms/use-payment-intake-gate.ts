@@ -19,7 +19,13 @@ const sessionStorageKey = (slug: string) => `nwrma-payment-session-${slug}`
 
 type StoredPaymentSession = { intakeId: string; sessionToken: string }
 
-export type PaymentIntakePhase = 'fresh' | 'pending' | 'rejected' | 'validated' | 'resume_ready'
+export type PaymentIntakePhase =
+  | 'fresh'
+  | 'pending'
+  | 'verified_pending_email'
+  | 'rejected'
+  | 'validated'
+  | 'resume_ready'
 
 type GateFormState = {
   companyName?: string
@@ -39,6 +45,7 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
   const { formSlug, patchForm, acknowledgements } = params
   const searchParams = useSearchParams()
   const resumeParam = searchParams.get('resume')?.trim() ?? ''
+  const amendParam = searchParams.get('amend')?.trim() ?? ''
 
   const formRef = useRef(params.form)
   const acknowledgementsRef = useRef(acknowledgements)
@@ -141,6 +148,10 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
           sessionStorage.removeItem(intakeStorageKey(formSlug))
           sessionStorage.removeItem(sessionStorageKey(formSlug))
         }
+      } else if (data.status === 'validated') {
+        setIntakeId(data.intakeId)
+        setResumeToken(null)
+        setPhase('verified_pending_email')
       } else if (data.status === 'pending') {
         setPhase('pending')
         setIntakeId(data.intakeId)
@@ -242,21 +253,14 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
         }
 
         if (data.needsRedeem) {
-          const redeemed = await postRedeem(emailToken)
-          if (!redeemed) {
-            setGateError('Could not open application. Please try again.')
-            return
-          }
-          if (!redeemed.res.ok) {
-            if (redeemed.data.requiresNewPayment) {
-              applyStatus(redeemed.data, null)
-              return
-            }
-            setGateError(redeemed.data.error ?? 'Could not open application. Please try again.')
-            return
-          }
-          applyStatus(redeemed.data, null, { fromResume: true })
-          clearResumeFromUrl()
+          setPendingResumeToken(emailToken)
+          setIntakeId(data.intakeId)
+          setIntakeReference(data.intakeReference)
+          setOrganisationName(data.organisationName)
+          setIntakeEmail(data.email)
+          setFinanceReceiptNumber(data.financeReceiptNumber ?? '')
+          setFeeVerifiedDate(data.feeVerifiedDate ?? '')
+          setPhase('resume_ready')
           return
         }
 
@@ -276,6 +280,11 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
   )
 
   useEffect(() => {
+    if (amendParam) {
+      initDoneRef.current = true
+      return
+    }
+
     if (resumeParam) {
       if (resumeHandledRef.current === resumeParam) return
       resumeHandledRef.current = resumeParam
@@ -338,10 +347,10 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
     }
 
     void run()
-  }, [resumeParam, formSlug, completeEmailResume, fetchStatus, applyStatus, resetForNewPayment])
+  }, [amendParam, resumeParam, formSlug, completeEmailResume, fetchStatus, applyStatus, resetForNewPayment])
 
   useEffect(() => {
-    if (phase !== 'pending' || !intakeId) return
+    if ((phase !== 'pending' && phase !== 'verified_pending_email') || !intakeId) return
     const poll = () => {
       if (typeof document !== 'undefined' && document.visibilityState !== 'visible') return
       void fetchStatus({ intakeId }).then((result) => {
@@ -429,11 +438,16 @@ export function usePaymentIntakeGate<T extends GateFormState>(params: {
     phase !== 'pending' &&
     phase !== 'rejected' &&
     phase !== 'resume_ready' &&
+    phase !== 'verified_pending_email' &&
     currentStep === targetStep &&
     (targetStep === 0 || canAccessWizardSteps)
 
   const showFormNav =
-    !gateBusy && phase !== 'pending' && phase !== 'rejected' && phase !== 'resume_ready'
+    !gateBusy &&
+    phase !== 'pending' &&
+    phase !== 'verified_pending_email' &&
+    phase !== 'rejected' &&
+    phase !== 'resume_ready'
 
   return {
     showWizardStep,

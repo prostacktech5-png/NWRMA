@@ -7,6 +7,7 @@ import {
   canReviewEffluentDischargeApplications,
   isReviewableEffluentDischargeStatus,
 } from '@/lib/effluent-discharge-application'
+import { additionalInfoRequestPayload } from '@/lib/application-amendment'
 import { notifyEffluentDischargeApplicantForStatus } from '@/lib/effluent-discharge-notify'
 import { resolveDemoViewerFromRequest } from '@/lib/demo-viewer-server'
 import type { EffluentDischargeApplicationStatus } from '@/lib/types'
@@ -76,10 +77,35 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
     }
 
     const existing = applications[index]
+
+    if (status === 'additional_info_required' && !reviewNote) {
+      return Response.json(
+        {
+          error:
+            'Describe the missing information in the request dialog before sending to the applicant.',
+        },
+        { status: 400 }
+      )
+    }
+
+    let amendUrl: string | undefined
+    let additionalPatch: Record<string, unknown> = {}
+    if (status === 'additional_info_required' && reviewNote) {
+      const issued = additionalInfoRequestPayload('effluent-discharge', id, existing, reviewNote)
+      additionalPatch = issued.patch
+      amendUrl = issued.amendUrl
+    }
+
     let updated = {
       ...existing,
+      ...additionalPatch,
       status: status ? (status as EffluentDischargeApplicationStatus) : existing.status,
-      reviewNote: reviewNote !== null ? reviewNote : existing.reviewNote ?? null,
+      reviewNote:
+        status === 'additional_info_required' && reviewNote
+          ? reviewNote
+          : reviewNote !== null
+            ? reviewNote
+            : existing.reviewNote ?? null,
       reviewedAt: new Date(),
     }
 
@@ -98,7 +124,7 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
       status === 'rejected'
     ) {
       try {
-        await notifyEffluentDischargeApplicantForStatus(updated, status)
+        await notifyEffluentDischargeApplicantForStatus(updated, status, { amendUrl })
         updated = { ...updated, lastEmailSentAt: new Date() }
         effluentDischargeApplications[index] = updated
         await saveErpReferencePayload({

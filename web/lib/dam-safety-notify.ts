@@ -25,9 +25,10 @@ export async function notifyDamSafetyApplicationReceived(
 
 export async function notifyDamSafetyApplicantForStatus(
   app: DamSafetyApplication,
-  status: DamSafetyApplicationStatus
+  status: DamSafetyApplicationStatus,
+  options?: { amendUrl?: string }
 ): Promise<void> {
-  const base = emailBase(app)
+  const base = { ...emailBase(app), amendUrl: options?.amendUrl ?? null }
   switch (status) {
     case 'additional_info_required':
       await sendDamSafetyStatusEmail(base, 'additional_info_required')

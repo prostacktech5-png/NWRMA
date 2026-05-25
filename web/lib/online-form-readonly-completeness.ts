@@ -133,27 +133,27 @@ export function scanWaterDrillingCompleteness(
   const ext = application.extendedForm
   if (!ext) return finalize(issues)
 
-  const textFields: [string, unknown][] = [
-    ['Company name', ext.companyName],
-    ['Address', ext.address],
-    ['Tel', ext.phone],
-    ['Email', ext.email],
-    ['Contact person', ext.contactName],
-    ['Contact email', ext.contactEmail],
-    ['Contact phone', ext.contactPhone],
-    ['Registered Company No.', ext.regNumber],
-    ['Bankers', ext.bankers],
-    ['Operating district', ext.district],
-    ['Projects (last 5 years)', ext.projectsLast5Years],
-    ['Referee 1 name', ext.referee1.name],
-    ['Referee 1 address', ext.referee1.address],
-    ['Referee 2 name', ext.referee2.name],
-    ['Referee 2 address', ext.referee2.address],
-    ['Declaration signature', ext.declarationSignature],
-    ['Declaration date', ext.declarationDate],
+  const textFields: [string, string, unknown][] = [
+    ['Company name', 'companyName', ext.companyName],
+    ['Address', 'address', ext.address],
+    ['Tel', 'phone', ext.phone],
+    ['Email', 'email', ext.email],
+    ['Contact person', 'contactName', ext.contactName],
+    ['Contact email', 'contactEmail', ext.contactEmail],
+    ['Contact phone', 'contactPhone', ext.contactPhone],
+    ['Registered Company No.', 'regNumber', ext.regNumber],
+    ['Bankers', 'bankers', ext.bankers],
+    ['Operating district', 'district', ext.district],
+    ['Projects (last 5 years)', 'projectsLast5Years', ext.projectsLast5Years],
+    ['Referee 1 name', 'referee1.name', ext.referee1.name],
+    ['Referee 1 address', 'referee1.address', ext.referee1.address],
+    ['Referee 2 name', 'referee2.name', ext.referee2.name],
+    ['Referee 2 address', 'referee2.address', ext.referee2.address],
+    ['Declaration signature', 'declarationSignature', ext.declarationSignature],
+    ['Declaration date', 'declarationDate', ext.declarationDate],
   ]
-  for (const [label, value] of textFields) {
-    if (isBlank(value)) issues.push(issue(label, label))
+  for (const [label, path, value] of textFields) {
+    if (isBlank(value)) issues.push(issue(label, path))
   }
 
   ext.directors.forEach((d, i) => {

@@ -1,13 +1,11 @@
 'use client'
 
 import { Paperclip } from 'lucide-react'
-import { ApplicationCompletenessBanner } from '@/components/forms/application-completeness-banner'
 import { PortalFormReviewShell } from '@/components/forms/portal-form-review-shell'
 import { PortalReadonlyField } from '@/components/forms/portal-readonly-field'
 import { PortalReadonlyYesNo } from '@/components/forms/portal-readonly-yes-no'
 import { FormSection } from '@/components/nwrma-site/online-forms/form-section'
 import { WaterRightDocumentActions } from '@/components/water-right/water-right-document-actions'
-import { scanWaterRightCompleteness } from '@/lib/online-form-readonly-completeness'
 import { WATER_RIGHT_REQUIRED_DOCUMENTS } from '@/lib/water-right-documents'
 import {
   ACTIVITY_SECTION_KEYS,
@@ -20,13 +18,10 @@ export function WaterRightReadonlyForm({ application }: { application: WaterRigh
   const form = application.extendedForm
   if (!form) return null
 
-  const report = scanWaterRightCompleteness(application)
-
   return (
     <PortalFormReviewShell
       documentTitle="APPLICATION FOR WATER RIGHT PERMIT"
       reference={application.reference}
-      topSlot={<ApplicationCompletenessBanner report={report} className="application-completeness-banner" />}
     >
       <FormSection title="1.0 Applicant details">
         <div className="nwrma-field-grid">

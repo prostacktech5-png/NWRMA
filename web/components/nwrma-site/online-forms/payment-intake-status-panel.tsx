@@ -3,6 +3,45 @@
 import Link from 'next/link'
 import { CheckCircle2, Clock, Loader2, XCircle } from 'lucide-react'
 
+export function PaymentIntakeVerifiedEmailPanel({
+  intakeReference,
+  email,
+  financeReceiptNumber,
+}: {
+  intakeReference: string
+  email: string
+  financeReceiptNumber?: string | null
+}) {
+  const emailOnFile = email.trim()
+  const receipt = financeReceiptNumber?.trim() ?? ''
+  return (
+    <div className="nwrma-form-intake-status nwrma-form-intake-status--validated">
+      <CheckCircle2 className="nwrma-form-intake-status__icon" aria-hidden />
+      <h2 className="nwrma-form-intake-status__title">Payment verified — check your email</h2>
+      <p className="nwrma-form-intake-status__text">
+        NWRMA Finance has verified your administrative fee payment. We sent a personal link to
+        continue your application.
+      </p>
+      <p className="nwrma-form-intake-status__meta">
+        <strong>Reference:</strong> {intakeReference}
+        <br />
+        <strong>Email on file:</strong> {emailOnFile || '—'}
+        {receipt ? (
+          <>
+            <br />
+            <strong>Official receipt number:</strong> {receipt}
+          </>
+        ) : null}
+      </p>
+      <p className="nwrma-form-intake-status__hint">
+        Open the message titled &quot;Payment verified — continue your application&quot; and click
+        <strong> Continue application</strong>. The link works once; if it expired, contact NWRMA
+        Finance. This page updates if you return from that email on this device.
+      </p>
+    </div>
+  )
+}
+
 export function PaymentIntakeWaitingPanel({
   intakeReference,
   email,

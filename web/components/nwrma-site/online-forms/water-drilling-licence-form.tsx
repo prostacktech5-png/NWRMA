@@ -31,12 +31,12 @@ import {
 } from '@/components/nwrma-site/online-forms/applicant-identity-fields'
 import { DrillingLicenceInstructions } from '@/components/nwrma-site/online-forms/form-instructions-step'
 import { FormSection } from '@/components/nwrma-site/online-forms/form-section'
-import { usePaymentIntakeGate } from '@/components/nwrma-site/online-forms/use-payment-intake-gate'
 import {
-  PaymentIntakeRejectedPanel,
-  PaymentIntakeResumePanel,
-  PaymentIntakeWaitingPanel,
-} from '@/components/nwrma-site/online-forms/payment-intake-status-panel'
+  FormPaymentGateMessages,
+  FormPaymentGateWizardStep,
+} from '@/components/nwrma-site/online-forms/form-payment-gate-shell'
+import { useApplicationAmendment } from '@/components/nwrma-site/online-forms/use-application-amendment'
+import { usePaymentIntakeGate } from '@/components/nwrma-site/online-forms/use-payment-intake-gate'
 import { EquipmentTable } from '@/components/nwrma-site/online-forms/equipment-table'
 import { PersonnelTable } from '@/components/nwrma-site/online-forms/personnel-table'
 import {
@@ -75,6 +75,7 @@ export function WaterDrillingLicenceForm({
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [successRef, setSuccessRef] = useState<string | null>(null)
+  const [amendResubmit, setAmendResubmit] = useState(false)
   const patch = (partial: Partial<WaterDrillingLicenceFormPayload>) => {
     setForm((prev) => ({ ...prev, ...partial }))
   }
@@ -86,11 +87,28 @@ export function WaterDrillingLicenceForm({
     acknowledgements: form.acknowledgements,
   })
 
+  const amend = useApplicationAmendment({
+    formSlug: 'water-drilling-licence',
+    createDefaultForm: createDefaultWaterDrillingForm,
+    patchForm: patch,
+  })
+
+  const canAccessWizardSteps =
+    paymentGate.canAccessWizardSteps || amend.canAccessWizardSteps
+  const lockApplicantIdentity =
+    paymentGate.lockApplicantIdentity || amend.canAccessWizardSteps
+
   useEffect(() => {
     if (paymentGate.canAccessWizardSteps && paymentGate.cameFromPaymentResume) {
       setStep(1)
     }
   }, [paymentGate.canAccessWizardSteps, paymentGate.cameFromPaymentResume])
+
+  useEffect(() => {
+    if (amend.canAccessWizardSteps) {
+      setStep(1)
+    }
+  }, [amend.canAccessWizardSteps])
 
   const validateStep = (index: number): string | null => {
     if (index === 0) {
@@ -135,7 +153,7 @@ export function WaterDrillingLicenceForm({
         return 'Referee 2 name and address are required.'
       }
     }
-    if (index === 5) {
+    if (index === 5 && !amend.canAccessWizardSteps) {
       for (const slot of REQUIRED_DOCUMENT_SLOTS) {
         if (!documents[slot.id]?.length) return `Please upload: ${slot.label}`
       }
@@ -152,16 +170,12 @@ export function WaterDrillingLicenceForm({
       setError(err)
       return
     }
-    if (step === 0 && paymentGate.phase === 'fresh') {
+    if (step === 0 && paymentGate.phase === 'fresh' && !amend.canAccessWizardSteps) {
       setError(null)
       paymentGate.setApplicantGateOpen(true)
       return
     }
-    if (step === 0 && !paymentGate.canAccessWizardSteps) {
-      setError('Payment must be verified by Finance before you can continue.')
-      return
-    }
-    if (step > 0 && !paymentGate.canAccessWizardSteps) {
+    if (!canAccessWizardSteps) {
       setError('Payment must be verified by Finance before you can continue.')
       return
     }
@@ -175,6 +189,63 @@ export function WaterDrillingLicenceForm({
   }
 
   const submit = async () => {
+    if (amend.canAccessWizardSteps && amend.amendToken) {
+      const payload = {
+        ...form,
+        declarationDate: resolveDeclarationDate(form.declarationDate),
+      }
+      const validation = validateAllStepsBeforeSubmit({
+        maxStepInclusive: 6,
+        validateStep,
+        schema: waterDrillingLicenceFormSchema,
+        form: payload,
+        pathToStep: waterDrillingPathToStep,
+      })
+      if (validation) {
+        setError(validation.message)
+        setStep(validation.step)
+        return
+      }
+      const uploadBytes = totalUploadBytes(documents)
+      const tooLarge = publicUploadTooLargeMessage(uploadBytes)
+      if (tooLarge) {
+        setError(tooLarge)
+        return
+      }
+      setSubmitting(true)
+      setError(null)
+      try {
+        const body = new FormData()
+        body.append('application', JSON.stringify(payload))
+        body.append('amend', amend.amendToken)
+        for (const slot of REQUIRED_DOCUMENT_SLOTS) {
+          for (const file of documents[slot.id] ?? []) {
+            body.append(`doc_${slot.id}`, file)
+          }
+        }
+        for (const [slotId, files] of Object.entries(documents)) {
+          if (REQUIRED_DOCUMENT_SLOTS.some((s) => s.id === slotId)) continue
+          for (const file of files) {
+            body.append(`doc_${slotId}`, file)
+          }
+        }
+        const res = await postPublicApplication('/api/public/application-amend', body)
+        const data = (await res.json()) as ApiValidationBody & { reference?: string }
+        if (!res.ok) {
+          setError(apiValidationErrorMessage(data))
+          return
+        }
+        amend.clearAmendFromUrl()
+        setAmendResubmit(true)
+        setSuccessRef(data.reference ?? amend.reference)
+      } catch {
+        setError('Network error. Please try again.')
+      } finally {
+        setSubmitting(false)
+      }
+      return
+    }
+
     if (!paymentGate.intakeId || !paymentGate.resumeToken) {
       setError('Validated payment intake is required.')
       return
@@ -246,11 +317,15 @@ export function WaterDrillingLicenceForm({
           <div className="nwrma-container px-4 nwrma-form-success">
             <h2>Application submitted</h2>
             <p>
-              Your water drilling licence application has been received. Reference:{' '}
+              {amendResubmit
+                ? 'Your updated application has been resubmitted for review. Reference:'
+                : 'Your water drilling licence application has been received. Reference:'}{' '}
               <strong>{successRef}</strong>
             </p>
             <p className="nwrma-muted">
-              NWRMA will review your submission. You may be contacted for additional information.
+              {amendResubmit
+                ? 'NWRMA will review your resubmission. You may receive further email updates.'
+                : 'NWRMA will review your submission. You may be contacted for additional information.'}
             </p>
             <Link href="/online-forms" className="nwrma-btn-primary inline-block mt-4">
               Back to Online Forms
@@ -293,61 +368,24 @@ export function WaterDrillingLicenceForm({
           </nav>
 
           {error ? <p className="nwrma-form-error" role="alert">{error}</p> : null}
-          {paymentGate.gateError ? (
-            <p className="nwrma-form-error" role="alert">
-              {paymentGate.gateError}
-            </p>
-          ) : null}
+          <FormPaymentGateMessages gate={paymentGate} applicantEmail={form.email} amend={amend} />
 
-          {paymentGate.statusLoading ? (
-            <p className="nwrma-muted py-8 text-center">
-              {paymentGate.resumeActivating ? 'Opening your application…' : 'Loading…'}
-            </p>
-          ) : paymentGate.phase === 'resume_ready' ? (
-            <PaymentIntakeResumePanel
-              intakeReference={paymentGate.intakeReference}
-              organisationName={paymentGate.organisationName}
-              financeReceiptNumber={paymentGate.financeReceiptNumber}
-              onContinue={paymentGate.redeemResume}
-              busy={paymentGate.submittingIntake}
-            />
-          ) : paymentGate.phase === 'pending' ? (
-            <PaymentIntakeWaitingPanel
-              intakeReference={paymentGate.intakeReference}
-              email={paymentGate.intakeEmail || form.email}
-            />
-          ) : paymentGate.phase === 'rejected' ? (
-            <PaymentIntakeRejectedPanel
-              intakeReference={paymentGate.intakeReference}
-              validationNote={paymentGate.validationNote}
-            />
-          ) : null}
-
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.phase !== 'resume_ready' &&
-          step === 0 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={0}>
             <DrillingLicenceInstructions
               acknowledgements={form.acknowledgements}
               onAcknowledgementsChange={(a) =>
                 patch({ acknowledgements: { ...form.acknowledgements, ...a } })
               }
             />
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.phase !== 'resume_ready' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 1 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={1}>
             <FormSection title="Application for well drilling licence — company details">
               <div className="nwrma-field-grid">
                 <ApplicantOrganizationField
                   label="Company name"
                   value={form.companyName}
-                  locked={paymentGate.lockApplicantIdentity}
+                  locked={lockApplicantIdentity}
                   onChange={(companyName) => patch({ companyName })}
                 />
                 <Field label="P.O. Box" required={false}>
@@ -381,7 +419,7 @@ export function WaterDrillingLicenceForm({
                 <ApplicantEmailField
                   label="E-mail"
                   value={form.email}
-                  locked={paymentGate.lockApplicantIdentity}
+                  locked={lockApplicantIdentity}
                   onChange={(email) => patch({ email })}
                 />
                 <Field label="Name of contact person">
@@ -433,13 +471,9 @@ export function WaterDrillingLicenceForm({
                 </Field>
               </div>
             </FormSection>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 2 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={2}>
             <FormSection title="Directors & bankers">
               <Field label="Registered Company No.">
                 <input
@@ -496,13 +530,9 @@ export function WaterDrillingLicenceForm({
                 />
               </Field>
             </FormSection>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 3 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={3}>
             <FormSection title="List of equipment (Annex 1)">
               <p className="nwrma-muted text-sm mb-4">
                 Specify quantities available for each item. Mark N/A where not applicable.
@@ -528,13 +558,9 @@ export function WaterDrillingLicenceForm({
                 onChange={(handDugWell) => patch({ handDugWell })}
               />
             </FormSection>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 4 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={4}>
             <>
               <FormSection title="Key personnel (Annex 2)">
                 <PersonnelTable
@@ -593,23 +619,15 @@ export function WaterDrillingLicenceForm({
                 </p>
               </FormSection>
             </>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 5 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={5}>
             <FormSection title="Required documents">
               <DocumentUploadGrid files={documents} onChange={setDocuments} />
             </FormSection>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 6 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={6}>
             <>
               <FormSection title="Licence fee schedule">
                 <table className="nwrma-data-table nwrma-fee-table">
@@ -656,13 +674,9 @@ export function WaterDrillingLicenceForm({
                 />
               ) : null}
             </>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.canAccessWizardSteps &&
-          step === 7 ? (
+          <FormPaymentGateWizardStep gate={paymentGate} amend={amend} step={step} targetStep={7}>
             <FormSection title="Review & submit">
               <p>Please review your entries before submitting to NWRMA.</p>
               <ul className="nwrma-review-summary">
@@ -678,14 +692,11 @@ export function WaterDrillingLicenceForm({
                 </li>
               </ul>
             </FormSection>
-          ) : null}
+          </FormPaymentGateWizardStep>
 
-          {!paymentGate.statusLoading &&
-          paymentGate.phase !== 'pending' &&
-          paymentGate.phase !== 'rejected' &&
-          paymentGate.phase !== 'resume_ready' ? (
+          {(paymentGate.showFormNav || amend.canAccessWizardSteps) ? (
           <div className="nwrma-form-nav">
-            {step > 0 && paymentGate.canAccessWizardSteps ? (
+            {step > 0 && canAccessWizardSteps ? (
               <button type="button" className="nwrma-btn-secondary" onClick={goBack} disabled={submitting}>
                 Back
               </button>

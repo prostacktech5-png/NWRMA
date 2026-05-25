@@ -122,11 +122,13 @@ function writeTargets(map) {
   let apiUrl = (map.get('NWRMA_API_URL') ?? '').trim().replace(/\/$/, '')
   let apiLan = (map.get('NWRMA_API_URL_LAN') ?? '').trim().replace(/\/$/, '')
 
+  const webPort = map.get('WEB_PORT') ?? '3000'
   const detected = detectLanIpv4()
   if (detected) {
     const autoLan = `http://${detected}:${port}`
     apiLan = autoLan
     map.set('NWRMA_API_URL_LAN', apiLan)
+    map.set('PUBLIC_APP_URL_LAN', `http://${detected}:${webPort}`)
   }
 
   // Web/Next on the laptop still talks to local Express.
@@ -142,7 +144,13 @@ function writeTargets(map) {
   fs.writeFileSync(path.join(root, 'server', '.env'), masterBody, 'utf8')
 
   const webOnly = new Map(map)
-  webOnly.set('PUBLIC_APP_URL', map.get('PUBLIC_APP_URL') ?? 'http://localhost:3000')
+  const publicApp = (map.get('PUBLIC_APP_URL') ?? 'http://localhost:3000').trim()
+  const publicAppLan = (map.get('PUBLIC_APP_URL_LAN') ?? '').trim()
+  const useLanPublic =
+    Boolean(publicAppLan) &&
+    (!publicApp || /^https?:\/\/(localhost|127\.0\.0\.1)(:|\/|$)/i.test(publicApp))
+  webOnly.set('PUBLIC_APP_URL', useLanPublic ? publicAppLan : publicApp)
+  if (publicAppLan) webOnly.set('PUBLIC_APP_URL_LAN', publicAppLan)
   fs.writeFileSync(path.join(root, 'web', '.env.local'), serializeEnv(webOnly), 'utf8')
 
   // FIELD_API_PRIORITY=internet | lan | auto (default auto)

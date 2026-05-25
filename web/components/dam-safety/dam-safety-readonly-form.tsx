@@ -2,13 +2,11 @@
 
 import { Paperclip } from 'lucide-react'
 import { DamSafetyDocumentActions } from '@/components/dam-safety/dam-safety-document-actions'
-import { ApplicationCompletenessBanner } from '@/components/forms/application-completeness-banner'
 import { PortalFormReviewShell } from '@/components/forms/portal-form-review-shell'
 import { PortalReadonlyField } from '@/components/forms/portal-readonly-field'
 import { PortalReadonlyYesNo } from '@/components/forms/portal-readonly-yes-no'
 import { FormSection } from '@/components/nwrma-site/online-forms/form-section'
 import { DAM_SAFETY_REQUIRED_DOCUMENTS } from '@/lib/dam-safety-documents'
-import { scanDamSafetyCompleteness } from '@/lib/online-form-readonly-completeness'
 import {
   ACTIVITY_SECTION_KEYS,
   ACTIVITY_SECTION_LABELS,
@@ -20,13 +18,10 @@ export function DamSafetyReadonlyForm({ application }: { application: DamSafetyA
   const form = application.extendedForm
   if (!form) return null
 
-  const report = scanDamSafetyCompleteness(application)
-
   return (
     <PortalFormReviewShell
       documentTitle="APPLICATION FOR DAM SAFETY LICENCE"
       reference={application.reference}
-      topSlot={<ApplicationCompletenessBanner report={report} className="application-completeness-banner" />}
     >
       <FormSection title="1.0 Applicant details">
         <div className="nwrma-field-grid">

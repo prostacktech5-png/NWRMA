@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer'
+import { resolvePublicAppBaseUrl } from '@/lib/form-resume-token'
 
 export type SmtpConfig = {
   host: string
@@ -73,12 +74,7 @@ export async function sendMailMessage(opts: {
 }
 
 export function inviteSetPasswordUrl(rawToken: string): string {
-  const raw =
-    process.env.PUBLIC_APP_URL?.trim() ||
-    process.env.NEXT_PUBLIC_APP_URL?.trim() ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '')
-  const base = raw.replace(/\/+$/, '') || 'http://localhost:3000'
-  return `${base}/set-password?token=${encodeURIComponent(rawToken)}`
+  return `${resolvePublicAppBaseUrl()}/set-password?token=${encodeURIComponent(rawToken)}`
 }
 
 export async function sendPasswordInviteEmail(params: {
@@ -169,6 +165,8 @@ type LicenseEmailBase = {
   organisationName: string
   reference: string
   reviewNote?: string | null
+  /** Link to reopen the same online form and resubmit (additional info workflow). */
+  amendUrl?: string | null
 }
 
 async function sendLicenseEmail(
@@ -177,6 +175,7 @@ async function sendLicenseEmail(
   bodyParagraphs: string[]
 ): Promise<void> {
   const greeting = `Hello ${base.contactName || 'Applicant'},`
+  const amendUrl = base.amendUrl?.trim() ?? ''
   const text = [
     greeting,
     '',
@@ -187,6 +186,9 @@ async function sendLicenseEmail(
     base.reviewNote?.trim()
       ? `\nMessage from NWRMA:\n${base.reviewNote.trim()}`
       : '',
+    amendUrl
+      ? `\nComplete and resubmit your application using this link (same form as your original submission):\n${amendUrl}`
+      : '',
     '',
     'National Water Resources Management Agency — Sierra Leone',
     'https://nwrma.gov.sl',
@@ -196,7 +198,15 @@ async function sendLicenseEmail(
 
   const htmlBody = bodyParagraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join('')
   const noteBlock = base.reviewNote?.trim()
-    ? `<p style="margin-top:16px;padding:12px;background:#f4f6f8;border-radius:8px;"><strong>Message from NWRMA:</strong><br/>${escapeHtml(base.reviewNote.trim())}</p>`
+    ? `<p style="margin-top:16px;padding:12px;background:#f4f6f8;border-radius:8px;white-space:pre-wrap;"><strong>Message from NWRMA:</strong><br/>${escapeHtml(base.reviewNote.trim())}</p>`
+    : ''
+  const amendBlock = amendUrl
+    ? `<p style="margin:20px 0;">
+    <a href="${escapeHtml(amendUrl)}" style="display:inline-block;padding:12px 20px;background:#0072C6;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;">
+      Open application form
+    </a>
+  </p>
+  <p style="font-size:12px;color:#555;">Use the same online form layout as before. Fields that were missing have been left blank for you to complete, then resubmit for review.</p>`
     : ''
 
   const html = `
@@ -205,11 +215,12 @@ async function sendLicenseEmail(
 <body style="font-family:system-ui,sans-serif;line-height:1.5;color:#111;max-width:560px;">
   <p>Hello <strong>${escapeHtml(base.contactName)}</strong>,</p>
   ${htmlBody}
+  ${noteBlock}
+  ${amendBlock}
   <p style="font-size:13px;color:#555;margin-top:20px;">
     <strong>Reference:</strong> ${escapeHtml(base.reference)}<br/>
     <strong>Organisation:</strong> ${escapeHtml(base.organisationName)}
   </p>
-  ${noteBlock}
   <p style="font-size:13px;color:#777;margin-top:24px;">National Water Resources Management Agency — Sierra Leone</p>
 </body>
 </html>`
@@ -241,7 +252,10 @@ export async function sendDamSafetyStatusEmail(
   const bodies = {
     additional_info_required: [
       `We are reviewing your Dam Safety application for ${base.organisationName}.`,
-      'Additional information or documents are required before we can continue processing.',
+      'Additional information is required before we can continue processing.',
+      base.amendUrl
+        ? 'Open your application using the button below, complete the missing sections in the same form format, and resubmit for review.'
+        : 'Please contact NWRMA with the requested information as soon as possible.',
     ],
     approved: [
       `Your Dam Safety application (${base.reference}) for ${base.organisationName} has been approved.`,
@@ -280,7 +294,10 @@ export async function sendEffluentDischargeStatusEmail(
   const bodies = {
     additional_info_required: [
       `We are reviewing your Effluent Discharge application for ${base.organisationName}.`,
-      'Additional information or documents are required before we can continue processing.',
+      'Additional information is required before we can continue processing.',
+      base.amendUrl
+        ? 'Open your application using the button below, complete the missing sections in the same form format, and resubmit for review.'
+        : 'Please contact NWRMA with the requested information as soon as possible.',
     ],
     approved: [
       `Your Effluent Discharge application (${base.reference}) for ${base.organisationName} has been approved.`,
@@ -319,7 +336,10 @@ export async function sendWaterRightStatusEmail(
   const bodies = {
     additional_info_required: [
       `We are reviewing your Water Right application for ${base.organisationName}.`,
-      'Additional information or documents are required before we can continue processing.',
+      'Additional information is required before we can continue processing.',
+      base.amendUrl
+        ? 'Open your application using the button below, complete the missing sections in the same form format, and resubmit for review.'
+        : 'Please contact NWRMA with the requested information as soon as possible.',
     ],
     approved: [
       `Your Water Right application (${base.reference}) for ${base.organisationName} has been approved.`,
@@ -349,9 +369,11 @@ export async function sendLicenseAdditionalInfoEmail(base: LicenseEmailBase): Pr
     base,
     `NWRMA: Additional information required — ${base.reference}`,
     [
-      `We are reviewing your borehole drilling licence application for ${base.organisationName}.`,
-      'Additional information or documents are required before we can continue processing your application.',
-      'Please reply to this email or contact NWRMA with the requested information as soon as possible.',
+      `We are reviewing your application (${base.reference}) for ${base.organisationName}.`,
+      'Additional information is required before we can continue processing.',
+      base.amendUrl
+        ? 'Open your application using the button below, complete the missing sections in the same form format, and resubmit for review.'
+        : 'Please contact NWRMA with the requested information as soon as possible.',
     ]
   )
 }

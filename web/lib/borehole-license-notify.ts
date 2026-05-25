@@ -28,9 +28,10 @@ export async function notifyApplicantApplicationReceived(
 
 export async function notifyApplicantForLicenseStatus(
   app: BoreholeLicenseApplication,
-  status: LicenseApplicationStatus
+  status: LicenseApplicationStatus,
+  options?: { amendUrl?: string }
 ): Promise<void> {
-  const base = emailBase(app)
+  const base = { ...emailBase(app), amendUrl: options?.amendUrl ?? null }
   switch (status) {
     case 'additional_info_required':
       await sendLicenseAdditionalInfoEmail(base)
