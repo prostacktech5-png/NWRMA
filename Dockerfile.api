@@ -1,0 +1,48 @@
+# NWRMA Express API — Railway service: nwrma-api
+# Dashboard: Builder = Dockerfile, Dockerfile path = Dockerfile.api
+
+FROM node:20-bookworm-slim AS build
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+COPY package.json package-lock.json .npmrc ./
+COPY shared/package.json ./shared/
+COPY server/package.json ./server/
+COPY web/package.json ./web/
+COPY mobile/package.json ./mobile/
+
+COPY shared ./shared
+COPY server ./server
+
+RUN npm ci --include=optional --workspace=@nwrma/shared --workspace=@nwrma/server
+
+RUN npm run build -w @nwrma/shared \
+  && npm run prisma:generate -w server \
+  && npm run build -w server
+
+FROM node:20-bookworm-slim AS run
+
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+
+RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+COPY package.json package-lock.json .npmrc ./
+COPY shared/package.json ./shared/
+COPY server/package.json ./server/
+COPY web/package.json ./web/
+COPY mobile/package.json ./mobile/
+
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/shared ./shared
+COPY --from=build /app/server ./server
+
+EXPOSE 8080
+
+CMD ["npm", "run", "start:api"]

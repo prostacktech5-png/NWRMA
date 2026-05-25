@@ -113,7 +113,7 @@ SQLite stores readings offline; **`POST /sync/offline-data`** uploads pending ro
 
 ### Production (Render + any-network APK)
 
-See **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** for Render Blueprint (`render.yaml`), public **`NWRMA_API_URL`**, and **`npm run mobile:release`**.
+See **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** for Render Blueprint (`render.yaml`) or **[docs/RAILWAY.md](docs/RAILWAY.md)** for Railway Docker deploy (`Dockerfile.api` / `Dockerfile.web`), public **`NWRMA_API_URL`**, and **`npm run mobile:release`**.
 
 ```bash
 node scripts/set-public-api-url.mjs https://your-api.onrender.com

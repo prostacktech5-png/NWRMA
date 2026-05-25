@@ -1,0 +1,42 @@
+# Deployment context — keep API/web Docker builds small (see Dockerfile.api / Dockerfile.web)
+
+# Git and IDE
+.git
+.gitignore
+.cursor
+.vscode
+
+# Dependencies and build outputs (rebuilt in image)
+node_modules
+**/node_modules
+.next
+**/.next
+dist
+server/dist
+shared/dist
+*.tsbuildinfo
+
+# Mobile / duplicate app trees (not needed for server or web images)
+mobile
+android app
+
+# Runtime uploads — mount Railway volume at /app/web/data for web service
+web/data
+data
+
+# APKs and local secrets
+*.apk
+env/nwrma.env
+server/.env
+server/.env.local
+web/.env.local
+mobile/.env
+
+# Render / Railway / misc deploy noise
+render.yaml
+.cursor/plans
+
+# Large dev-only trees (optional: tst kept for web marketing prepare:public)
+# Uncomment to shrink web build further if marketing video not needed:
+# tst/**/*.mp4
+# tst/**/*.mov
