@@ -21,6 +21,9 @@ mobile/ios/
 mobile/.expo/
 *.tsbuildinfo
 
+# Generated during npm run deploy:railway
+railway.toml
+
 # Runtime / upload data (local or Render disk — not in repo)
 web/data/
 data/

@@ -30,6 +30,7 @@
     "verify:field-sync": "node scripts/verify-field-sync.mjs",
     "deploy:verify": "node scripts/verify-field-sync.mjs",
     "deploy:set-api-url": "node scripts/set-public-api-url.mjs",
+    "deploy:railway": "node scripts/railway-deploy.mjs",
     "start": "npm run start -w web",
     "start:web": "npm run start -w web",
     "start:api": "npm run prisma:migrate -w server && npm run start -w server",

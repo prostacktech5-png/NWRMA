@@ -1,0 +1,11 @@
+# Railway config for service: nwrma-api
+# Set "Config file path" to /railway.api.toml in service settings, or deploy via npm run deploy:railway
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile.api"
+
+[deploy]
+healthcheckPath = "/health"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3

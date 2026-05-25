@@ -6,6 +6,28 @@ Project: [Railway dashboard](https://railway.com/project/1bcb7582-9ac2-407e-a36c
 
 ---
 
+## One-command deploy (fastest)
+
+1. Railway → Project → **Settings** → **Tokens** → create **Project Token**
+2. PowerShell from repo root:
+
+```powershell
+$env:RAILWAY_TOKEN="paste-your-project-token-here"
+npm run deploy:railway
+```
+
+This script ([`scripts/railway-deploy.mjs`](../scripts/railway-deploy.mjs)) will:
+
+- Link project `1bcb7582-9ac2-407e-a36c-bf70c42f7627`
+- Push variables from `env/nwrma.env` (never committed)
+- Deploy `nwrma-api` with [`railway.api.toml`](../railway.api.toml) + `Dockerfile.api`
+- Deploy `nwrma-web` with [`railway.web.toml`](../railway.web.toml) + `Dockerfile.web`
+- Run `db:seed`, `set-public-api-url`, and `sync:env`
+
+Optional: `$env:RAILWAY_PROJECT_ID="1bcb7582-9ac2-407e-a36c-bf70c42f7627"` if linking fails.
+
+---
+
 ## Why Docker (not Railpack)
 
 Railpack was uploading **~1.5 GB** (whole repo including `mobile/`, `android app/`) and running **`npm ci` twice** via `render-build-*.mjs`. Switch each service to **Builder: Dockerfile** with the paths below.
