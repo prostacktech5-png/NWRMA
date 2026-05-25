@@ -16,9 +16,12 @@ server/dist
 shared/dist
 *.tsbuildinfo
 
-# Mobile / duplicate app trees (not needed for server or web images)
+# Mobile / duplicate app trees (not needed for server or web images; "android app" breaks Nixpacks paths)
 mobile
+mobile/
 android app
+android app/
+**/android app/**
 
 # Runtime uploads — mount Railway volume at /app/web/data for web service
 web/data

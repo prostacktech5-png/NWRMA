@@ -69,7 +69,7 @@ function setServiceVariables(serviceName, vars) {
     log(`variable set ${k} on ${serviceName}`)
     const r = spawnSync(
       'npx',
-      ['--yes', '@railway/cli@4', 'variable', 'set', k, '--stdin', '--service', serviceName, '--skip-deploys', '-y'],
+      ['--yes', '@railway/cli@4', 'variable', 'set', k, '--stdin', '--service', serviceName, '--skip-deploys'],
       { cwd: root, input: String(v), stdio: ['pipe', 'inherit', 'inherit'], env: process.env, shell: true }
     )
     if (r.status !== 0) {
@@ -106,7 +106,7 @@ function deployService(serviceName, configFile) {
   const configDst = path.join(root, 'railway.toml')
   fs.copyFileSync(configSrc, configDst)
   log(`Using ${configFile} -> railway.toml for ${serviceName}`)
-  run(`${CLI} up --detach --service "${serviceName}" -y`)
+  run(`${CLI} up --detach --service "${serviceName}"`)
 }
 
 async function waitHealth(url, label, maxSec = 300) {
@@ -146,7 +146,7 @@ Missing RAILWAY_TOKEN.
 
   log('Linking Railway project...')
   try {
-    run(`${CLI} link -p ${PROJECT_ID} -y`)
+    run(`${CLI} link -p ${PROJECT_ID}`)
   } catch {
     log('Link may already exist; continuing.')
   }

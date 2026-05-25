@@ -1,0 +1,20 @@
+# Web (Next.js) — Sevalla / Railway / Nixpacks fallback.
+# Prefer Dockerfile.web in dashboard. Do NOT use default Nixpacks detect (breaks on "android app" path).
+# Sevalla: Settings → Config file path → /nixpacks.toml
+
+[variables]
+NIXPACKS_NODE_VERSION = "20"
+
+[phases.install]
+cmds = ["npm ci --include=optional"]
+
+[phases.build]
+cmds = [
+  "npm install @tailwindcss/oxide-linux-x64-gnu@4.3.0 -w my-project --no-audit --no-fund",
+  "npm run build -w @nwrma/shared",
+  "npm run prepare:public -w web",
+  "npm run build -w my-project",
+]
+
+[start]
+cmd = "npm run start -w web"

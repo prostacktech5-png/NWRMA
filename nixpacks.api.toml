@@ -1,0 +1,19 @@
+# API (Express) — Sevalla / Nixpacks fallback.
+# Prefer Dockerfile.api in dashboard.
+# Sevalla: Settings → Config file path → /nixpacks.api.toml
+
+[variables]
+NIXPACKS_NODE_VERSION = "20"
+
+[phases.install]
+cmds = ["npm ci --include=optional --workspace=@nwrma/shared --workspace=@nwrma/server"]
+
+[phases.build]
+cmds = [
+  "npm run build -w @nwrma/shared",
+  "npm run prisma:generate -w server",
+  "npm run build -w server",
+]
+
+[start]
+cmd = "npm run start:api"

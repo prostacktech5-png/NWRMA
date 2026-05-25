@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sevalla": {
+      "command": "npx",
+      "args": ["-y", "@sevalla/mcp-server"],
+      "env": {
+        "SEVALLA_API_KEY": "paste-from-env-sevalla-env-never-commit"
+      }
+    }
+  }
+}
